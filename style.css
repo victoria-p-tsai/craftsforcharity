@@ -138,6 +138,10 @@ header nav ul .nav-item {
     color: #767676;
 }
 
+.anchor {
+    padding-top: 100px;
+}
+
 .content {
     margin-top: 100px;
     padding: 100px 0;
@@ -147,6 +151,14 @@ header nav ul .nav-item {
 section {
     padding: 0 22%;
     width: auto;
+}
+section::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+    pointer-events: none;
 }
 
 h2, h3 {
@@ -158,6 +170,7 @@ h2 {
     text-transform: uppercase;
     font-size: 36px;
     color: #6fcafc;
+    text-align: center;
 }
 
 h3 {
@@ -165,11 +178,15 @@ h3 {
 }
 
 p, ul li {
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 ul {
     list-style-position: inside;
+}
+
+.answer {
+    margin-top: 20px;
 }
 
 footer {
@@ -365,15 +382,24 @@ footer {
 /* --------------------------------------------------------------------- */
 /* ABOUT US */
 
-/* .about-menu {
+.about-menu {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.about-menu .question {
+.question p, .question li, .question h3 {
+    font-size: 1.1em;
+}
 
-} */
+.about-menu .question h2, .workshops-content h2 {
+    border-bottom: 4px dashed #ffd45a;
+    margin-bottom: 20px;
+}
+
+.about-menu section, .workshops-content section {
+    margin-bottom: 50px;
+}
 
 
 /* --------------------------------------------------------------------- */
@@ -385,6 +411,24 @@ footer {
 
 .workshops-content h3 {
     color: #454f99;
+}
+
+.workshops-content .btn {
+    margin-top: 20px;
+}
+
+#survey, #resources {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#survey h3 {
+    font-size: 22px;
+}
+
+#resources .btn {
+    width: 250px;
 }
 
 
@@ -419,8 +463,8 @@ footer {
     }
 }
 
-/* for phones */
-@media screen and (max-width: 450px) {
+/* for phones 
+@media screen and (max-width: 920px) {
     nav {
         display: none;
     }
@@ -430,4 +474,4 @@ footer {
         padding-right: none;
         transition: 0.8s;
     }
-}
+} */

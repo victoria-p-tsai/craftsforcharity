@@ -16,6 +16,7 @@
         $(function(){
             $("#header").load("header.html"); 
             $("#footer").load("footer.html"); 
+            $("#email-form").load("contact-form.html"); 
         });
     </script> 
 </head>
@@ -40,21 +41,21 @@
                 <img src="CFC Banners/Knitting.jpeg">
                 <h3>LEARN</h3>
                 <p>We teach you crafting skills like knitting and making cards in our workshops!</p>
-                <button class="btn" onclick="window.location.pathname = './classes.html';">Learn More</button>
+                <button class="btn" onclick="window.location.pathname='./classes.html';">Learn More</button>
             </div>
         
             <div class="actions-items" id="create">
                 <img src="CFC Banners/3 Rectangles 2.jpg" alt="no image">
                 <h3>CREATE</h3>
                 <p>You make items like scarves, cards, and toys!</p>
-                <button class="btn" onclick="window.location.href = './classes.html#materials';">Learn More</button>
+                <button class="btn" onclick="window.location.href='./classes.html#materials';">Learn More</button>
             </div>
         
             <div class="actions-items" id="donate">
-                <img src="CFC Banners/meals and happy.webp" alt="no image">
+                <img src="CFC Banners/meals and happy.png" alt="no image">
                 <h3>DONATE</h3>
                 <p>We donate your creations to charities!</p>
-                <button class="btn" onclick="window.location.pathname = './donate.html';">Learn More</button>
+                <button class="btn" onclick="window.location.pathname='./donate.html';">Learn More</button>
             </div>
     
             <img class="bg-img left" src="CFC Banners/Yarn Balls.jpeg">
@@ -65,6 +66,7 @@
                 <h3><span class="yellow">CONTACT</span> US</h3>
                 <p>Email: craftscharity@gmail.com<br/>
                     Tel: 667-261-9783</p>
+                <section id="email-form"></section>
             </div>
             
             <div class="visit-us contacts-card">
