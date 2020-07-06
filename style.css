@@ -12,6 +12,14 @@
     border-bottom: 0.25em dashed #ffd45a;
 }
 
+.title {
+    color: #6fcafc;
+    font-size: 50px;
+    letter-spacing: 7px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
 .btn {
     border: none;
     color: white;
@@ -48,7 +56,7 @@
     margin-bottom: 30px;
 }
 
-.question p, .question li, a {
+.question p, .question li, .question a {
     font-size: 1.1em;
 }
 
@@ -111,6 +119,7 @@ header .logo .logo-text {
     width: auto;
     color: #6fcafc;
     transition: 0.8s;
+    line-height: initial;
 }
 
 header nav {
@@ -142,6 +151,18 @@ header nav ul .nav-item {
     color: #767676;
 }
 
+header nav .active, header nav .nav-item:hover {
+    color: black;
+}
+
+header nav .sub {
+    display: none;/**/
+    text-transform: lowercase;
+}
+header nav .sub .open {
+    display: flex;
+}
+
 .content {
     margin-top: 100px;
     padding: 100px 0;
@@ -149,7 +170,7 @@ header nav ul .nav-item {
 }
 
 section {
-    padding: 0 22%;
+    padding: 0 24%;
     width: auto;
 }
 section::before { 
@@ -182,7 +203,7 @@ h3 {
     font-size: 1.1em;
 }
 
-p, ul li {
+p, ul li, a {
     line-height: 1.6em;
 }
 
@@ -235,19 +256,16 @@ footer {
     align-items: center;
 }
 
+.our-purpose .title {
+    margin-bottom: 0;
+}
+
 .our-purpose article {
     margin: 0 15%;
     font-size: 1.4em;
 }
 
-.our-purpose article h2 {
-    color: #6fcafc;
-    font-size: 50px;
-    letter-spacing: 7px;
-    font-weight: 900;
-}
-
-.our-purpose article p {
+.our-purpose article p, .our-purpose article a {
     color: #767676;
 }
 
@@ -456,6 +474,7 @@ footer {
 
 #materials .material-item:nth-child(even) {
     width: 70%;
+    /*border: 3px solid black;*/
 }
 
 #materials .material-item:nth-child(2), #materials .material-item:nth-child(4) {
@@ -471,63 +490,37 @@ footer {
     width: 200px;
     height: 150px;
     object-fit: cover;
-    bottom: 10px;
-    margin-right: 30px;
+    bottom: 20px;
+    margin-right: 8%;
 }
 #materials #img-knit-needle {
     width: 100px;
-    margin-right: 80px;
+    margin-right: 13%;
     bottom: 40px;
 }
 #materials #img-yarn-needle {
-    margin-right: 40px;
+    margin-right: 8%;
     width: 180px;
-}/**/
-/*
-#where-materials ul {
-    display: inline-block;
-    vertical-align: top;
-    list-style-type: none;
-}
-
-#where-materials ul li {
-    margin-bottom: 10px;
-}
-
-#where-materials ul:nth-child(1) {
-    margin-right: 10px;
-    text-align: right;
-    width: 40%;
-}
-#where-materials ul:nth-child(2) {
-    margin: 3px 10px 0 0;
-    text-align: left;
-}
-
-#where-materials ul:nth-child(2) li {
-    margin-bottom: 1em;
-}*/
-
-#where-materials {
-    vertical-align: top;
 }
 
 #where-materials h3, #where-materials .side-block, #teachers h3, #teachers .side-block {
     display: inline-block;
+    vertical-align: top;
 }
 #where-materials h3, #teachers h3 {
-    width: 45%;
+    width: 40%;
     text-align: right;
     /*border: 3px solid black;*/
 }
 #where-materials .side-block, #teachers .side-block {
-    width: 45%;
+    width: 55%;
     text-align: left;
     margin-left: 20px;
+    margin-top: 7px;
     /*border: 3px solid black;*/
 }
 
-#where-materials p {
+#where-materials p, #where-materials a {
     text-align: center;
     margin-top: 15px;
 }
