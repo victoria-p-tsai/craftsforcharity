@@ -17,11 +17,13 @@
     font-size: 50px;
     letter-spacing: 7px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 4px dashed #ffd45a;/**/
 }
 
 .btn {
     border: none;
+    outline: none;
     color: white;
     background-color: #6fcafc;
     padding: 12px;
@@ -52,6 +54,10 @@
     color: #454f99;
 }
 
+.grey {
+    color: rgb(241, 241, 241);
+}
+
 .question {
     margin-bottom: 30px;
 }
@@ -62,6 +68,10 @@
 
 .question h3 {
     color: #454f99;
+}
+
+.answer {
+    margin-top: 20px;
 }
 
 
@@ -78,6 +88,12 @@
 html, body, a {
     color: #767676;
 }
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
 
 header {
     display: flex;
@@ -93,15 +109,6 @@ header {
     transition: 0.8s;
 }
 
-header.sticky {
-    padding: 5px 100px;
-    background: rgba(255,255,255,1);
-}
-header.sticky .logo .logo-pic img {
-    height: 80px;
-    margin-left: 10px;
-}
-
 header .logo {
     display: flex;
     align-items: center;
@@ -110,7 +117,7 @@ header .logo {
 
 header .logo .logo-pic img {
     height: 100px;
-    padding-right: 10px;
+    padding-right: 15px;
     transition: 0.8s;
 }
 
@@ -120,6 +127,15 @@ header .logo .logo-text {
     color: #6fcafc;
     transition: 0.8s;
     line-height: initial;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: rgba(255,255,255,1);
+}
+header.sticky .logo .logo-pic img {
+    height: 80px;
+    margin-left: 10px;
 }
 
 header nav {
@@ -151,8 +167,8 @@ header nav ul .nav-item {
     color: #767676;
 }
 
-header nav .active, header nav .nav-item:hover {
-    color: black;
+header nav .current, header nav .nav-item:hover {
+    color: black !important;
 }
 
 header nav .sub {
@@ -165,7 +181,7 @@ header nav .sub .open {
 
 .content {
     margin-top: 100px;
-    padding: 100px 0;
+    padding: 80px 0;
     justify-content: center;
 }
 
@@ -215,12 +231,43 @@ ul li .indented {
     margin-left: 2em;
 }
 
-a:active {
+a:active, a:hover {
     color: black;
 }
 
-.answer {
-    margin-top: 20px;
+button.collapsible h2 {
+    transition: 0.2s;
+    font-size: 30px;
+}
+button.collapsible h2:hover, .active {
+    color: #454f99;
+}
+
+.collapsible {
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    color: #6fcafc;
+    border-radius: 5px;
+}
+.collapsible:nth-child(odd) {
+    border: none;
+    outline: none;
+}
+
+.coll-content {
+    padding: 0px 18px 8px;
+    margin: 8px 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.coll-content p {
+    line-height: 1.8em;
 }
 
 footer {
@@ -228,9 +275,14 @@ footer {
     height: 70px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: center; /*space-between*/
     align-items: center;
+    margin-top: auto;
 }
+/*
+footer p {
+    padding-left: 50px;
+}*/
 
 
 /* --------------------------------------------------------------------- */
@@ -258,6 +310,7 @@ footer {
 
 .our-purpose .title {
     margin-bottom: 0;
+    border: none;
 }
 
 .our-purpose article {
@@ -337,6 +390,7 @@ footer {
 .actions #create .btn {
     background-color: white;
     color: #6fcafc;
+    align-self: flex-end;
 }
 .actions #create .btn:hover {
     background-color: transparent;
@@ -419,12 +473,7 @@ footer {
     text-align: center;
 }
 
-.about-menu .question h2, .workshops-content h2 {
-    border-bottom: 4px dashed #ffd45a;
-    margin-bottom: 20px;
-}
-
-.about-menu section, .workshops-content section {
+.about-menu .title {
     margin-bottom: 50px;
 }
 
@@ -433,7 +482,12 @@ footer {
 /* CLASSES */
 
 .workshops-content section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.workshops-content h2, .donate-where h2 {
+    border-bottom: 4px dashed #ffd45a;
+    margin-bottom: 20px;
 }
 
 .workshops-content h3 {
@@ -454,6 +508,14 @@ footer {
 #survey h3 {
     font-size: 22px;
 }
+
+#resources .btn {
+    width: 250px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* MATERIALS */
 
 #materials {
     overflow: hidden;
@@ -525,8 +587,12 @@ footer {
     margin-top: 15px;
 }
 
-#resources .btn {
-    width: 250px;
+
+/* --------------------------------------------------------------------- */
+/* WHERE DO YOUR CRAFTS GO */
+
+.donate-where section {
+    margin-bottom: 50px;
 }
 
 
