@@ -12,24 +12,6 @@ window.addEventListener("scroll", function() {
 })
 
 
-//header dropdown animation: hidden --> showing underneath
-
-
-
-//header highlight: current page --> black
-/* var url = window.location.href.split("/"); //replace string with location.href
-var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
-//naturally you could use something other than the <nav> element
-var i=0;
-var currentPage = url[url.length - 1];
-for(i; i<navLinks.length; i++){
-    var lb = navLinks[i].href.split("/");
-    if(lb[lb.length-1] == currentPage) {
-        navLinks[i].classList.toggle("current");
-    }
-} */
-
-
 //collapsible menu animation: hidden --> showing underneath
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -51,3 +33,17 @@ $('.collapsible').click(function(){
     $(this).find('i').toggleClass('fa-caret-down fa-caret-up')
     $(this).find('h2').toggleClass('active')
 });
+
+
+//header highlight: current page --> black (((only works for index.html and contact-us)))
+ var url = window.location.href.split("/"); //replace string with location.href
+var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
+//naturally you could use something other than the <nav> element
+var i=0;
+var currentPage = url[url.length - 1];
+for(i; i<navLinks.length; i++){
+    var lb = navLinks[i].href.split("/");
+    if(lb[lb.length-1] == currentPage) {
+        navLinks[i].classList.toggle("current");
+    }
+} /**/
