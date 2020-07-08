@@ -89,10 +89,27 @@ html, body, a {
     color: #767676;
 }
 html {
-    height: 100%;
+    overflow-y: scroll;
 }
-body {
-    min-height: 100%;
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: rgb(241, 241, 241);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(165, 165, 165);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
 }
 
 header {
@@ -101,27 +118,29 @@ header {
     z-index: 1000;
     padding: 15px 100px;
     width: 100%;
+    min-height: max-content;
     top: 0;
     left: 0;
     justify-content: space-between;
     align-items: center;
     background: transparent;
     transition: 0.8s;
+    outline: none;
 }
 
-header .logo {
+.logo {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-header .logo .logo-pic img {
+.logo .logo-pic img {
     height: 100px;
     padding-right: 15px;
     transition: 0.8s;
 }
 
-header .logo .logo-text {
+.logo .logo-text {
     font-size: 1.5em;
     width: auto;
     color: #6fcafc;
@@ -138,51 +157,75 @@ header.sticky .logo .logo-pic img {
     margin-left: 10px;
 }
 
-header nav {
+nav {
     display: flex;
-    list-style: none;
     justify-content: center;
     align-items: center;
 }
 
-header nav ul {
+nav ul {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header nav ul li {
+nav ul li {
     list-style: none;
 }
 
-header nav ul .nav-item {
+nav ul .nav-item {
     text-decoration: none;
-    margin: 0 30px;
     position: relative;
     font-weight: bold;
     letter-spacing: 2px;
     font-size: .95em;
-    text-transform: uppercase;
     color: #767676;
 }
 
-header nav .current, header nav .nav-item:hover {
+nav ul .head {
+    margin: 0 30px;
+    padding-bottom: 35px;
+}
+
+nav .current, nav .nav-item:hover {
     color: black !important;
 }
 
-header nav .sub {
-    display: none;/**/
+nav > .sub {
+    /*display: none;*/
     text-transform: lowercase;
 }
-header nav .sub .open {
-    display: flex;
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+    background-color: white;
+    width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-content .sub {
+    margin: 10px 20px;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .content {
     margin-top: 100px;
     padding: 80px 0;
     justify-content: center;
+    min-height: calc(100vh - 142px - 28px);
 }
 
 section {
@@ -221,6 +264,7 @@ h3 {
 
 p, ul li, a {
     line-height: 1.6em;
+    transition: 0.15s;
 }
 
 ul {
@@ -268,6 +312,49 @@ button.collapsible h2:hover, .active {
 
 .coll-content p {
     line-height: 1.8em;
+}
+
+#email-form {
+    padding: 17px 12.5%;
+}
+
+input[type=text], textarea {
+    background-color: white;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    transition: 0.2s;
+}
+input[type=text]:hover, textarea:hover, input[type=text]:focus, textarea:focus {
+    border: 1px solid #a0a0a0;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 14px;
+    transition: 0.2s;
+}
+textarea {
+    height: 115px;
+}
+
+button[type=submit] {
+    background-color: #6fcafc;
+    color: white;
+    border: 0;
+    outline: 0;
+    margin-top: 15px;
+    padding: 7px;
+    width: 100px;
+    float: right;
+    font-size: 16px;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+button[type=submit]:hover {
+    background-color: #ffd45a;
+    color: black;
 }
 
 footer {
@@ -333,7 +420,7 @@ footer p {
     justify-content: space-evenly;
     align-items: space-between;
     margin: 40px 0 0;
-    padding: 50px 7% 40px;
+    padding: 30px 7% 40px;
 }
 
 .actions .actions-items {
@@ -451,8 +538,8 @@ footer p {
 .contacts .contacts-card {
     display: block;
     width: 60%;
-    height: 400px;
-    padding: 40px;
+    min-height: 570px;
+    padding: 30px 40px 35px;
     margin: 0 20px 40px;
     background-color: rgb(241, 241, 241);
     text-align: center;
@@ -460,7 +547,21 @@ footer p {
 }
 
 .contacts .contacts-card h3 {
-    font-size: 1.2em;
+    font-size: 2.5em;
+}
+
+.contacts .contacts-card .icons {
+    margin: 20px 0 30px;
+}
+
+.contacts .contacts-card i {
+    margin: 15px;
+    font-size: 60px;
+    color: #454f99;
+    transition: 0.2s;
+}
+.contacts .contacts-card i:hover, .contact-page .info .icons i:hover {
+    color: black;
 }
 
 
@@ -570,7 +671,7 @@ footer p {
     vertical-align: top;
 }
 #where-materials h3, #teachers h3 {
-    width: 40%;
+    width: 35%;
     text-align: right;
     /*border: 3px solid black;*/
 }
@@ -593,6 +694,77 @@ footer p {
 
 .donate-where section {
     margin-bottom: 50px;
+}
+
+.donate-where .title {
+    margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* CONTACT US */
+
+.contact-page .logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 130px;
+}
+
+.contact-page .row {
+    width: 100%;
+}
+
+.contact-page .info, .contact-page #email-form {
+    display: inline-block;
+    padding: 0;
+    height: 200px;
+}
+.contact-page .info {
+    width: 40%;
+}
+
+.contact-page .info .icons {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 2.7em;
+}
+
+.contact-page .info .icons i {
+    margin: 10px;
+    color: #454f99;
+}
+
+.contact-page #email-form {
+    float: right;
+    width: 55%;
+}
+
+.contact-page .lcol {
+    height: 100%;
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page input[type=text], .contact-page textarea {
+    background-color: rgb(241, 241, 241);
+}
+.contact-page input[type=text] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact-page textarea {
+    width: 55%;
+    float: right;
+}
+.contact-page input[type=text]:hover, .contact-page textarea:hover {
+    background-color: white;
+}
+
+.contact-page button[type=submit] {
+    float: right;
 }
 
 
