@@ -15,21 +15,28 @@
     </a>
     <nav>
         <ul>
-            <a href="./index.html" class="nav-item" id="home"><li>HOME</li></a>
-            <a href="./about-us.html" class="nav-item" id="about"><li>ABOUT US</li></a>
-            <a href="./classes.html" class="head nav-item" id="classes"><li>CLASSES <i class="fa fa-caret-down" aria-hidden="true"></i></li></a>
-                <ul>
-                    <a href="./classes.html" class="sub nav-item" id="overview"><li>overview</li></a>
-                    <a href="./register.html" class="sub nav-item" id="register"><li>register for a class</li></a>
-                    <a href="./materials.html" class="sub nav-item" id="materials"><li>materials</li></a>
-                </ul>
-            <a href="./donate.html" class="head nav-item" id="donate"><li>DONATE <i class="fa fa-caret-down" aria-hidden="true"></i></li></a>
-                <ul>
-                    <a href="./donate.html" class="sub nav-item" id="overview"><li>donate funds</li></a>
-                    <a href="./where-your-money-goes.html" class="sub nav-item" id="where"><li>where your crafts go</li></a>
-                </ul>
-            <a href="./contact.html" class="nav-item" id="contact"><li>CONTACT US</li></a>
-            <a href="./faq.html" class="nav-item" id="faq"><li>FAQ</li></a>
+            <li><a href="./index.html" class="head nav-item" id="home">HOME</a></li>
+            <li><a href="./about-us.html" class="head nav-item" id="about">ABOUT US</a></li>
+
+            <div class="dropdown">
+                <li><a href="./classes.html" class="head nav-item" id="classes">CLASSES <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+                    <ul class="dropdown-content">
+                        <li><a href="./classes.html" class="sub nav-item" id="overview">overview</a></li>
+                        <li><a href="./materials.html" class="sub nav-item" id="materials">materials</a></li>
+                        <li><a href="./register.html" class="sub nav-item" id="register">register for a class</a></li>
+                    </ul>
+            </div>
+
+            <div class="dropdown">
+                <li><a href="./donate.html" class="head nav-item" id="donate">DONATE <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+                    <ul class="dropdown-content">
+                        <li><a href="./donate.html" class="sub nav-item" id="overview">donate funds</a></li>
+                        <li><a href="./where-your-donations-go.html" class="sub nav-item" id="where">where your crafts go</a></li>
+                    </ul>
+            </div>
+            
+            <li><a href="./contact.html" class="head nav-item" id="contact">CONTACT US</a></li>
+            <li><a href="./faq.html" class="head nav-item" id="faq">FAQ</a></li>
         </ul>
     </nav>
 </header>
