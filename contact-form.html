@@ -7,22 +7,24 @@
 </head>
 
 <form action="https://formspree.io/xnqggjkp" method="POST">
+    <div class="lcol">
+        <label>
+            <input type="text" name="_name" placeholder="Name" required>
+        </label>
+    
+        <label>
+            <input type="text" name="_replyto" placeholder="Email" required>
+        </label>
+    
+        <label>
+            <input type="text" name="_subject" placeholder="Subject" />
+        </label>
+    </div>
+
     <label>
-        <input type="text" name="_replyto" placeholder="Email">
-    </label>
-
-    <br/>
-
-    <label>
-        <input type="text" name="_subject" placeholder="Subject" />
-    </label>
-
-    <br/>
-
-    <label>
-        <textarea name="message" placeholder="Type your message here..."></textarea>
-    </label>
-
+        <textarea name="message" placeholder="Type your message here..." required></textarea>
+    </label>    
+    
     <!-- your other form fields go here -->
     <br/>
 
