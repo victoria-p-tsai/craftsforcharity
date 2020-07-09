@@ -92,6 +92,9 @@
 html, body, a {
     color: #767676;
 }
+html {
+    overflow-y: scroll;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -832,6 +835,10 @@ footer p {
 
 /* for ipads + tablets (1530px)*/
 @media screen and (max-width: 1560px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     header .logo .logo-text {
         display: none;
     }
@@ -840,6 +847,10 @@ footer p {
         width: 100%;
         padding-right: 0;
         padding-left: 0;
+    }
+
+    h2 {
+        line-height: 1.3em;
     }
 }
 
@@ -868,9 +879,6 @@ footer p {
         justify-content: center;
         align-items: center;
     }
-    ::-webkit-scrollbar {
-        display: none;
-    }
     nav {
         display: none;
     }
@@ -883,7 +891,7 @@ footer p {
     }
 
     header .logo .logo-pic img {
-        height: 80px;
+        height: 70px;
         padding-right: 0;
         float: left;
     }
@@ -892,9 +900,22 @@ footer p {
         height: 90;
     }
     header.sticky .logo .logo-pic img {
-        height: 80px;
+        height: 70px;
         float: left;
         margin: 0;
+    }
+
+    section {
+        padding: 0 8%;
+    }
+
+    .content {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .title {
+        font-size: 40px;
     }
 
     .mySlides img {
@@ -924,8 +945,79 @@ footer p {
         margin-top: 50px;
     }
 
+    .contacts h3 {
+        line-height: 1.25em;
+        margin: 10px 0;
+    }
+
+    .contacts #contact-us p {
+        margin-top: 20px;
+    }
+
+    .contacts #email-form {
+        padding: 15px 10px;
+    }
+
     .contacts #visit-us {
         padding-bottom: 0;
-        height: max-content;
+        height: 10px;
+    }
+
+    .about-menu .question {
+        margin-bottom: 10px;
+    }
+
+    .about-menu .question h2 {
+        font-size: 1.85em;
+    }
+
+    .workshops-content section {
+        margin-bottom: 0;
+    }
+
+    #materials img {
+        display: block;
+        float: none;
+    }
+
+    #materials .material-items:nth-child(even) {
+        margin: 0;
+    }
+
+    #where-materials h3, #where-materials .side-block {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    #where-materials .side-block {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .contact-page .info, .contact-page .info .icons, .contact-page #email-form {
+        display: block;
+        width: 100%;
+    }
+    .contact-page .info .icons {
+        margin-top: 10px;
+    }
+
+    .contact-page #email-form .lcol, .contact-page #email-form textarea {
+        width: 100%;
+    }
+    .contact-page #email-form textarea {
+        margin: 0;
+    }
+    .contact-page #email-form input[type=text], .contact-page #email-form textarea {
+        margin: 5px 0;
+    }
+
+    .contact-page iframe {
+        margin: 120px 0 30px;
+    }
+
+    footer p {
+        font-size: .85em;
+        margin: 0 20px;
     }
 }

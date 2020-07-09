@@ -39,12 +39,12 @@ $('.collapsible').click(function(){
  var url = window.location.href.split("/"); //replace string with location.href
 var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
 //naturally you could use something other than the <nav> element
-var i=0;
+var k=0;
 var currentPage = url[url.length - 1];
-for(i; i<navLinks.length; i++){
-    var lb = navLinks[i].href.split("/");
+for(k; k<navLinks.length; k++){
+    var lb = navLinks[k].href.split("/");
     if(lb[lb.length-1] == currentPage) {
-        navLinks[i].closest('.head').classList.toggle("current");
+        navLinks[k].closest(".head").classList.toggle("current");
     }
 } /**/
 
