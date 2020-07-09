@@ -47,3 +47,20 @@ for(i; i<navLinks.length; i++){
         navLinks[i].classList.toggle("current");
     }
 } /**/
+
+
+//slideshow animation: automatic + manual
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var j;
+    var x = document.getElementsByClassName("slides");
+    for (j = 0; j < x.length; j++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
