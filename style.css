@@ -74,6 +74,10 @@
     margin-top: 20px;
 }
 
+.hidden {
+    display: none;
+}
+
 
 /* --------------------------------------------------------------------- */
 /* UNIVERSAL */
@@ -88,13 +92,11 @@
 html, body, a {
     color: #767676;
 }
-html {
-    overflow-y: scroll;
-}
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 /* Track */
@@ -172,6 +174,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    text-align: center;
 }
 
 nav ul .nav-item {
@@ -222,10 +225,10 @@ nav > .sub {
 }
 
 .content {
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 80px 0;
     justify-content: center;
-    min-height: calc(100vh - 142px - 28px);
+    min-height: calc(100vh - 142px - 8px);
 }
 
 section {
@@ -365,6 +368,7 @@ footer {
     justify-content: center; /*space-between*/
     align-items: center;
     margin-top: auto;
+    text-align: center;
 }
 /*
 footer p {
@@ -375,6 +379,45 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* HOME */
 
+.banner {
+    max-height: 670px;
+}
+
+#slideshow {
+    padding-bottom: 20px;
+    margin: 170px auto 0;
+}
+
+#slideshow img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.banner img {
+    box-sizing: border-box;
+    background-size: cover;
+    padding: 0 17% 60px;
+    overflow: hidden;
+}
+/* 
+.banner a {
+    width: 40px;
+    font-size: 64px;
+    display: inline-block;
+    color: #9FA8DA;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 400px;
+    font-weight: bold;
+    padding: 0 10px;
+} */
+
+/* .banner > div {
+    display: block;
+}
+
 .banner img {
     box-sizing: border-box;
     width: 100%;
@@ -384,6 +427,19 @@ footer p {
     margin-top: 150px;
     overflow: hidden;
 }
+
+.banner #slideshow {
+    margin: 0;
+    position: relative;
+}
+
+.banner #slideshow > div {
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+}*/
 
 .our-purpose {
     position: relative;
@@ -428,7 +484,7 @@ footer p {
     width: 480px;
     min-width: 380px;
     padding: 20px 40px;
-    height: calc(max-content+5px);
+    height: calc(max-content + 5px);
     margin: 10px 20px;
     z-index: 10;
     border-radius: 5px;
@@ -538,6 +594,7 @@ footer p {
 .contacts .contacts-card {
     display: block;
     width: 60%;
+    min-width: 380px;
     min-height: 570px;
     padding: 30px 40px 35px;
     margin: 0 20px 40px;
@@ -560,6 +617,7 @@ footer p {
     color: #454f99;
     transition: 0.2s;
 }
+
 .contacts .contacts-card i:hover, .contact-page .info .icons i:hover {
     color: black;
 }
@@ -733,6 +791,7 @@ footer p {
 .contact-page .info .icons i {
     margin: 10px;
     color: #454f99;
+    transition: 0.2s;
 }
 
 .contact-page #email-form {
@@ -771,8 +830,8 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* RESPONSIVE */
 
-/* for ipads + tablets (1530)*/
-@media screen and (max-width: 1024) {
+/* for ipads + tablets (1530px)*/
+@media screen and (max-width: 1560px) {
     header .logo .logo-text {
         display: none;
     }
@@ -782,9 +841,13 @@ footer p {
         padding-right: 0;
         padding-left: 0;
     }
+}
 
+/* between tablets and phones */
+@media screen and (max-width: 1100px) {
     .actions {
         flex-direction: column;
+        max-width: 550px;
     }
 
     .actions .actions-items {
@@ -799,15 +862,70 @@ footer p {
     }
 }
 
-/* for phones 
+/* for phones */
 @media screen and (max-width: 920px) {
+    html {
+        justify-content: center;
+        align-items: center;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
     nav {
         display: none;
     }
 
-    header .logo .logo-pic img {
-        height: 100px;
-        padding-right: none;
-        transition: 0.8s;
+    header {
+        justify-content: center;
+        height: 90;
+        padding: 5px 100px;
+        background-color: white;
     }
-} */
+
+    header .logo .logo-pic img {
+        height: 80px;
+        padding-right: 0;
+        float: left;
+    }
+    
+    header.sticky {
+        height: 90;
+    }
+    header.sticky .logo .logo-pic img {
+        height: 80px;
+        float: left;
+        margin: 0;
+    }
+
+    .mySlides img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .our-purpose {
+        padding: 0 0 20px;
+        height: max-content;
+    }
+    
+    .our-purpose h2 {
+        margin: 0;
+    }
+
+    .actions {
+        padding: 0;
+    }
+
+    .actions .actions-items {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .contacts {
+        margin-top: 50px;
+    }
+
+    .contacts #visit-us {
+        padding-bottom: 0;
+        height: max-content;
+    }
+}
