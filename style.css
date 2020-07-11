@@ -873,6 +873,12 @@ footer p {
         padding: 5px 100px;
         background-color: white;
     }
+
+    header.sticky .logo .logo-pic img {
+        height: 100px;
+        float: left;
+        margin: 0;
+    }
 }
 
 /* between tablets and phones */
@@ -906,10 +912,7 @@ footer p {
         padding-right: 0;
         float: left;
     }
-    
-    header.sticky {
-        height: 90;
-    }
+
     header.sticky .logo .logo-pic img {
         height: 70px;
         float: left;
@@ -929,12 +932,17 @@ footer p {
         font-size: 40px;
     }
 
-    .mySlides img {
-        padding: 0;
+    #slideshow {
+        margin: 110px 0 0;
+    }
+
+    .banner img {
+        padding: 0 0 30px;
         width: 100%;
     }
 
     .our-purpose {
+        margin-top: 140px;
         padding: 0 0 20px;
         height: max-content;
     }
