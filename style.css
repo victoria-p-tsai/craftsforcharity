@@ -146,7 +146,7 @@ header {
 }
 
 .logo .logo-text {
-    font-size: 1.5em;
+    font-size: 1.4em;
     width: auto;
     color: #6fcafc;
     transition: 0.8s;
@@ -839,10 +839,6 @@ footer p {
         display: none;
     }
 
-    header .logo .logo-text {
-        display: none;
-    }
-
     .banner {
         width: 100%;
         padding-right: 0;
@@ -851,6 +847,31 @@ footer p {
 
     h2 {
         line-height: 1.3em;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    nav ul .head {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    header .logo .logo-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        height: 90;
+        padding: 5px 100px;
+        background-color: white;
     }
 }
 
@@ -878,16 +899,6 @@ footer p {
     html {
         justify-content: center;
         align-items: center;
-    }
-    nav {
-        display: none;
-    }
-
-    header {
-        justify-content: center;
-        height: 90;
-        padding: 5px 100px;
-        background-color: white;
     }
 
     header .logo .logo-pic img {
