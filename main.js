@@ -28,7 +28,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-//icon toggle: up-arrow icon <--> down-arrow icon
+//icon toggle in "about-us" menu: up-arrow icon <--> down-arrow icon
 $('.collapsible').click(function(){
     $(this).find('i').toggleClass('fa-caret-down fa-caret-up')
     $(this).find('h2').toggleClass('active')
@@ -36,7 +36,7 @@ $('.collapsible').click(function(){
 
 
 //header highlight: current page --> black
- var url = window.location.href.split("/"); //replace string with location.href
+var url = window.location.href.split("/"); //replace string with location.href
 var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
 //naturally you could use something other than the <nav> element
 var k=0;
@@ -46,7 +46,7 @@ for(k; k<navLinks.length; k++){
     if(lb[lb.length-1] == currentPage) {
         navLinks[k].closest(".head").classList.toggle("current");
     }
-} /**/
+}
 
 
 //slideshow animation: automatic + manual
