@@ -14,26 +14,36 @@
         <span class="logo-pic"><img src="CFC Banners/CFC Logo.png"></span>
         <span class="logo-text"><h1>Crafts for Charity</h1></span>
     </a>
+    
+    <input type="checkbox" id="menu-icon">
+    <label for="menu-icon"><i class="fas fa-bars"></i></label>
+    
     <nav>
         <ul>
             <li><a href="./index.html" class="head nav-item" id="home">HOME</a></li>
             <li><a href="./about-us.html" class="head nav-item" id="about">ABOUT US</a></li>
 
             <div class="dropdown">
-                <li><a href="./classes.html" class="head nav-item" id="classes">CLASSES <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-                    <ul class="dropdown-content">
-                        <li><a href="./classes.html" class="sub nav-item" id="overview">overview</a></li>
-                        <li><a href="./materials.html" class="sub nav-item" id="materials">materials</a></li>
-                        <li><a href="./register.html" class="sub nav-item" id="register">register for a class</a></li>
-                    </ul>
+                <input type="checkbox" id="classes-dropdown">
+                <li>
+                    <!-- <a href="./classes.html" class="nav-item" id="classes">CLASSES</a> -->
+                    <label for="classes-dropdown" class="head nav-item">CLASSES <i class="fa fa-caret-down" aria-hidden="true"></i></label></li>
+                <ul class="dropdown-content">
+                    <li><a href="./classes.html" class="sub nav-item" id="overview">overview</a></li>
+                    <li><a href="./materials.html" class="sub nav-item" id="materials">materials</a></li>
+                    <li><a href="./register.html" class="sub nav-item" id="register">register for a class</a></li>
+                </ul>
             </div>
 
             <div class="dropdown">
-                <li><a href="./donate.html" class="head nav-item" id="donate">DONATE <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-                    <ul class="dropdown-content">
-                        <li><a href="./donate.html" class="sub nav-item" id="overview">donate funds</a></li>
-                        <li><a href="./where-your-donations-go.html" class="sub nav-item" id="where">where your crafts go</a></li>
-                    </ul>
+                <input type="checkbox" id="donate-dropdown">
+                <li>
+                    <!-- <a href="./donate.html" class="nav-item" id="donate">DONATE</a> -->
+                    <label for="donate-dropdown" class="head nav-item">DONATE <i class="fa fa-caret-down" aria-hidden="true"></i></label></li>
+                <ul class="dropdown-content">
+                    <li><a href="./donate.html" class="sub nav-item" id="overview">donate funds</a></li>
+                    <li><a href="./where-your-donations-go.html" class="sub nav-item" id="where">where your crafts go</a></li>
+                </ul>
             </div>
             
             <li><a href="./contact.html" class="head nav-item" id="contact">CONTACT US</a></li>
