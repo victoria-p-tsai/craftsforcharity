@@ -135,11 +135,13 @@ header {
 
 .logo {
     display: flex;
+    width: max-content;
     align-items: center;
     text-decoration: none;
 }
 
 .logo .logo-pic img {
+    position: relative;
     height: 100px;
     padding-right: 15px;
     transition: 0.8s;
@@ -159,7 +161,6 @@ header.sticky {
 }
 header.sticky .logo .logo-pic img {
     height: 80px;
-    margin-left: 10px;
 }
 
 nav {
@@ -190,7 +191,7 @@ nav ul .nav-item {
 }
 
 nav ul .head {
-    margin: 0 30px;
+    margin: 0 10px 0 60px;
     padding-bottom: 35px;
 }
 
@@ -199,7 +200,6 @@ nav .current, nav .nav-item:hover {
 }
 
 nav > .sub {
-    /*display: none;*/
     text-transform: lowercase;
 }
 
@@ -221,10 +221,15 @@ nav > .sub {
     text-decoration: none;
     display: block;
     text-align: left;
+    font-weight: 400;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#menu-icon, #menu-icon ~ label, input[type=checkbox] {
+    display: none;
 }
 
 .content {
@@ -268,7 +273,7 @@ h3 {
     font-size: 1.1em;
 }
 
-p, ul li, a {
+p, ul li, a, nav .dropdown label {
     line-height: 1.6em;
     transition: 0.15s;
 }
@@ -698,7 +703,6 @@ footer p {
 
 #materials .material-item:nth-child(even) {
     width: 70%;
-    /*border: 3px solid black;*/
 }
 
 #materials .material-item:nth-child(2), #materials .material-item:nth-child(4) {
@@ -831,6 +835,15 @@ footer p {
 
 
 /* --------------------------------------------------------------------- */
+/* FAQ */
+
+.faq-content a {
+    font-size: 17.6px;
+    word-wrap: break-word;
+}
+
+
+/* --------------------------------------------------------------------- */
 /* RESPONSIVE */
 
 /* for ipads + tablets (1530px)*/
@@ -848,60 +861,158 @@ footer p {
     h2 {
         line-height: 1.3em;
     }
+
+    h3 {
+        line-height: 1.7em;
+        margin-bottom: 5px;
+    }
 }
 
+/* nav list condenses */
 @media screen and (max-width: 1600px) {
     nav ul .head {
         margin: 0 20px;
     }
 }
 
+/* logo text disappears */
 @media screen and (max-width: 1420px) {
     header .logo .logo-text {
         display: none;
     }
 }
 
-@media screen and (max-width: 1040px) {
-    nav {
-        display: none;
-    }
-
-    header {
-        justify-content: center;
-        height: 90;
-        padding: 5px 100px;
-        background-color: white;
-    }
-
-    header.sticky .logo .logo-pic img {
-        height: 100px;
-        float: left;
-        margin: 0;
-    }
-}
-
-/* between tablets and phones */
+/* action/contact cards stack instead of row */
 @media screen and (max-width: 1100px) {
     .actions {
         flex-direction: column;
-        max-width: 550px;
+        justify-content: center;
+        align-items: center;
     }
 
     .actions .actions-items {
         top: 0;
         margin-right: 20px;
         margin-left: 20px;
-        width: 90%;
+        width: 60%;
+        min-width: 380px;
     }
 
     .contacts {
         flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .contacts .contacts-card {
+        min-height: 0;
+        padding-bottom: 60px;
+    }
+}
+
+/* nav list disappears and replaced by menu icon */
+@media screen and (max-width: 1060px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100px;
+        background-color: white;
+        display: block;
+    }
+
+    header.sticky {
+        padding: 0;
+    }
+
+    header .logo .logo-pic img {
+        margin: 10px 0 0 70px;
+        display: inline-block;
+        height: 80px;
+    }
+
+    header .logo .logo-text {
+        display: block;
+        margin-left: 10px;
+        font-size: 1.3em;
+    }
+
+    #menu-icon + label {
+        display: block;
+        position: absolute;
+        font-size: 36px;
+        top: 30px;
+        right: 70px;
+        float: right;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    nav {
+        display: block;
+        text-align: right;
+        float: right;
+        height: 0;
+        background-color: white;
+        width: 100%;
+        overflow: scroll;
+        transition: height 0.2s;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    nav ul {
+        display: block;
+        margin: 10px;
+    }
+
+    nav ul li {
+        text-align: right;
+        padding: 8px;
+    }
+
+    input[type=checkbox]:checked ~ label {
+        color: black !important;
+    }
+
+    #menu-icon:checked ~ nav {
+        height: 280%;
+        box-shadow: 0px 10px 16px -16px rgba(0,0,0,0.2);
+    }
+
+    #classes, #donate {
+        margin-right: 3px;
+    }
+
+    .dropdown-content {
+        position: relative;
+        display: none;
+        z-index: 10000;
+        background-color: white;
+        height: 0;
+        overflow: hidden;
+        width: 250px;
+        box-shadow: none;
+        margin: 0 0 0 auto;
+        transition: 0.2s;
+    }
+
+    .dropdown-content .sub {
+        margin: 0 20px;
+        padding: 0 0;
+        text-align: right;
+    }
+
+    #classes-dropdown:checked ~ .dropdown-content {
+        height: 125px;
+    }
+    #donate-dropdown:checked ~ .dropdown-content {
+        height: 85px;
     }
 }
 
 /* for phones */
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 640px) {
     html {
         justify-content: center;
         align-items: center;
@@ -910,13 +1021,23 @@ footer p {
     header .logo .logo-pic img {
         height: 70px;
         padding-right: 0;
-        float: left;
+        margin-left: 30px;
     }
 
     header.sticky .logo .logo-pic img {
         height: 70px;
-        float: left;
-        margin: 0;
+    }
+
+    header .logo .logo-text {
+        display: none;
+    }
+
+    nav {
+        padding-right: 0;
+    }
+
+    #menu-icon + label {
+        right: 35px;
     }
 
     section {
@@ -945,14 +1066,15 @@ footer p {
         margin-top: 140px;
         padding: 0 0 20px;
         height: max-content;
+        width: 100%;
     }
     
-    .our-purpose h2 {
-        margin: 0;
+    .home-content section::before {
+        height: 50px;
     }
 
     .actions {
-        padding: 0;
+        padding: 30px 0;
     }
 
     .actions .actions-items {
@@ -975,11 +1097,6 @@ footer p {
 
     .contacts #email-form {
         padding: 15px 10px;
-    }
-
-    .contacts #visit-us {
-        padding-bottom: 0;
-        height: 10px;
     }
 
     .about-menu .question {
