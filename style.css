@@ -882,6 +882,13 @@ footer p {
     }
 }
 
+/* materials list condensed */
+@media screen and (max-width: 1300px) {
+    #materials .material-item:nth-child(2), #materials .material-item:nth-child(4) {
+        margin-bottom: 130px;
+    }
+}
+
 /* action/contact cards stack instead of row */
 @media screen and (max-width: 1100px) {
     .actions {
@@ -1008,6 +1015,34 @@ footer p {
     }
     #donate-dropdown:checked ~ .dropdown-content {
         height: 85px;
+    }
+}
+
+/* materials images turn into column (instead of float) */
+@media screen and (max-width: 920px) {
+    #materials .material-item:nth-child(even) {
+        margin-left: 1em;
+        width: 93%;
+    }
+    #materials .material-item:nth-child(2), #materials .material-item:nth-child(4) {
+        margin-bottom: 30px;
+    }
+
+    #materials img {
+        margin-top: 20px;
+        float: none;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #materials #img-yarn {
+        left: 20%;
+    }
+    #materials #img-knit-needle {
+        left: 35%;
+    }
+    #materials #img-yarn-needle {
+        left: 23%;
     }
 }
 
