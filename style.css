@@ -211,7 +211,7 @@ nav > .sub {
     width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 50px;
     border-radius: 5px;
 }
 
@@ -712,6 +712,7 @@ footer p {
 #materials img {
     float: right;
     position: relative;
+    margin-left: 20px;
 }
 
 #materials #img-yarn {
@@ -873,6 +874,10 @@ footer p {
     nav ul .head {
         margin: 0 20px;
     }
+
+    .dropdown-content {
+        margin-left: 10px;
+    }
 }
 
 /* logo text disappears */
@@ -1019,7 +1024,7 @@ footer p {
 }
 
 /* materials images turn into column (instead of float) */
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1150px) {
     #materials .material-item:nth-child(even) {
         margin-left: 1em;
         width: 93%;
