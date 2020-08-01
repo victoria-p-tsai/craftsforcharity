@@ -1,6 +1,14 @@
 /* --------------------------------------------------------------------- */
 /* DESIGNS */
 
+:root {
+    --main-yellow: #ffd45a;
+    --main-dark-blue: #454f99;
+    --main-light-blue: #6fcafc;
+    --main-light-grey: rgb(241, 241, 241);
+    --main-dark-grey: #767676;
+}
+
 .dashed-top {
     border-top: 0.25em dashed #ffd45a;
 }
@@ -18,7 +26,7 @@
     letter-spacing: 7px;
     font-weight: 900;
     margin-bottom: 40px;
-    border-bottom: 4px dashed #ffd45a;/**/
+    border-bottom: 4px dashed #ffd45a;
 }
 
 .btn {
@@ -27,7 +35,7 @@
     color: white;
     background-color: #6fcafc;
     padding: 12px;
-    margin: 30px 20px 20px;
+    margin: 30px auto 20px;
     border-radius: 10px;
     font-size: 1.1em;
     letter-spacing: 2px;
@@ -76,6 +84,11 @@
 
 .hidden {
     display: none;
+}
+
+.center {
+    text-align: center;
+    display: block;
 }
 
 
@@ -270,7 +283,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 p, ul li, a, nav .dropdown label {
@@ -279,7 +292,8 @@ p, ul li, a, nav .dropdown label {
 }
 
 ul {
-    list-style-position: inside;
+    list-style-position: outside;
+    margin-left: 2em;
 }
 
 ul li .indented {
@@ -648,11 +662,11 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* CLASSES */
 
-.workshops-content section {
+.workshops-content section, .logistics-content section, .outreach-content section, .teaching-content section {
     margin-bottom: 50px;
 }
 
-.workshops-content h2, .donate-where h2 {
+.workshops-content h2, .donate-where h2, .logistics-content h2, .outreach-content h2, .teaching-content h2 {
     border-bottom: 4px dashed #ffd45a;
     margin-bottom: 20px;
 }
@@ -670,6 +684,15 @@ footer p {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+#virtual-classes .redirect {
+    text-align: center;
+}
+
+#virtual-classes .btn {
+    width: 300px;
+    font-size: 1.3em;
 }
 
 #survey h3 {
@@ -766,6 +789,41 @@ footer p {
     margin-bottom: 40px;
 }
 
+.donate-where img {
+    width: 80%;
+    margin: 15px auto;
+    display: block;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* MEMBER POSITION OVERVIEW */
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* SERVICE HOURS */
+
+.srvhrs-content img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* TEACHING */
+
+.logistics-content .btn, .outreach-content .btn, .teaching-content .btn {
+    font-size: 2em;
+    width: 250px;
+    padding: 15px;
+}
+
+
 
 /* --------------------------------------------------------------------- */
 /* CONTACT US */
@@ -849,10 +907,6 @@ footer p {
 
 /* for ipads + tablets (1530px)*/
 @media screen and (max-width: 1560px) {
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
     .banner {
         width: 100%;
         padding-right: 0;
@@ -880,7 +934,7 @@ footer p {
     }
 }
 
-/* logo text disappears */
+/* logo text disappears (victoria = 1366 / annie = 1504) */
 @media screen and (max-width: 1420px) {
     header .logo .logo-text {
         display: none;
@@ -924,6 +978,10 @@ footer p {
 
 /* nav list disappears and replaced by menu icon */
 @media screen and (max-width: 1060px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     header {
         justify-content: center;
         align-items: center;
