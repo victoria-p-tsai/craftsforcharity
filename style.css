@@ -9,31 +9,37 @@
     --main-dark-grey: #767676;
 }
 
+.drop::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: " \f0d7";
+}
+
 .dashed-top {
-    border-top: 0.25em dashed #ffd45a;
+    border-top: 0.25em dashed var(--main-yellow);
 }
 .dashed-bottom {
-    border-bottom: 0.25em dashed #ffd45a;
+    border-bottom: 0.25em dashed var(--main-yellow);
 }
 .dashed {
-    border-top: 0.25em dashed #ffd45a;
-    border-bottom: 0.25em dashed #ffd45a;
+    border-top: 0.25em dashed var(--main-yellow);
+    border-bottom: 0.25em dashed var(--main-yellow);
 }
 
 .title {
-    color: #6fcafc;
+    color: var(--main-light-blue);
     font-size: 50px;
     letter-spacing: 7px;
     font-weight: 900;
     margin-bottom: 40px;
-    border-bottom: 4px dashed #ffd45a;
+    border-bottom: 4px dashed var(--main-yellow);
 }
 
 .btn {
     border: none;
     outline: none;
     color: white;
-    background-color: #6fcafc;
+    background-color: var(--main-light-blue);
     padding: 12px;
     margin: 30px auto 20px;
     border-radius: 10px;
@@ -46,20 +52,35 @@
     cursor: pointer;
 }
 .btn:hover {
-    background-color: #ffd45a;
+    background-color: var(--main-yellow);
     color: black;
 }
 
+.apply {
+    font-size: 1.5em;
+    width: 225px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.arrow  {
+    background-color: var(--main-light-grey);
+    color: var(--main-dark-grey);
+    width: max-content;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
 .yellow {
-    color: #ffd45a;
+    color: var(--main-yellow);
 }
 
 .light-blue {
-    color: #6fcafc;
+    color: var(--main-light-blue);
 }
 
 .dark-blue {
-    color: #454f99;
+    color: var(--main-dark-blue);
 }
 
 .grey {
@@ -201,6 +222,7 @@ nav ul .nav-item {
     letter-spacing: 2px;
     font-size: .95em;
     color: #767676;
+    white-space: nowrap;
 }
 
 nav ul .head {
@@ -221,14 +243,31 @@ nav > .sub {
     display: none;
     z-index: 10000;
     background-color: white;
-    width: 180px;
+    width: 205px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 20px;
     margin-left: 50px;
     border-radius: 5px;
 }
+.side {
+    display: flex;
+}
+.side-content {
+    position: absolute;
+    display: none;
+    z-index: -1;
+    background-color: white;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 0;
+    margin-left: 205px;
+    border-radius: 5px;
+}
+.side-content i {
+    display: none;
+}
 
-.dropdown-content .sub {
+.dropdown-content .sub, .side-content .sub {
     margin: 10px 20px;
     padding: 5px 0;
     text-decoration: none;
@@ -237,8 +276,12 @@ nav > .sub {
     font-weight: 400;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .side:hover .side-content {
     display: block;
+}
+
+#member-overview {
+    margin-bottom: 0;
 }
 
 #menu-icon, #menu-icon ~ label, input[type=checkbox] {
@@ -487,7 +530,7 @@ footer p {
     color: #767676;
 }
 
-.home-content h3 {
+.home-content h3, .mempos-content h3 {
     letter-spacing: 5px;
     font-weight: 900;
     font-size: 24px;
@@ -521,7 +564,7 @@ footer p {
     border: 5px solid white;
 }
 
-.actions .actions-items h3 {
+.actions .actions-items h3, .member-cards .member-card h3 {
     margin-bottom: 5px;
 }
 
@@ -536,11 +579,11 @@ footer p {
     color: black;
     border-bottom: 10px solid #6fcafc;
 }
-.actions #learn .btn {
+.actions #learn .btn, .mempos-content #log-card .btn {
     background-color: black;
     color: #ffd45a;
 }
-.actions #learn .btn:hover {
+.actions #learn .btn:hover, .mempos-content #log-card .btn:hover {
     background-color: transparent;
     color: black;
 }
@@ -552,12 +595,12 @@ footer p {
     border-bottom: 10px solid #454f99;
     color: white;
 }
-.actions #create .btn {
+.actions #create .btn, .mempos-content #outr-card .btn {
     background-color: white;
     color: #6fcafc;
     align-self: flex-end;
 }
-.actions #create .btn:hover {
+.actions #create .btn:hover, .mempos-content #outr-card .btn:hover {
     background-color: transparent;
     color: white;
 }
@@ -569,11 +612,11 @@ footer p {
     border-bottom: 10px solid #ffd45a;
     color: #6fcafc;
 }
-.actions #donate .btn {
+.actions #donate .btn, .mempos-content #teach-card .btn {
     background-color: #6fcafc;
     color: #454f99;
 }
-.actions #donate .btn:hover {
+.actions #donate .btn:hover, .mempos-content #teach-card .btn:hover {
     background-color: transparent;
     color: #6fcafc;
 }
@@ -662,11 +705,11 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* CLASSES */
 
-.workshops-content section, .logistics-content section, .outreach-content section, .teaching-content section {
+.workshops-content section, .mempos-contents section, .donmat-content section, .doncraf-content section {
     margin-bottom: 50px;
 }
 
-.workshops-content h2, .donate-where h2, .logistics-content h2, .outreach-content h2, .teaching-content h2 {
+.workshops-content h2, .donate-where h2, .mempos-contents h2, .donmat-content h2, .doncraf-content h2 {
     border-bottom: 4px dashed #ffd45a;
     margin-bottom: 20px;
 }
@@ -762,14 +805,12 @@ footer p {
 #where-materials h3, #teachers h3 {
     width: 35%;
     text-align: right;
-    /*border: 3px solid black;*/
 }
 #where-materials .side-block, #teachers .side-block {
     width: 55%;
     text-align: left;
     margin-left: 20px;
-    margin-top: 7px;
-    /*border: 3px solid black;*/
+    margin-top: 5px;
 }
 
 #where-materials p, #where-materials a {
@@ -779,7 +820,7 @@ footer p {
 
 
 /* --------------------------------------------------------------------- */
-/* WHERE DO YOUR CRAFTS GO */
+/* WHO WE SUPPORT */
 
 .donate-where section {
     margin-bottom: 50px;
@@ -799,9 +840,56 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* MEMBER POSITION OVERVIEW */
 
+.mempos-content .member-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 17%;
+}
+
+.mempos-content .member-card {
+    max-width: 30%;
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mempos-content .member-card h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.mempos-content .member-card img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.mempos-content #log-card {
+    background: var(--main-yellow);
+    color: black;
+    border-bottom: 10px solid var(--main-light-blue);
+}
+.mempos-content #outr-card {
+    background: var(--main-light-blue);
+    color: white;
+    border-bottom: 10px solid var(--main-dark-blue);
+}
+.mempos-content #teach-card {
+    background: var(--main-dark-blue);
+    color: var(--main-light-blue);
+    border-bottom: 10px solid var(--main-yellow);
+}
 
 
+/* --------------------------------------------------------------------- */
+/* MEMBER POSITIONS */
 
+.mempos-contents img {
+    width: 50%;
+    margin-top: 50px;
+}
 
 
 /* --------------------------------------------------------------------- */
@@ -812,17 +900,6 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* --------------------------------------------------------------------- */
-/* TEACHING */
-
-.logistics-content .btn, .outreach-content .btn, .teaching-content .btn {
-    font-size: 2em;
-    width: 250px;
-    padding: 15px;
-}
-
 
 
 /* --------------------------------------------------------------------- */
@@ -896,7 +973,7 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* FAQ */
 
-.faq-content a {
+.faq-content a, .volfaq-content a {
     font-size: 17.6px;
     word-wrap: break-word;
 }
@@ -924,7 +1001,7 @@ footer p {
 }
 
 /* nav list condenses */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
     nav ul .head {
         margin: 0 20px;
     }
@@ -934,50 +1011,52 @@ footer p {
     }
 }
 
-/* logo text disappears (victoria = 1366 / annie = 1504) */
-@media screen and (max-width: 1420px) {
-    header .logo .logo-text {
-        display: none;
+/* entire nav condenses + side padding shrinks */
+@media screen and (max-width: 1605px) {
+    header {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    header.sticky {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .logo .logo-pic img {
+        height: 80px;
+    }
+
+    .logo .logo-text {
+        font-size: 1.2em;
+    }
+
+    nav ul .nav-item {
+        font-size: .9em;
+    }
+
+    .mempos-contents img {
+        width: 70%;
     }
 }
 
+/* logo text disappears (victoria = 1366 / annie = 1504) */
 /* materials list condensed */
 @media screen and (max-width: 1300px) {
+    header .logo .logo-text {
+        display: none;
+    }
+    
+    .logo .logo-pic img {
+        height: 100px;
+    }
+    
     #materials .material-item:nth-child(2), #materials .material-item:nth-child(4) {
         margin-bottom: 130px;
     }
 }
 
-/* action/contact cards stack instead of row */
-@media screen and (max-width: 1100px) {
-    .actions {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .actions .actions-items {
-        top: 0;
-        margin-right: 20px;
-        margin-left: 20px;
-        width: 60%;
-        min-width: 380px;
-    }
-
-    .contacts {
-        flex-direction: column;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .contacts .contacts-card {
-        min-height: 0;
-        padding-bottom: 60px;
-    }
-}
-
 /* nav list disappears and replaced by menu icon */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1250px) {
     ::-webkit-scrollbar {
         display: none;
     }
@@ -1046,7 +1125,7 @@ footer p {
     }
 
     #menu-icon:checked ~ nav {
-        height: 280%;
+        height: 320%;
         box-shadow: 0px 10px 16px -16px rgba(0,0,0,0.2);
     }
 
@@ -1073,11 +1152,80 @@ footer p {
         text-align: right;
     }
 
+    #aboutus-dropdown:checked ~ .dropdown-content {
+        height: 85px;
+    }
     #classes-dropdown:checked ~ .dropdown-content {
         height: 125px;
     }
     #donate-dropdown:checked ~ .dropdown-content {
         height: 85px;
+    }
+    #volunteer-dropdown:checked ~ .dropdown-content {
+        height: 245px;
+    }
+
+    .side {
+        display: block;
+        position: relative;
+    }
+
+    .side-content {
+        display: block;
+        position: relative;
+        top: 0;
+        right: 20px;
+        box-shadow: none;
+        margin: 0 0 0 auto;
+    }
+    .side-content i {
+        display: inline-block;
+        transform: rotate(45deg);
+    }
+    .side-content .sub {
+        white-space: nowrap;
+        text-align: right;
+    }
+
+    #outreach {
+        right: 2px;
+    }
+
+    .mempos-content .member-cards {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+/* action/contact cards stack instead of row */
+@media screen and (max-width: 1100px) {
+    .actions, .member-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .actions .actions-items, .member-cards .member-card {
+        top: 0;
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 60%;
+        min-width: 380px;
+    }
+
+    .member-card {
+        margin-bottom: 50px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .contacts .contacts-card {
+        min-height: 0;
+        padding-bottom: 60px;
     }
 }
 
@@ -1107,6 +1255,10 @@ footer p {
     #materials #img-yarn-needle {
         left: 23%;
     }
+
+    .mempos-contents img {
+        width: 100%;
+    }
 }
 
 /* for phones */
@@ -1127,7 +1279,8 @@ footer p {
     }
 
     header .logo .logo-text {
-        display: none;
+        margin-left: 10px;
+        font-size: .9em;
     }
 
     nav {
@@ -1171,12 +1324,15 @@ footer p {
         height: 50px;
     }
 
-    .actions {
+    .actions, .member-cards {
         padding: 30px 0;
     }
 
     .actions .actions-items {
         margin: 0;
+        border-radius: 0;
+    }
+    .member-cards .member-card {
         border-radius: 0;
     }
 
@@ -1253,5 +1409,12 @@ footer p {
     footer p {
         font-size: .85em;
         margin: 0 20px;
+    }
+}
+
+/* even smaller than phones-- logo text disappears */
+@media screen and (max-width: 430px) {
+    header .logo .logo-text {
+        display: none;
     }
 }
