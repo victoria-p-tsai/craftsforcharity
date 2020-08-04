@@ -1163,7 +1163,7 @@ footer p {
         height: 125px;
     }
     #donate-dropdown:checked ~ .dropdown-content {
-        height: 85px;
+        height: 125px;
     }
     #volunteer-dropdown:checked ~ .dropdown-content {
         height: 245px;
