@@ -675,6 +675,9 @@ footer p {
 .contacts .contacts-card .icons {
     margin: 20px 0 30px;
 }
+.contacts .contacts-card .usernames {
+    font-size: 1.3em;
+}
 
 .contacts .contacts-card i {
     margin: 15px;
@@ -701,8 +704,8 @@ footer p {
     margin-bottom: 50px;
 }
 
-.about-menu .redirect {
-    text-align: left;
+.about-menu .question {
+    margin-bottom: 10px;
 }
 
 
@@ -824,6 +827,14 @@ footer p {
 
 
 /* --------------------------------------------------------------------- */
+/* REGISTER */
+
+.register-content .redirect {
+    margin-top: 20px;
+}
+
+
+/* --------------------------------------------------------------------- */
 /* WHO WE SUPPORT */
 
 .donate-where section {
@@ -857,6 +868,7 @@ footer p {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    font-size: 1.1em;
 }
 
 .mempos-content .member-card h3 {
@@ -982,6 +994,15 @@ footer p {
     word-wrap: break-word;
 }
 
+.faq-content .collapsible {
+    height: max-content;
+}
+
+.faq-content .collapsible h2 {
+    text-transform: initial;
+    font-size: 1.4em;
+}
+
 
 /* --------------------------------------------------------------------- */
 /* RESPONSIVE */
@@ -1030,10 +1051,6 @@ footer p {
         height: 80px;
     }
 
-    .logo .logo-text {
-        font-size: 1.2em;
-    }
-
     nav ul .nav-item {
         font-size: .9em;
     }
@@ -1045,7 +1062,7 @@ footer p {
 
 /* logo text disappears (victoria = 1366 / annie = 1504) */
 /* materials list condensed */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1340px) {
     header .logo .logo-text {
         display: none;
     }
@@ -1265,8 +1282,15 @@ footer p {
     }
 }
 
-/* for phones */
 @media screen and (max-width: 640px) {
+    .logo-text-wrap::after {
+        content: ' ';
+        display: block;
+    }
+}
+
+/* for phones */
+@media screen and (max-width: 430px) {
     html {
         justify-content: center;
         align-items: center;
@@ -1416,8 +1440,8 @@ footer p {
     }
 }
 
-/* even smaller than phones-- logo text disappears */
-@media screen and (max-width: 430px) {
+/* logo text disappears */
+@media screen and (max-width: 350px) {
     header .logo .logo-text {
         display: none;
     }
