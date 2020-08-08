@@ -58,9 +58,13 @@
 
 .apply {
     font-size: 1.5em;
-    width: 225px;
+    width: 250px;
     padding: 15px;
     margin-bottom: 50px;
+}
+
+.application {
+    width: 300px;
 }
 
 .arrow  {
@@ -91,7 +95,7 @@
     margin-bottom: 30px;
 }
 
-.question p, .question li, .question a {
+.question p, .question li {
     font-size: 1.1em;
 }
 
@@ -110,6 +114,8 @@
 .center {
     text-align: center;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -213,6 +219,7 @@ nav ul {
 nav ul li {
     list-style: none;
     text-align: center;
+    padding-left: 0;
 }
 
 nav ul .nav-item {
@@ -230,12 +237,8 @@ nav ul .head {
     padding-bottom: 35px;
 }
 
-nav .current, nav .nav-item:hover {
-    color: black !important;
-}
-
-nav > .sub {
-    text-transform: lowercase;
+nav .active, nav .nav-item:hover {
+    color: black;
 }
 
 .dropdown-content {
@@ -274,6 +277,8 @@ nav > .sub {
     display: block;
     text-align: left;
     font-weight: 400;
+    text-transform: lowercase;
+    white-space: initial;
 }
 
 .dropdown:hover .dropdown-content, .side:hover .side-content {
@@ -338,6 +343,10 @@ ul {
     list-style-position: outside;
     margin-left: 2em;
 }
+ul li {
+    line-height: 1.9em;
+    padding-left: .4em;
+}
 
 ul li .indented {
     margin-left: 2em;
@@ -364,6 +373,7 @@ button.collapsible h2:hover, .active {
     font-weight: bold;
     color: #6fcafc;
     border-radius: 5px;
+    position: relative;
 }
 .collapsible:nth-child(odd) {
     border: none;
@@ -378,7 +388,7 @@ button.collapsible h2:hover, .active {
     transition: max-height 0.3s ease-out;
 }
 
-.coll-content p {
+.coll-content p, .coll-content ul li {
     line-height: 1.8em;
 }
 
@@ -439,6 +449,55 @@ footer {
 footer p {
     padding-left: 50px;
 }*/
+
+
+/* --------------------------------------------------------------------- */
+/* PRIVACY POLICY POPUP */
+
+/* The Modal (background) */
+.modal {
+    /* display: none;  Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px 50px;
+    width: 70%;
+    border-radius: 5px;
+    height: 80vh;
+    overflow-y: scroll;
+    position: relative;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.2s;
+    float: right;
+    /* position: fixed;
+    right: 20%; */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /* --------------------------------------------------------------------- */
@@ -560,6 +619,8 @@ footer p {
 
 .actions .actions-items img {
     width: 100%;
+    height: 50%;
+    object-fit: cover;
     margin: 20px 0;
     border: 5px solid white;
 }
@@ -621,9 +682,9 @@ footer p {
     color: #6fcafc;
 }
 
-.actions #donate img {
+/* .actions #donate img {
     border: none;
-}
+} */
 
 .actions .bg-img {
     position: absolute;
@@ -673,7 +734,7 @@ footer p {
 }
 
 .contacts .contacts-card .icons {
-    margin: 20px 0 30px;
+    margin: 20px 10px 30px 0;
 }
 .contacts .contacts-card .usernames {
     font-size: 1.3em;
@@ -700,23 +761,28 @@ footer p {
     text-align: center;
 }
 
-.about-menu .title {
+.about-menu .title, .materials-content .title {
     margin-bottom: 50px;
 }
 
-.about-menu .question {
-    margin-bottom: 10px;
+.about-menu .question, .materials-content .question {
+    margin-bottom: 20px;
+}
+
+.about-menu .question .btn, .materials-content .question .btn {
+    width: 250px;
+    margin-top: 15px;
 }
 
 
 /* --------------------------------------------------------------------- */
 /* CLASSES */
 
-.workshops-content section, .mempos-contents section, .donmat-content section, .doncraf-content section {
+.workshops-content section, .mempos-contents section, .donmat-content section {
     margin-bottom: 50px;
 }
 
-.workshops-content h2, .donate-where h2, .mempos-contents h2, .donmat-content h2, .doncraf-content h2 {
+.workshops-content h2, .donate-where h2, .mempos-contents h2, .donmat-content h2 {
     border-bottom: 4px dashed #ffd45a;
     margin-bottom: 20px;
 }
@@ -757,71 +823,88 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* MATERIALS */
 
-#materials {
+.materials-content {
     overflow: hidden;
 }
 
-#materials ul {
-    font-weight: bold;
+.materials-content ul {
     list-style-position: outside;
     margin-left: 2em;
 }
-#materials ul li .indented {
+.materials-content ul li .indented {
     font-weight: initial;
 }
 
-#materials .material-items {
+.materials-content .material-items {
     margin-top: 40px;
 }
 
-#materials .material-item:nth-child(even) {
+.materials-content .material-item:nth-child(even) {
     width: 70%;
 }
 
-#materials .material-item:nth-child(2), #materials .material-item:nth-child(4) {
+.materials-content .material-item:nth-child(2), #materials .material-item:nth-child(4) {
     margin-bottom: 140px;
 }
 
-#materials img {
+.materials-content img {
     float: right;
     position: relative;
     margin-left: 20px;
+    margin-top: 10px;
 }
 
-#materials #img-yarn {
+.materials-content #img-yarn {
     width: 200px;
     height: 150px;
     object-fit: cover;
-    bottom: 20px;
-    margin-right: 8%;
+    /* bottom: 20px;
+    margin-right: 8%; */
 }
-#materials #img-knit-needle {
+.materials-content #img-knit-needle {
     width: 100px;
-    margin-right: 13%;
-    bottom: 40px;
+    margin-right: 20px;
+    /* bottom: 40px; */
+    margin-top: 0;
 }
-#materials #img-yarn-needle {
-    margin-right: 8%;
+.materials-content #img-yarn-needle {
+    /* margin-right: 8%; */
     width: 180px;
 }
 
-#where-materials h3, #where-materials .side-block, #teachers h3, #teachers .side-block {
+/* .materials-content h3, .materials-content .side-block, #teachers h3, #teachers .side-block {
     display: inline-block;
     vertical-align: top;
 }
-#where-materials h3, #teachers h3 {
+.materials-content h3, #teachers h3 {
     width: 35%;
     text-align: right;
 }
-#where-materials .side-block, #teachers .side-block {
+.materials-content .side-block, #teachers .side-block {
     width: 55%;
     text-align: left;
     margin-left: 20px;
     margin-top: 5px;
+} */
+
+.materials-content .title {
+    margin-bottom: 40px;
 }
 
-#where-materials p, #where-materials a {
-    text-align: center;
+.materials-content p, .materials-content a {
+    margin-top: 15px;
+}
+
+.materials-content .question {
+    margin-bottom: 20px;
+}
+
+.materials-content .question h2 {
+    border: none;
+    margin: 0;
+}
+
+.materials-content .question .coll-content {
     margin-top: 15px;
 }
 
@@ -989,18 +1072,66 @@ footer p {
 /* --------------------------------------------------------------------- */
 /* FAQ */
 
-.faq-content a, .volfaq-content a {
+.faq-content a, 
+.volfaq-content a {
     font-size: 17.6px;
     word-wrap: break-word;
+    min-height: max-content;
 }
 
-.faq-content .collapsible {
+.faq-content .question, 
+.volfaq-content .question {
+    margin-bottom: 0;
+}
+
+.faq-content .collapsible, 
+.volfaq-content .collapsible {
     height: max-content;
+    padding: 30px 0 0;
+    background-color: transparent;
+    border-top: 1px solid var(--main-light-grey);
+}
+.faq-content .first, 
+.volfaq-content .first {
+    border-top: none;
 }
 
-.faq-content .collapsible h2 {
+.faq-content .collapsible h2, 
+.volfaq-content .collapsible h2 {
     text-transform: initial;
     font-size: 1.4em;
+    margin-left: 25px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.faq-content .collapsible h2::before, 
+.volfaq-content .collapsible h2::before {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+
+.faq-content .collapsible h2.active::before, 
+.volfaq-content .collapsible h2.active::before {
+    content: '-';
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 30px;
+}
+
+.faq-content .coll-content,
+.volfaq-content .coll-content {
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.volfaq-content .arrow {
+    margin-top: 50px;
 }
 
 
@@ -1015,14 +1146,14 @@ footer p {
         padding-left: 0;
     }
 
-    h2 {
+    /* h2 {
         line-height: 1.3em;
     }
 
     h3 {
         line-height: 1.7em;
         margin-bottom: 5px;
-    }
+    } */
 }
 
 /* nav list condenses */
@@ -1060,13 +1191,15 @@ footer p {
     }
 }
 
-/* logo text disappears (victoria = 1366 / annie = 1504) */
-/* materials list condensed */
-@media screen and (max-width: 1340px) {
-    header .logo .logo-text {
-        display: none;
+@media screen and (max-width: 1485px) {
+    .logo-text-wrap {
+        display: block;
     }
-    
+}
+
+/* (victoria = 1366 / annie = 1504) */
+/* materials list condensed */
+@media screen and (max-width: 1320px) {
     .logo .logo-pic img {
         height: 100px;
     }
@@ -1077,7 +1210,7 @@ footer p {
 }
 
 /* nav list disappears and replaced by menu icon */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
     ::-webkit-scrollbar {
         display: none;
     }
@@ -1105,6 +1238,9 @@ footer p {
         display: block;
         margin-left: 10px;
         font-size: 1.3em;
+    }
+    .logo-text-wrap {
+        display: inline;
     }
 
     #menu-icon + label {
@@ -1144,10 +1280,26 @@ footer p {
     input[type=checkbox]:checked ~ label {
         color: black !important;
     }
+    
 
     #menu-icon:checked ~ nav {
-        height: 320%;
+        height: 355%;
         box-shadow: 0px 10px 16px -16px rgba(0,0,0,0.2);
+    }
+    
+    #aboutus-dropdown:checked ~ li .drop,
+    #classes-dropdown:checked ~ li .drop,
+    #donate-dropdown:checked ~ li .drop,
+    #volunteer-dropdown:checked ~ li .drop {
+        color: black;
+    }
+    #aboutus-dropdown:checked ~ li .drop::after,
+    #classes-dropdown:checked ~ li .drop::after,
+    #donate-dropdown:checked ~ li .drop::after,
+    #volunteer-dropdown:checked ~ li .drop::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: " \f0d8";
     }
 
     #classes, #donate {
@@ -1156,7 +1308,7 @@ footer p {
 
     .dropdown-content {
         position: relative;
-        display: none;
+        display: block;
         z-index: 10000;
         background-color: white;
         height: 0;
@@ -1177,13 +1329,13 @@ footer p {
         height: 85px;
     }
     #classes-dropdown:checked ~ .dropdown-content {
-        height: 125px;
+        height: 185px;
     }
     #donate-dropdown:checked ~ .dropdown-content {
-        height: 125px;
+        height: 185px;
     }
     #volunteer-dropdown:checked ~ .dropdown-content {
-        height: 245px;
+        height: 275px;
     }
 
     .side {
@@ -1198,6 +1350,7 @@ footer p {
         right: 20px;
         box-shadow: none;
         margin: 0 0 0 auto;
+        pointer-events: none;
     }
     .side-content i {
         display: inline-block;
@@ -1206,6 +1359,11 @@ footer p {
     .side-content .sub {
         white-space: nowrap;
         text-align: right;
+        border: 2px solid black;
+    }
+
+    h2 {
+        line-height: 1.2em;
     }
 
     #outreach {
@@ -1282,9 +1440,21 @@ footer p {
     }
 }
 
-@media screen and (max-width: 640px) {
-    .logo-text-wrap::after {
-        content: ' ';
+/* header logo and text wrap around */
+@media screen and (max-width: 630px) {
+    header {
+        align-items: center;
+    }
+    header .logo .logo-pic img {
+        margin-left: 40px;
+    }
+    .logo-container h1 {
+        font-size: 1.7em;
+    }
+    .logo-text {
+        padding-top: 5px;
+    }
+    .logo-text-wrap {
         display: block;
     }
 }
@@ -1307,8 +1477,9 @@ footer p {
     }
 
     header .logo .logo-text {
+        padding-top: 5px;
         margin-left: 10px;
-        font-size: .9em;
+        font-size: 1em;
     }
 
     nav {
@@ -1380,6 +1551,13 @@ footer p {
     .contacts #email-form {
         padding: 15px 10px;
     }
+    
+    .arrows {
+        margin: 40px 0;
+    }
+    .arrow {
+        margin-top: 0 !important;
+    }
 
     .about-menu .question {
         margin-bottom: 10px;
@@ -1432,6 +1610,15 @@ footer p {
 
     .contact-page iframe {
         margin: 120px 0 30px;
+    }
+
+    .faq-content {
+        margin-bottom: 50px;
+    }
+
+    .faq-content h2, 
+    .volfaq-content h2 {
+        line-height: 1.4em;
     }
 
     footer p {
