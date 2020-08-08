@@ -237,7 +237,7 @@ nav ul .head {
     padding-bottom: 35px;
 }
 
-nav .current, nav .nav-item:hover {
+nav .active, nav .nav-item:hover {
     color: black;
 }
 
@@ -283,6 +283,10 @@ nav .current, nav .nav-item:hover {
 
 .dropdown:hover .dropdown-content, .side:hover .side-content {
     display: block;
+}
+
+.mobile-container {
+    display: none;
 }
 
 #member-overview {
@@ -1335,7 +1339,7 @@ footer p {
         height: 185px;
     }
     #volunteer-dropdown:checked ~ .dropdown-content {
-        height: 275px;
+        height: 305px;
     }
 
     .side {
@@ -1343,7 +1347,7 @@ footer p {
         position: relative;
     }
 
-    .side-content {
+    /* .side-content {
         display: block;
         position: relative;
         top: 0;
@@ -1360,14 +1364,27 @@ footer p {
         white-space: nowrap;
         text-align: right;
         border: 2px solid black;
+    } */
+    .side-content,
+    .side-content .sub {
+        display: none;
+        box-shadow: none;
+    }
+    .side i {
+        display: inline-block;
+        transform: rotate(45deg);
+    }
+    .mobile-container {
+        display: block;
+        margin-right: 10px;
+    }
+    .side .mobile {
+        white-space: nowrap;
+        text-align: right;
     }
 
     h2 {
         line-height: 1.2em;
-    }
-
-    #outreach {
-        right: 2px;
     }
 
     .mempos-content .member-cards {
