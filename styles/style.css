@@ -237,7 +237,7 @@ nav ul .head {
     padding-bottom: 35px;
 }
 
-nav .active, nav .nav-item:hover {
+nav .current, nav .nav-item:hover {
     color: black;
 }
 
