@@ -1333,7 +1333,7 @@ footer p {
         height: 85px;
     }
     #classes-dropdown:checked ~ .dropdown-content {
-        height: 185px;
+        height: 145px;
     }
     #donate-dropdown:checked ~ .dropdown-content {
         height: 185px;
