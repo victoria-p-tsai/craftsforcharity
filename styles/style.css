@@ -866,14 +866,17 @@ footer p {
     margin-right: 8%; */
 }
 .materials-content #img-knit-needle {
-    width: 100px;
+    width: 200px;
     margin-right: 20px;
     /* bottom: 40px; */
     margin-top: 0;
 }
 .materials-content #img-yarn-needle {
     /* margin-right: 8%; */
+    margin-top: 30px;
     width: 180px;
+    height: 80px;
+    object-fit: cover;
 }
 
 /* .materials-content h3, .materials-content .side-block, #teachers h3, #teachers .side-block {
@@ -1435,21 +1438,11 @@ footer p {
         margin-bottom: 30px;
     }
 
-    #materials img {
+    #materials img, #materials #img-yarn-needle {
         margin-top: 20px;
         float: none;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-    #materials #img-yarn {
-        left: 20%;
-    }
-    #materials #img-knit-needle {
-        left: 35%;
-    }
-    #materials #img-yarn-needle {
-        left: 23%;
+        left: 45%;
+        transform: translateX(-50%);
     }
 
     .mempos-contents img {
