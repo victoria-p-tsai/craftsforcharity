@@ -7,6 +7,7 @@
     DO -NOT- PUT STYLES INTO THE CSS FILE. USE SCSS FILE.
         - make sure to install extension (i use Live Sass Compiler in vscode) that allows you to automatically match sass/scss to css
         - also, NEVER EVER USE INLINE STYLES (styling in the html) <-- BAD PRACTICE
+            - ex. style="margin-bottom: 30px;"
 
     WHEN CREATING A NEW PAGE, USE template.html
         - make sure to change:
@@ -199,10 +200,10 @@
 
 .question {
   margin-bottom: 30px;
+  font-size: 1.1em;
 }
 
-.question p, .question li {
-  font-size: 1.1em;
+.question p {
   margin-bottom: 20px;
 }
 
@@ -545,6 +546,7 @@ button.collapsible h2:hover, button.collapsible h2 .active {
 
 .coll-content p, .coll-content ul li {
   line-height: 1.8em;
+  margin-left: 0.5rem;
 }
 
 #email-form {
@@ -622,6 +624,10 @@ button[type=submit] {
 button[type=submit]:hover {
   background-color: #ffd45a;
   color: black;
+}
+
+iframe {
+  margin-bottom: 30px;
 }
 
 footer {
@@ -1678,7 +1684,7 @@ footer {
     margin: 0;
   }
   .contact-page iframe {
-    margin: 120px 0 30px;
+    margin-top: 120px;
   }
   .faq-content {
     margin-bottom: 50px;
