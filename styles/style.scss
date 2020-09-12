@@ -1,18 +1,62 @@
 /* --------------------------------------------------------------------- */
 
-/* NOTES (close when not in use --> click arrow next to line 3)
+/* NOTES (close when not in use --> click arrow next to line)
 
 CREATE A GITHUB ACCOUNT SO THAT I CAN ADD YOU TO BE A CONTRIBUTOR ON THE REPOSITORY
     - as contributor, you can edit the repo directly (rather than using pull requests which i wont have the time to always review and merge)
 
 DO -NOT- PUT STYLES INTO THE CSS FILE. USE SCSS FILE.
     - make sure to install extension (i use Live Sass Compiler in vscode) that allows you to automatically match sass/scss to css
+    - also, NEVER EVER USE INLINE STYLES (styling in the html) <-- BAD PRACTICE
 
 WHEN CREATING A NEW PAGE, USE template.html
     - make sure to change:
         - page title (appears in browser tab); default = "NAME | Crafts for Charity"
         - header name
+        - content class specific to that page
+            - ex. class = "doncraf-content content"
         - remove "disclaimer" SECTION when all content is added
+        - add to navbar
+        - arrow links
+            - redirect to adjacent pages in DROPDOWN (if last page, loop to first)
+            - if not in dropdown, no arrow links
+            - MAKE SURE TO CHANGE THE ARROWS OF THE ADJACENT PAGES TO INCLUDE THE NEW PAGE
+        - height of mobile dropdown (if in dropdown)
+            - found in: 
+                @media screen and (max-width: 1300px) {
+                    ...
+                    #aboutus-dropdown:checked ~ .dropdown-content {
+                        height: 85px; //(# of items * 40) + 5
+                    }
+                    #classes-dropdown:checked ~ .dropdown-content {
+                        height: 125px;
+                    }
+                    #donate-dropdown:checked ~ .dropdown-content {
+                        height: 185px;
+                    }
+                    #volunteer-dropdown:checked ~ .dropdown-content {
+                        height: 305px;
+                    }
+                    ...
+                }
+        - if adding side hover box (ex. member positions side hover box):
+            - use .side classes + create new .mobile-container
+                    <ul class="dropdown-content">
+                        <div class="side">
+                            <li><a href="/FOLDER/OVERVIEW-FILE.html" class="sub nav-item">HEAD_NAME</a></li>
+                            <ul class="side-content">
+                                <li><a href="/FOLDER/SUBFOLDER/FILE1.html" class="sub nav-item" id="(id is not necessary)">FILE1_NAME</a></li>
+                                <li><a href="/FOLDER/SUBFOLDER/FILE2.html" class="sub nav-item">FILE2_NAME</a></li>
+                                <li><a href="/FOLDER/SUBFOLDER/FILE3.html" class="sub nav-item">FILE3_NAME</a></li>
+                            </ul>
+                            <div class="mobile-container">
+                                <li><a href="/FOLDER/SUBFOLDER/FILE1.html" class="sub mobile nav-item">FILE1_NAME &nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                                <li><a href="/FOLDER/SUBFOLDER/FILE2.html" class="sub mobile nav-item">FILE2_NAME &nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                                <li><a href="/FOLDER/SUBFOLDER/FILE3.html" class="sub mobile nav-item">FILE3_NAME &nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                            </div>
+                        </div>
+                    </ul>
+            - .side container will show up in desktop; .mobile-container will show up on mobile (when hamburger icon = visible)
 
 PUT IMAGES INTO FOLDER /CFC Banners/... 
     - DO NOT change the folder name to "images" since you will have to reroute every reference to the folder
@@ -23,6 +67,7 @@ PUT IMAGES INTO FOLDER /CFC Banners/...
             - using ../ or ./ or no slash will NOT be constant
 
 IF YOU WANT/HAVE TIME, PUT ALL MEDIA QUERIES INTO NEW FILE media.scss + LINK TO ALL PAGES
+    - all media queries found at bottom of this file (style.scss)
     - adds more organization
     - very tedious, only do if you want lol
 
@@ -50,14 +95,18 @@ LABEL EACH GROUP OF STYLES
 TRY TO STICK TO THE COLOR PALETTE FOUND IN THE VARIABLES
     - if necessary, you can use different shades of GREY ( winks )
 
-ALSP TRY TO MAKE -REUSABLE- STYLES
+ALSO TRY TO MAKE -REUSABLE- STYLES
     - as in, don't make specific styles that only apply to one thing
         - ex. .title applies to all titles
+        - ex (of BAD code). making each style page specific (call out to myself)
+            - if you want/have time, refactor the code so that styles are REUSABLE + not specific to a page
     - makes the website look more consistent
     - DONT REPEAT STYLES
         - use the variables whenever you can (do not repeat hex codes)
         - you can create mixams for frequently used groups of styles + variables for frequently used values
-        - get a good grasp of the already existing design classes before creating a new one that is potentially repetitive
+        - get a good grasp of already existing design classes before creating a new one that is potentially repetitive
+
+FINALLY, ASK ME ANYTHING IF YOU NEED ANY HELP :) ig: @myco.le discord: kou#0726
 
 */
 
@@ -155,6 +204,7 @@ $dark-grey: #767676;
     width: max-content;
     padding-right: 25px;
     padding-left: 25px;
+    text-transform: capitalize;
 }
 
 .application { //google form embed on volunteer-application.html
@@ -166,6 +216,7 @@ $dark-grey: #767676;
 
     p, li {
         font-size: 1.1em;
+        margin-bottom: 20px;
     }
 
     h3 {
@@ -1347,7 +1398,7 @@ footer {
     }
 
     #aboutus-dropdown:checked ~ .dropdown-content {
-        height: 85px; //# of items * 40 + 5
+        height: 85px; //(# of items * 40) + 5
     }
     #classes-dropdown:checked ~ .dropdown-content {
         height: 125px;
