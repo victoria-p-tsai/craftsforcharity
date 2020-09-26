@@ -203,7 +203,7 @@
   font-size: 1.1em;
 }
 
-.question p, .question ul {
+.question p, .question ul:not(.indented) {
   margin-bottom: 20px;
 }
 
