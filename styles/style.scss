@@ -112,6 +112,8 @@
 */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+
 
 // VARIABLES
 
@@ -252,10 +254,12 @@ $dark-grey: #767676;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    //font-family: 'Maven Pro', sans-serif;
 }
 
 html {
     overflow-y: scroll;
+    overflow-x: hidden;
     color: $dark-grey;
 
     a {
@@ -445,7 +449,7 @@ nav {
     margin-top: 80px;
     padding: 80px 0;
     justify-content: center;
-    //min-height: calc(100vh - 142px - 8px);
+    min-height: calc(100vh - 517px); //guess + check lol
 }
 
 section {
@@ -602,6 +606,32 @@ iframe {
     margin-bottom: 30px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+        font-weight: bold;
+    }
+
+    tr, td {
+        padding: 10px;
+        border: 1px solid rgba($color: $dark-grey, $alpha: 0.75);
+    }
+
+    :not(thead) {
+        tr {
+            td:nth-child(2) {
+                text-align: center;
+            }
+    
+            &:nth-child(odd) {
+                background-color: $light-grey;
+            }
+        }
+    }
+}
+
 footer {
     background-color: $light-grey;
     height: max-content;
@@ -625,7 +655,7 @@ footer {
     }
 
     .navigate-col li:hover, .legal-col li:hover {
-        transform: translateX(10px);
+        transform: translateX(6px);
     }
 
     ul {
@@ -634,12 +664,13 @@ footer {
 
         li {
             padding: 2px;
+            transition: 0.3s;
         }
     }
 
     .icons-col {
         width: 100%;
-        font-size: 36px;
+        font-size: 33px;
         text-align: center;
         color: $dark-grey;
         margin-top: 20px;
@@ -909,16 +940,18 @@ footer {
 }
 
 .contacts .contacts-card .icons {
-    margin: 20px 10px 30px 0;
+    margin: 20px 0 30px;
 
     i {
         margin: 15px;
-        font-size: 60px;
+        font-size: 55px;
     }    
 }
 
 .icons {
-    white-space: nowrap;
+    span {
+        white-space: nowrap;
+    }
 
     i {
         color: $dark-blue;
@@ -1175,7 +1208,7 @@ footer {
         .icons {
             margin-top: 25px;
             text-align: center;
-            font-size: 2.7em;
+            font-size: 2.5em;
 
             i {
                 margin: 10px;

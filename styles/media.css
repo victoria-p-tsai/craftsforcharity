@@ -199,6 +199,9 @@
     margin-right: 10%;
     margin-left: 10%;
   }
+  .our-purpose .title {
+    margin-bottom: 15px;
+  }
 }
 
 /* action/contact cards stack instead of row */
