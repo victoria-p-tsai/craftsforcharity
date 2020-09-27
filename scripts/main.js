@@ -35,6 +35,7 @@ $('.collapsible').click(function(){
 });
 
 
+/*
 //header highlight: current page --> black
 var url = window.location.href.split("/"); //replace string with location.href
 var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
@@ -46,7 +47,7 @@ for(k; k<navLinks.length; k++){
     if(lb[lb.length-1] == currentPage) {
         navLinks[k].closest(".head").classList.toggle("current");
     }
-}
+} */
 
 
 //slideshow animation: automatic + manual
