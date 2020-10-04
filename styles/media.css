@@ -67,7 +67,6 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    height: 100px;
     background-color: white;
     display: block;
   }
@@ -90,8 +89,10 @@
   #menu-icon + label {
     display: block;
     position: absolute;
-    font-size: 36px;
-    top: 30px;
+    font-size: 24px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 70px;
     float: right;
     cursor: pointer;
@@ -256,6 +257,16 @@
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .team-content div {
+    height: 375px;
+  }
+  .team-content div img {
+    float: left;
+    margin-right: 30px;
+  }
+}
+
 @media screen and (max-width: 940px) {
   .contact-page .info, .contact-page .info .icons, .contact-page #email-form {
     display: block;
@@ -295,7 +306,8 @@
     display: block;
   }
   header .logo-container .logo .logo-pic img {
-    margin-left: 40px;
+    margin-left: 35px;
+    height: 60px;
   }
   footer .cols {
     -webkit-box-orient: vertical;

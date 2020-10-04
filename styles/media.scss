@@ -7,6 +7,14 @@ $light-grey: #f1f1f1;
 $dark-grey: #767676;
 
 
+@mixin center {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 
 
 /* --------------------------------------------------------------------- */
@@ -81,7 +89,6 @@ $dark-grey: #767676;
         justify-content: center;
         align-items: center;
         padding: 0;
-        height: 100px;
         background-color: white;
         display: block;
 
@@ -111,8 +118,9 @@ $dark-grey: #767676;
     #menu-icon + label {
         display: block;
         position: absolute;
-        font-size: 36px;
-        top: 30px;
+        font-size: 24px;
+        top: 50%;
+        transform: translateY(-50%);
         right: 70px;
         float: right;
         cursor: pointer;
@@ -284,6 +292,19 @@ $dark-grey: #767676;
     }
 }
 
+@media screen and (min-width: 1080px) {
+    .team-content {
+        div {
+            height: 375px;
+
+            img {
+                float: left;
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 940px) {
     .contact-page {
         .info, .info .icons, #email-form {
@@ -331,7 +352,8 @@ $dark-grey: #767676;
             }
 
             .logo .logo-pic img {
-                margin-left: 40px;
+                margin-left: 35px;
+                height: 60px;
             }
         }
     }

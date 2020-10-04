@@ -124,6 +124,14 @@ $light-grey: #f1f1f1;
 $dark-grey: #767676;
 
 
+@mixin center {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 
 // DESIGNS (COLORS)
 
@@ -642,6 +650,10 @@ table {
     }
 }
 
+.arrows {
+    margin-top: 50px;
+}
+
 footer {
     background-color: $light-grey;
     height: max-content;
@@ -997,6 +1009,33 @@ footer {
 }
 
 
+
+/* OUR TEAM */
+
+.team-content {
+    div {
+        height: max-content;
+        margin-bottom: 50px;
+
+        img {
+            @include center();
+            margin-bottom: 30px;
+            max-width: 100%;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: left;
+        } 
+    }
+
+    p {
+        font-size: 17.6px;
+    }
+}
+
+
 /* --------------------------------------------------------------------- */
 /* CLASSES */
 
@@ -1004,7 +1043,7 @@ footer {
     margin-bottom: 50px;
 }
 
-.workshops-content h2, .donate-where h2, .mempos-contents h2, .donmat-content h2 {
+.workshops-content h2, .donate-where h2, .mempos-contents h2, .donmat-content h2, #team-why h2 {
     border-bottom: 4px dashed $yellow;
     margin-bottom: 20px;
 }
