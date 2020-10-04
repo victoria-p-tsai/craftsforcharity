@@ -257,7 +257,7 @@
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1140px) {
   .team-content div {
     height: 375px;
   }
@@ -338,7 +338,7 @@
     font-size: 1em;
   }
   header.sticky .logo .logo-pic img {
-    height: 70px;
+    height: 60px;
   }
   header nav {
     padding-right: 0;

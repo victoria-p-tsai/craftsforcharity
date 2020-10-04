@@ -1076,6 +1076,10 @@ footer .credits {
   text-align: left;
 }
 
+.team-content div h3 {
+  color: #454f99;
+}
+
 .team-content p {
   font-size: 17.6px;
 }
