@@ -296,7 +296,7 @@ header.sticky {
 }
 
 header.sticky .logo .logo-pic img {
-  height: 80px;
+  height: 70px;
 }
 
 .logo {
@@ -314,7 +314,7 @@ header.sticky .logo .logo-pic img {
 
 .logo .logo-pic img {
   position: relative;
-  height: 100px;
+  height: 80px;
   padding-right: 15px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
