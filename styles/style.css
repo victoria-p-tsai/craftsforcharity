@@ -280,7 +280,7 @@ header {
           align-items: center;
   position: fixed;
   z-index: 1000;
-  padding: 15px 100px;
+  padding: 5px 100px;
   width: 100%;
   top: 0;
   left: 0;
@@ -462,8 +462,13 @@ nav ul .head {
 }
 
 section {
+  /* max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px; */
+  max-width: 100%;
   padding: 0 24%;
-  width: auto;
+  width: 100%;
 }
 
 section::before {
@@ -782,6 +787,11 @@ footer .credits {
 
 /* --------------------------------------------------------------------- */
 /* HOME */
+/* .home-content section  {
+    max-width: 100%;
+    padding: 0 24%;
+    width: 100%;
+} */
 .banner {
   max-height: 670px;
 }
@@ -883,7 +893,6 @@ footer .credits {
   bottom: 0;
 }
 
-.actions .actions-items
 .actions .actions-items h3, .member-cards .member-card h3 {
   margin-bottom: 5px;
 }
@@ -937,35 +946,6 @@ footer .credits {
 .actions #donate .btn:hover, .mempos-content #teach-card .btn:hover {
   background-color: transparent;
   color: #6fcafc;
-}
-
-.actions .bg-img {
-  position: absolute;
-  width: 38%;
-  z-index: -1;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: none;
-}
-
-.right {
-  right: 0;
-  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(5%, transparent), color-stop(80%, white), color-stop(15%, #6fcafc));
-  -webkit-mask-image: linear-gradient(to right, transparent 5%, white 80%, #6fcafc 15%);
-  mask-image: -webkit-gradient(linear, left top, right top, color-stop(5%, transparent), color-stop(80%, white), color-stop(15%, #6fcafc));
-  mask-image: linear-gradient(to right, transparent 5%, white 80%, #6fcafc 15%);
-  background: #6fcafc;
-}
-
-.left {
-  left: 0;
-  margin-top: 710px;
-  -webkit-mask-image: -webkit-gradient(linear, right top, left top, color-stop(5%, transparent), color-stop(95%, white));
-  -webkit-mask-image: linear-gradient(to left, transparent 5%, white 95%);
-  mask-image: -webkit-gradient(linear, right top, left top, color-stop(5%, transparent), color-stop(95%, white));
-  mask-image: linear-gradient(to left, transparent 5%, white 95%);
-  background: #6fcafc;
 }
 
 .contacts {
@@ -1177,7 +1157,6 @@ footer .credits {
 }
 
 .materials-content img#img-yarn {
-  height: 150px;
   margin-top: 10px;
 }
 
@@ -1201,7 +1180,8 @@ footer .credits {
 }
 
 .donate-where img {
-  width: 80%;
+  max-width: 670px;
+  width: 100%;
   margin: 15px auto;
   display: block;
 }
@@ -1266,14 +1246,16 @@ footer .credits {
 /* --------------------------------------------------------------------- */
 /* MEMBER POSITIONS (INDIV PAGES) */
 .mempos-contents img {
-  width: 50%;
+  max-width: 450px;
+  width: 100%;
   margin-top: 50px;
 }
 
 /* --------------------------------------------------------------------- */
 /* SERVICE HOURS */
 .srvhrs-content img {
-  width: 80%;
+  max-width: 670px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

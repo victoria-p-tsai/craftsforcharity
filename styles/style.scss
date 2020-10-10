@@ -311,7 +311,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1000;
-    padding: 15px 100px;
+    padding: 5px 100px;
     width: 100%;
     top: 0;
     left: 0;
@@ -471,8 +471,13 @@ nav {
 }
 
 section {
+    /* max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px; */
+    max-width: 100%;
     padding: 0 24%;
-    width: auto;
+    width: 100%;
 
     &::before { //when clicking on in-page links (#), allows space for header
         display: block; 
@@ -766,6 +771,12 @@ footer {
 /* --------------------------------------------------------------------- */
 /* HOME */
 
+/* .home-content section  {
+    max-width: 100%;
+    padding: 0 24%;
+    width: 100%;
+} */
+
 .banner {
     max-height: 670px;
 
@@ -853,8 +864,6 @@ footer {
     }
 }
 
-.actions .actions-items 
-
 .actions .actions-items h3, .member-cards .member-card h3 {
     margin-bottom: 5px;
 }
@@ -902,30 +911,6 @@ footer {
 .actions #donate .btn:hover, .mempos-content #teach-card .btn:hover {
     background-color: transparent;
     color: $light-blue;
-}
-
-.actions .bg-img {
-    position: absolute;
-    width: 38%;
-    z-index: -1;
-    height: 250px;
-    object-fit: cover;
-    display: none;
-}
-
-.right {
-    right: 0;
-    -webkit-mask-image: linear-gradient(to right, transparent 5%, white 80%, $light-blue 15%);
-    mask-image: linear-gradient(to right, transparent 5%, white 80%, $light-blue 15%);
-    background: $light-blue;
-}
-
-.left {
-    left: 0;
-    margin-top: 710px;
-    -webkit-mask-image: linear-gradient(to left, transparent 5%, white 95%);
-    mask-image: linear-gradient(to left, transparent 5%, white 95%);
-    background: $light-blue;
 }
 
 .contacts {
@@ -1129,7 +1114,6 @@ footer {
         width: 200px;
 
         &#img-yarn {
-            height: 150px;
             margin-top: 10px;
         }
         &#img-knit-needle {
@@ -1159,7 +1143,8 @@ footer {
     }
 
     img {
-        width: 80%;
+        max-width: 670px;
+        width: 100%;
         margin: 15px auto;
         display: block;
     }    
@@ -1219,7 +1204,8 @@ footer {
 /* MEMBER POSITIONS (INDIV PAGES) */
 
 .mempos-contents img {
-    width: 50%;
+    max-width: 450px;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -1228,7 +1214,8 @@ footer {
 /* SERVICE HOURS */
 
 .srvhrs-content img {
-    width: 80%;
+    max-width: 670px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }

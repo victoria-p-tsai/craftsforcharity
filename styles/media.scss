@@ -59,10 +59,6 @@ $dark-grey: #767676;
     nav ul .nav-item {
         font-size: .9em;
     }
-
-    .mempos-contents img {
-        width: 70%;
-    }
 }
 
 @media screen and (max-width: 1485px) {
@@ -119,7 +115,7 @@ $dark-grey: #767676;
         display: block;
         position: absolute;
         font-size: 24px;
-        top: 50px;
+        top: 45px;
         transform: translateY(-50%);
         right: 70px;
         float: right;
@@ -278,34 +274,7 @@ $dark-grey: #767676;
     }
 }
 
-/* materials images turn into column (instead of float) */
-@media screen and (max-width: 1150px) {
-    #materials img, #materials #img-yarn-needle {
-        margin-top: 20px;
-        float: none;
-        left: 45%;
-        transform: translateX(-50%);
-    }
-
-    .mempos-contents img {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1140px) {
-    .team-content {
-        div {
-            height: 375px;
-
-            img {
-                float: left;
-                margin-right: 30px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 900px) {
     .contact-page {
         .info, .info .icons, #email-form {
             display: block;
@@ -322,13 +291,33 @@ $dark-grey: #767676;
             input[type=text], textarea {
                 margin: 5px 0;
             }
-            textarea {
-                margin: 0;
-            }
         }
 
         iframe {
             margin-top: 120px;
+        }
+    }
+}
+
+/* materials images turn into column (instead of float) */
+@media screen and (max-width: 900px) {
+    #materials img, #materials #img-yarn-needle {
+        margin-top: 20px;
+        float: none;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 635px) {
+    .team-content {
+        div {
+            height: 375px;
+
+            img {
+                float: left;
+                margin-right: 30px;
+            }
         }
     }
 }
@@ -515,5 +504,10 @@ $dark-grey: #767676;
 @media screen and (max-width: 350px) {
     header .logo .logo-text {
         display: none;
+    }
+
+    .contact-page .info .icons {
+        font-size: 32px;
+        white-space: nowrap;
     }
 }
