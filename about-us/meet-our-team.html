@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <title>MEET OUR TEAM | Crafts for Charity</title>
-    <meta name="description" content="Crafts for Charity’s mission is to create enjoyable opportunities for those who want to volunteer creatively to help their community. We do this by providing free virtual craft classes that teach the skills needed to donate crafts to those in need.">
-    <meta name="keywords" content="crafts, charity, craft, charities, students, student, nonprofit, homeless, help homeless, community, service, outreach, yarn, knitting, blankets, scarves, learn, create, donate, volunteer, donate, classes, projects">
-    
+    <meta name="description"
+        content="Crafts for Charity’s mission is to create enjoyable opportunities for those who want to volunteer creatively to help their community. We do this by providing free virtual craft classes that teach the skills needed to donate crafts to those in need.">
+    <meta name="keywords"
+        content="crafts, charity, craft, charities, students, student, nonprofit, homeless, help homeless, community, service, outreach, yarn, knitting, blankets, scarves, learn, create, donate, volunteer, donate, classes, projects">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177097582-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-177097582-1');
     </script>
 
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="icon" type="image/png" href="/CFC Banners/CFC Logo.png"/>
+    <link rel="icon" type="image/png" href="/CFC Banners/CFC Logo.png" />
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <link href="/styles/media.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
-    <script> 
-        $(function(){
-            $("#header").load("/header.html"); 
-            $("#footer").load("/footer.html"); 
-            $("#email-form").load("/contact-form.html"); 
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#footer").load("/footer.html");
+            $("#email-form").load("/contact-form.html");
         });
-    </script> 
-    <script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script> 
+    </script>
+    <script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-        $(function() {
+        $(function () {
             // this will get the full URL at the address bar
             var url = window.location.href;
-    
+
             // passes on every "a" tag
-            $("nav a").each(function() {
+            $("nav a").each(function () {
                 // checks if its the same on the address bar
                 if (url == (this.href)) {
                     $(this).closest("li").addClass("active");
                     //for making parent of submenu active
-                   $(this).closest("li").parent().parent().addClass("active");
+                    $(this).closest("li").parent().parent().addClass("active");
                 }
             });
-        });        
+        });
     </script>
 </head>
 
@@ -70,28 +74,41 @@
                 <img src="/CFC Banners/victoria tsai.png" alt="">
                 <h2>Victoria Tsai</h2>
                 <h3>President</h3>
-                <p class="desc">Hi everyone! I'm a sophomore at Atholton High School in Maryland. I love arts & crafts, so I founded Crafts for Charity to use my passion to help create fun volunteering opportunities and help others in need. I also love coding and engineering!</p>
+                <p class="desc">Hi everyone! I'm a sophomore at Atholton High School in Maryland. I love arts & crafts,
+                    so I founded Crafts for Charity to use my passion to help create fun volunteering opportunities and
+                    help others in need. I also love coding and engineering!</p>
             </div>
             <div class="vpres">
                 <img src="/CFC Banners/annie soon.png" alt="">
                 <h2>Annie Soon</h2>
                 <h3>Vice President</h3>
-                <p class="desc">Hi! I am a sophomore at the Bryn Mawr School. I love art, so I hope that I can spread different crafting skills while helping people in need through Crafts for Charity. I also enjoy playing video games and taking care of my pets!</p>
+                <p class="desc">Hi! I am a sophomore at the Bryn Mawr School. I love art, so I hope that I can spread
+                    different crafting skills while helping people in need through Crafts for Charity. I also enjoy
+                    playing video games and taking care of my pets!</p>
             </div>
         </section>
 
         <section id="team-why">
             <h2>WHY DID WE START CFC?</h2>
-            <p class="center">We have both always had a love for arts and crafts and wanted to use our passion to help those in need. We started Crafts for Charity to be able to spread our love for crafting, allowing everyone at any age or skill level to volunteer their time in a fun and creative way to create crafts that will be used to better the world! We believe in the importance of opening opportunities to everyone in the arts and volunteering fields and we want our free and accessible craft classes to achieve our mission of spreading creativity while helping others!</p>
+            <p class="center text-description-bigger">We have both always had a love for <b>arts and crafts</b> and wanted to use our passion to help
+                those in need. We started <b>Crafts for Charity</b> to be able to spread our love for crafting, allowing
+                everyone at <b>any age or skill level</b> to volunteer their time in a <b>fun and creative way</b> to create crafts
+                that will be used to better the world! We believe in the importance of opening opportunities to everyone
+                in the arts and volunteering fields and we want our free and accessible craft classes to achieve our
+                mission of <b>spreading creativity while helping others</b>!</p>
         </section>
 
         <section class="center arrows">
-            <p><button class="btn arrow" onclick="window.location.pathname = '/about-us/';"><i class="fas fa-arrow-left"></i> About Us</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn arrow" onclick="window.location.pathname = '/about-us/projects.html';">Projects <i class="fas fa-arrow-right"></i></button></p>
+            <p><button class="btn arrow" onclick="window.location.pathname = '/about-us/';"><i
+                        class="fas fa-arrow-left"></i> About Us</button>&nbsp;&nbsp;&nbsp;&nbsp;<button
+                    class="btn arrow" onclick="window.location.pathname = '/about-us/projects.html';">Projects <i
+                        class="fas fa-arrow-right"></i></button></p>
         </section>
     </div>
-    
+
     <div id="footer"></div>
 
     <script type="text/javascript" src="/scripts/main.js"></script>
 </body>
+
 </html>

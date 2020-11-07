@@ -117,16 +117,24 @@
 }
 
 .dashed-top {
-  border-top: 0.25em dashed #ffd45a;
+  border-top: 4px dashed #ffd45a;
 }
 
 .dashed-bottom {
-  border-bottom: 0.25em dashed #ffd45a;
+  border-bottom: 4px dashed #ffd45a;
 }
 
 .dashed {
   border-top: 0.25em dashed #ffd45a;
   border-bottom: 0.25em dashed #ffd45a;
+}
+
+.solid-top {
+  border-top: 4px solid #ffd45a;
+}
+
+.solid-bottom {
+  border-bottom: 4px solid #ffd45a;
 }
 
 .yellow {
@@ -143,6 +151,15 @@
 
 .grey {
   color: #f1f1f1;
+}
+
+.white {
+  color: white;
+}
+
+b {
+  font-weight: bold;
+  color: #454f99;
 }
 
 .title {
@@ -184,6 +201,56 @@
   margin-bottom: 50px;
 }
 
+.yellow-btn {
+  color: black;
+  background-color: #ffd45a;
+}
+
+.yellow-btn:hover {
+  background-color: transparent;
+  color: #ffd45a;
+}
+
+.black-btn {
+  color: #ffd45a;
+  background-color: black;
+}
+
+.black-btn:hover {
+  background-color: #ffd45a;
+  color: black;
+}
+
+.white-btn {
+  background-color: white;
+  color: #6fcafc;
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.lightblue-btn {
+  background-color: #6fcafc;
+  color: #454f99;
+}
+
+.lightblue-btn:hover {
+  background-color: transparent;
+  color: #6fcafc;
+}
+
+.darkblue-btn {
+  background-color: #454f99;
+  color: #6fcafc;
+}
+
+.darkblue-btn:hover {
+  background-color: transparent;
+  color: #454f99;
+}
+
 .arrow {
   background-color: #f1f1f1;
   color: #767676;
@@ -193,6 +260,20 @@
   padding-right: 25px;
   padding-left: 25px;
   text-transform: capitalize;
+}
+
+.soft-grey-length {
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.soft-grey-length:hover {
+  color: #454f99;
 }
 
 .application {
@@ -205,7 +286,7 @@
 }
 
 .question p, .question ul:not(.indented) {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .question h3 {
@@ -225,6 +306,10 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.text-description-bigger {
+  font-size: 18px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -499,6 +584,10 @@ h2 {
 
 h3 {
   font-size: 1.2em;
+}
+
+p {
+  font-size: 17px;
 }
 
 p, ul li, a, nav .dropdown label {
@@ -839,14 +928,14 @@ footer .credits {
   font-size: 1.4em;
 }
 
-.our-purpose article p, .our-purpose article a {
-  color: #767676;
+.our-purpose article p {
+  font-size: 20px;
 }
 
 .home-content h3, .mempos-content h3 {
   letter-spacing: 5px;
-  font-weight: 900;
-  font-size: 24px;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 .actions {
@@ -904,16 +993,6 @@ footer .credits {
   border-bottom: 10px solid #6fcafc;
 }
 
-.actions #learn .btn, .mempos-content #log-card .btn {
-  background-color: black;
-  color: #ffd45a;
-}
-
-.actions #learn .btn:hover, .mempos-content #log-card .btn:hover {
-  background-color: transparent;
-  color: black;
-}
-
 .actions #create {
   margin-top: 60px;
   background: #6fcafc;
@@ -921,30 +1000,10 @@ footer .credits {
   color: white;
 }
 
-.actions #create .btn, .mempos-content #outr-card .btn {
-  background-color: white;
-  color: #6fcafc;
-}
-
-.actions #create .btn:hover, .mempos-content #outr-card .btn:hover {
-  background-color: transparent;
-  color: white;
-}
-
 .actions #donate {
   margin-top: 60px;
   background: #454f99;
   border-bottom: 10px solid #ffd45a;
-  color: #6fcafc;
-}
-
-.actions #donate .btn, .mempos-content #teach-card .btn {
-  background-color: #6fcafc;
-  color: #454f99;
-}
-
-.actions #donate .btn:hover, .mempos-content #teach-card .btn:hover {
-  background-color: transparent;
   color: #6fcafc;
 }
 
@@ -1058,10 +1117,6 @@ footer .credits {
 
 .team-content div h3 {
   color: #454f99;
-}
-
-.team-content p {
-  font-size: 17.6px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -1334,7 +1389,6 @@ footer .credits {
 /* --------------------------------------------------------------------- */
 /* FAQ */
 .faq-content a {
-  font-size: 17.6px;
   word-wrap: break-word;
   min-height: -webkit-max-content;
   min-height: -moz-max-content;

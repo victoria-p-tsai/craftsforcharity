@@ -142,30 +142,42 @@ $dark-grey: #767676;
 }
 
 .dashed-top {
-    border-top: 0.25em dashed $yellow;
+    border-top: 4px dashed $yellow;
 }
 .dashed-bottom {
-    border-bottom: 0.25em dashed $yellow;
+    border-bottom: 4px dashed $yellow;
 }
 .dashed {
     border-top: 0.25em dashed $yellow;
     border-bottom: 0.25em dashed $yellow;
 }
 
+.solid-top {
+    border-top: 4px solid $yellow;
+}
+.solid-bottom {
+    border-bottom: 4px solid $yellow;
+}
+
 .yellow {
     color: $yellow;
 }
-
 .light-blue {
     color: $light-blue;
 }
-
 .dark-blue {
     color: $dark-blue;
 }
-
 .grey {
     color: $light-grey;
+}
+.white {
+    color: white;
+}
+
+b {
+    font-weight: bold;
+    color: $dark-blue;
 }
 
 
@@ -208,6 +220,55 @@ $dark-grey: #767676;
         margin-bottom: 50px;
     }
 }
+.yellow-btn {
+    // background-color: black;
+    // color: $yellow;
+    color: black;
+    background-color: $yellow;
+
+    &:hover {
+        background-color: transparent;
+        color: $yellow;
+    }
+}
+.black-btn {
+    // background-color: black;
+    // color: $yellow;
+    color: $yellow;
+    background-color: black;
+
+    &:hover {
+        background-color: $yellow;
+        color: black;
+    }
+}
+.white-btn {
+    background-color: white;
+    color: $light-blue;
+
+    &:hover {
+        background-color: transparent;
+        color: white;
+    }
+}
+.lightblue-btn {
+    background-color: $light-blue;
+    color: $dark-blue;
+
+    &:hover {
+        background-color: transparent;
+        color: $light-blue;
+    }
+}
+.darkblue-btn {
+    background-color: $dark-blue;
+    color: $light-blue;
+
+    &:hover {
+        background-color: transparent;
+        color: $dark-blue;
+    }
+}
 
 .arrow  {
     background-color: $light-grey;
@@ -218,6 +279,21 @@ $dark-grey: #767676;
     text-transform: capitalize;
 }
 
+
+.soft-grey-length {
+    background-color: $light-grey;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $dark-blue;
+    }
+}
+
+
 .application { //google form embed on volunteer-application.html
     width: 300px;
 }
@@ -227,7 +303,7 @@ $dark-grey: #767676;
     font-size: 1.1em;
 
     p, ul:not(.indented) {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     h3 {
@@ -250,6 +326,10 @@ $dark-grey: #767676;
     margin-left: auto;
 }
 
+.text-description-bigger {
+    font-size: 18px;
+}
+
 
 
 
@@ -268,7 +348,7 @@ $dark-grey: #767676;
 html {
     overflow-y: scroll;
     overflow-x: hidden;
-    color: $dark-grey;
+    color: $dark-grey; //black
 
     a {
         color: $dark-grey;
@@ -508,6 +588,10 @@ h2 {
 
 h3 {
     font-size: 1.2em;
+}
+
+p {
+    font-size: 17px;
 }
 
 p, ul li, a, nav .dropdown label {
@@ -817,16 +901,16 @@ footer {
         margin: 0 15%;
         font-size: 1.4em;
 
-        p, a {
-            color: $dark-grey;
+        p {
+            font-size: 20px;
         }
     }
 }
 
 .home-content h3, .mempos-content h3 {
     letter-spacing: 5px;
-    font-weight: 900;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 32px;
 }
 
 .actions {
@@ -874,14 +958,6 @@ footer {
     color: black;
     border-bottom: 10px solid $light-blue;
 }
-.actions #learn .btn, .mempos-content #log-card .btn {
-    background-color: black;
-    color: $yellow;
-}
-.actions #learn .btn:hover, .mempos-content #log-card .btn:hover {
-    background-color: transparent;
-    color: black;
-}
 
 .actions #create {
     margin-top: 60px;
@@ -889,27 +965,11 @@ footer {
     border-bottom: 10px solid $dark-blue;
     color: white;
 }
-.actions #create .btn, .mempos-content #outr-card .btn {
-    background-color: white;
-    color: $light-blue;
-}
-.actions #create .btn:hover, .mempos-content #outr-card .btn:hover {
-    background-color: transparent;
-    color: white;
-}
 
 .actions #donate {
     margin-top: 60px;
     background: $dark-blue;
     border-bottom: 10px solid $yellow;
-    color: $light-blue;
-}
-.actions #donate .btn, .mempos-content #teach-card .btn {
-    background-color: $light-blue;
-    color: $dark-blue;
-}
-.actions #donate .btn:hover, .mempos-content #teach-card .btn:hover {
-    background-color: transparent;
     color: $light-blue;
 }
 
@@ -1017,10 +1077,6 @@ footer {
         h3 {
             color: $dark-blue;
         }
-    }
-
-    p {
-        font-size: 17.6px;
     }
 }
 
@@ -1298,7 +1354,6 @@ footer {
 
 .faq-content {
     a {
-        font-size: 17.6px;
         word-wrap: break-word;
         min-height: max-content;
     }
