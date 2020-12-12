@@ -1059,11 +1059,14 @@ footer {
 
 .team-content {
     div {
+        display: block;
+        min-height: 300px;
         height: max-content;
         margin-bottom: 50px;
+        width: 100%;
 
         img {
-            @include center();
+            position: relative;
             margin-bottom: 30px;
             max-width: 100%;
             width: 300px;
