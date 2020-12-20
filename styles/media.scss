@@ -109,6 +109,10 @@ $dark-grey: #767676;
         .logo-text-wrap {
             display: inline;
         }
+
+        .btn {
+            margin-right: 28px;
+        }
     }
 
     #menu-icon + label {
@@ -190,16 +194,16 @@ $dark-grey: #767676;
     }
 
     #aboutus-dropdown:checked ~ .dropdown-content {
-        height: 85px; //(# of items * 40) + 5
+        height: 125px; //(# of items * 40) + 5
     }
     #classes-dropdown:checked ~ .dropdown-content {
-        height: 125px;
+        height: 165px;
     }
     #donate-dropdown:checked ~ .dropdown-content {
-        height: 185px;
+        height: 175px;
     }
     #volunteer-dropdown:checked ~ .dropdown-content {
-        height: 305px;
+        height: 265px;
     }
 
     .side {

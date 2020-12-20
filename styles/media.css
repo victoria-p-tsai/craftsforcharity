@@ -83,6 +83,9 @@
   header .logo-text-wrap {
     display: inline;
   }
+  header .btn {
+    margin-right: 28px;
+  }
   #menu-icon + label {
     display: block;
     position: absolute;
@@ -156,16 +159,16 @@
     text-align: right;
   }
   #aboutus-dropdown:checked ~ .dropdown-content {
-    height: 85px;
-  }
-  #classes-dropdown:checked ~ .dropdown-content {
     height: 125px;
   }
+  #classes-dropdown:checked ~ .dropdown-content {
+    height: 165px;
+  }
   #donate-dropdown:checked ~ .dropdown-content {
-    height: 185px;
+    height: 175px;
   }
   #volunteer-dropdown:checked ~ .dropdown-content {
-    height: 305px;
+    height: 265px;
   }
   .side {
     display: block;
