@@ -275,6 +275,16 @@ b {
     padding-left: 25px;
     text-transform: capitalize;
 }
+.left::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f060  "; //arrow-left
+}
+.right::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: " \f061"; //arrow-right
+}
 
 
 .soft-grey-length {
@@ -1414,9 +1424,5 @@ footer {
         &.first {
             border-top: none;
         }
-    }
-
-    .arrow {
-        margin-top: 50px;
     }
 } 

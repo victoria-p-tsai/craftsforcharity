@@ -260,6 +260,18 @@ b {
   text-transform: capitalize;
 }
 
+.left::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060  ";
+}
+
+.right::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: " \f061";
+}
+
 .soft-grey-length {
   background-color: #f1f1f1;
   width: 100%;
@@ -1455,9 +1467,5 @@ footer .credits {
 
 .faq-content .collapsible.first {
   border-top: none;
-}
-
-.faq-content .arrow {
-  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
