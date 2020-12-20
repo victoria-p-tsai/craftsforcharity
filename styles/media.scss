@@ -111,7 +111,7 @@ $dark-grey: #767676;
         }
 
         .btn {
-            margin-right: 28px;
+            margin: 10px 28px 0;
         }
     }
 
@@ -147,6 +147,10 @@ $dark-grey: #767676;
                 text-align: right;
                 padding: 8px;
             }
+        }
+
+        .head {
+            cursor: pointer;
         }
     }
 
@@ -204,6 +208,9 @@ $dark-grey: #767676;
     }
     #volunteer-dropdown:checked ~ .dropdown-content {
         height: 265px;
+    }
+    #donatebtn-dropdown:checked ~ .dropdown-content {
+        height: 165px;
     }
 
     .side {
@@ -393,10 +400,6 @@ $dark-grey: #767676;
         right: 35px;
         top: 40px;
         transform: translateY(-50%);
-    }
-
-    section {
-        padding: 0 8%;
     }
 
     .content {

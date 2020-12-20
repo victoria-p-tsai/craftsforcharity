@@ -42,18 +42,17 @@
                 </ul>
             </div>
 
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <input type="checkbox" id="donate-dropdown">
-                <li><!-- <a href="./donate.html" class="nav-item" id="donate">DONATE</a> -->
+                <li><!-- <a href="./donate.html" class="nav-item" id="donate">DONATE</a>
                     <label for="donate-dropdown" class="head nav-item drop" id="donate-nav">DONATE</label></li>
                 <ul class="dropdown-content">
                     <li><a href="/donate/donate-materials.html" class="sub nav-item" id="donate-materials">donate crafts or materials</a></li>
-                    <!-- <li><a href="/donate/donate-crafts.html" class="sub nav-item" id="donate-crafts">donate crafts</a></li> -->
-                    <li><a href="/donate/who-we-support.html" class="sub nav-item" id="where-crafts">who we support</a></li>
+                    <!-- <li><a href="/donate/donate-crafts.html" class="sub nav-item" id="donate-crafts">donate crafts</a></li>
                     <li><a href="/donate/drop-off.html" class="sub nav-item" id="drop-off">drop-off crafts or materials</a></li>
-                    <!-- <li><a href="/donate/srvhrs-knit.html" class="sub nav-item" id="service-hours">service hours for knitting</a></li> -->
+                    <!-- <li><a href="/donate/srvhrs-knit.html" class="sub nav-item" id="service-hours">service hours for knitting</a></li>
                 </ul>
-            </div>
+            </div> -->
 
             <div class="dropdown">
                 <input type="checkbox" id="volunteer-dropdown">
@@ -83,7 +82,21 @@
             <li><a href="/faq/" class="head nav-item" id="faq-nav">FAQ</a></li>
             <li><a href="/contact/" class="head nav-item" id="contact-us-nav">CONTACT US</a></li>
 
-            <button class="btn" onclick="window.location.pathname = '/donate/';">DONATE</button>
+            <div class="dropdown donate-dropdown">
+                <input type="checkbox" id="donatebtn-dropdown">
+                <button class="btn">
+                    <label for="donatebtn-dropdown" class="head drop donate-lbl">
+                        <a href="/donate/">DONATE</a> | 
+                    </label>
+                </button>
+                <ul class="dropdown-content donate-drop">
+                    <li><a href="/donate/donate-materials.html" class="sub nav-item" id="donate-materials">donate crafts or materials</a></li>
+                    <!-- <li><a href="/donate/donate-crafts.html" class="sub nav-item" id="donate-crafts">donate crafts</a></li> -->
+                    <li><a href="/donate/who-we-support.html" class="sub nav-item" id="where-crafts">who we support</a></li>
+                    <li><a href="/donate/drop-off.html" class="sub nav-item" id="drop-off">drop-off crafts or materials</a></li>
+                    <!-- <li><a href="/donate/srvhrs-knit.html" class="sub nav-item" id="service-hours">service hours for knitting</a></li> -->
+                </ul>
+            </div>
         </ul>
     </nav>
 </header>

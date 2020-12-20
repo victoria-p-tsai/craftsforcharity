@@ -84,7 +84,7 @@
     display: inline;
   }
   header .btn {
-    margin-right: 28px;
+    margin: 10px 28px 0;
   }
   #menu-icon + label {
     display: block;
@@ -119,6 +119,9 @@
   nav ul li {
     text-align: right;
     padding: 8px;
+  }
+  nav .head {
+    cursor: pointer;
   }
   input[type=checkbox]:checked ~ label {
     color: black !important;
@@ -169,6 +172,9 @@
   }
   #volunteer-dropdown:checked ~ .dropdown-content {
     height: 265px;
+  }
+  #donatebtn-dropdown:checked ~ .dropdown-content {
+    height: 165px;
   }
   .side {
     display: block;
@@ -339,9 +345,6 @@
     top: 40px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-  }
-  section {
-    padding: 0 8%;
   }
   .content {
     padding-top: 30px;
