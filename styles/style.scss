@@ -197,7 +197,7 @@ b {
     letter-spacing: 2px;
     transition: 0.3s;
     text-decoration: none;
-    width: 180px;
+    width: 250px;
     font-weight: 600;
     cursor: pointer;
 
@@ -1208,17 +1208,6 @@ footer {
 
 
 
-
-/* --------------------------------------------------------------------- */
-/* DROP-OFF BOX */
-
-.btn {
-    width: 230px;
-}
-
-
-
-
 /* --------------------------------------------------------------------- */
 /* WHO WE SUPPORT */
 
@@ -1283,6 +1272,10 @@ footer {
                 background: $dark-blue;
                 color: $light-blue;
                 border-bottom: 10px solid $yellow;
+            }
+
+            .btn {
+                width: 100%;
             }
         }
     }

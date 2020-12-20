@@ -176,7 +176,7 @@ b {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
-  width: 180px;
+  width: 250px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -1250,12 +1250,6 @@ footer .credits {
 }
 
 /* --------------------------------------------------------------------- */
-/* DROP-OFF BOX */
-.btn {
-  width: 230px;
-}
-
-/* --------------------------------------------------------------------- */
 /* WHO WE SUPPORT */
 .donate-where section {
   margin-bottom: 50px;
@@ -1327,6 +1321,10 @@ footer .credits {
   background: #454f99;
   color: #6fcafc;
   border-bottom: 10px solid #ffd45a;
+}
+
+.mempos-content .member-cards .member-card .btn {
+  width: 100%;
 }
 
 /* --------------------------------------------------------------------- */
