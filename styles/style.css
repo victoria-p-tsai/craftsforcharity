@@ -1142,6 +1142,10 @@ footer .credits {
 }
 
 .team-content div img {
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   position: relative;
   margin-bottom: 30px;
   max-width: 100%;

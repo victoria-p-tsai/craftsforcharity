@@ -1099,6 +1099,7 @@ footer {
         width: 100%;
 
         img {
+            @include center();
             position: relative;
             margin-bottom: 30px;
             max-width: 100%;
