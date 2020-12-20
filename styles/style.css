@@ -199,6 +199,10 @@ b {
   margin-bottom: 50px;
 }
 
+.btn.learn-more {
+  width: 175px;
+}
+
 .yellow-btn {
   color: black;
   background-color: #ffd45a;
