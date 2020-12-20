@@ -167,7 +167,7 @@ b {
   font-size: 50px;
   letter-spacing: 7px;
   font-weight: 900;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-bottom: 4px dashed #ffd45a;
 }
 
@@ -276,10 +276,6 @@ b {
   color: #454f99;
 }
 
-.application {
-  width: 300px;
-}
-
 .question {
   margin-bottom: 30px;
   font-size: 1.1em;
@@ -310,6 +306,11 @@ b {
 
 .text-description-bigger {
   font-size: 18px;
+}
+
+.title-borderbottom {
+  border-bottom: 4px dashed #ffd45a;
+  margin-bottom: 20px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -382,6 +383,12 @@ header.sticky {
 
 header.sticky .logo .logo-pic img {
   height: 70px;
+}
+
+header .btn {
+  width: auto;
+  font-size: .9em;
+  margin-top: 20px;
 }
 
 .logo {
@@ -1079,10 +1086,6 @@ footer .credits {
   text-align: center;
 }
 
-.about-menu .title, .materials-content .title {
-  margin-bottom: 50px;
-}
-
 .about-menu .question, .materials-content .question {
   margin-bottom: 20px;
 }
@@ -1125,17 +1128,12 @@ footer .credits {
   margin-bottom: 50px;
 }
 
-.about-menu h2, .workshops-content h2, .donate-where h2, .mempos-contents h2, .donmat-content h2, #team-why h2 {
-  border-bottom: 4px dashed #ffd45a;
-  margin-bottom: 20px;
-}
-
 .about-menu h3, .workshops-content h3 {
   color: #454f99;
   font-size: 1.25em;
 }
 
-.workshops-content .btn {
+.classes .btn {
   margin-top: 20px;
 }
 
@@ -1149,10 +1147,6 @@ footer .credits {
   text-align: center;
 }
 
-#virtual-classes .redirect {
-  text-align: center;
-}
-
 #virtual-classes .btn {
   width: 300px;
   font-size: 1.3em;
@@ -1162,8 +1156,8 @@ footer .credits {
   font-size: 22px;
 }
 
-#resources .btn {
-  width: 250px;
+.btn.resources {
+  width: 275px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -1173,7 +1167,7 @@ footer .credits {
 }
 
 .materials-content .title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .materials-content p, .materials-content a {
@@ -1198,10 +1192,6 @@ footer .credits {
   margin-left: 2em;
 }
 
-.materials-content ul li .indented {
-  font-weight: initial;
-}
-
 .materials-content img {
   float: right;
   position: relative;
@@ -1222,6 +1212,10 @@ footer .credits {
 .materials-content img#img-yarn-needle {
   margin-top: 30px;
   height: 80px;
+}
+
+.materials-content .material-item {
+  font-weight: bold;
 }
 
 /* --------------------------------------------------------------------- */

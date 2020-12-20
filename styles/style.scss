@@ -188,7 +188,7 @@ b {
     font-size: 50px;
     letter-spacing: 7px;
     font-weight: 900;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-bottom: 4px dashed $yellow;
 }
 
@@ -294,10 +294,6 @@ b {
 }
 
 
-.application { //google form embed on volunteer-application.html
-    width: 300px;
-}
-
 .question {
     margin-bottom: 30px;
     font-size: 1.1em;
@@ -328,6 +324,11 @@ b {
 
 .text-description-bigger {
     font-size: 18px;
+}
+
+.title-borderbottom { //h2
+    border-bottom: 4px dashed $yellow;
+    margin-bottom: 20px;
 }
 
 
@@ -406,6 +407,12 @@ header {
         .logo .logo-pic img {
             height: 70px;
         }
+    }
+
+    .btn {
+        width: auto;
+        font-size: .9em;
+        margin-top: 20px;
     }
 }
 
@@ -1040,10 +1047,6 @@ footer {
     text-align: center;
 }
 
-.about-menu .title, .materials-content .title {
-    margin-bottom: 50px;
-}
-
 .about-menu .question, .materials-content .question {
     margin-bottom: 20px;
 
@@ -1091,27 +1094,18 @@ footer {
     margin-bottom: 50px;
 }
 
-.about-menu h2, .workshops-content h2, .donate-where h2, .mempos-contents h2, .donmat-content h2, #team-why h2 {
-    border-bottom: 4px dashed $yellow;
-    margin-bottom: 20px;
-}
-
 .about-menu h3, .workshops-content h3 {
     color: $dark-blue;
     font-size: 1.25em;
 }
 
-.workshops-content .btn {
+.classes .btn {
     margin-top: 20px;
 }
 
 #survey, #resources {
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-#virtual-classes .redirect {
     text-align: center;
 }
 
@@ -1124,8 +1118,8 @@ footer {
     font-size: 22px;
 }
 
-#resources .btn {
-    width: 250px;
+.btn.resources {
+    width: 275px;
 }
 
 
@@ -1136,7 +1130,7 @@ footer {
     overflow: hidden;
 
     .title {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     p, a {
@@ -1159,10 +1153,6 @@ footer {
     ul {
         list-style-position: outside;
         margin-left: 2em;
-
-        li .indented {
-            font-weight: initial;
-        }
     }
 
     img {
@@ -1182,6 +1172,10 @@ footer {
             margin-top: 30px;
             height: 80px;
         }
+    }
+
+    .material-item {
+        font-weight: bold;
     }
 }
 
