@@ -416,7 +416,7 @@ header {
         background: rgba(255,255,255,1);
 
         .logo .logo-pic img {
-            height: 70px;
+            height: 60px;
         }
     }
 
@@ -444,13 +444,13 @@ header {
 
     .logo-pic img {
         position: relative;
-        height: 80px;
+        height: 70px;
         padding-right: 15px;
         transition: 0.8s;
     }
 
     .logo-text {
-        font-size: 1.4em;
+        font-size: 1.1em;
         width: auto;
         color: $light-blue;
         transition: 0.8s;
