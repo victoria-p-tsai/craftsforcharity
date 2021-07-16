@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>VOLUNTEER FAQ | Crafts for Charity</title>
+    <title>MEMBER POSITIONS OVERVIEW | Crafts for Charity</title>
     <meta name="description" content="Crafts for Charity’s mission is to create enjoyable opportunities for those who want to volunteer creatively to help their community. We do this by providing free virtual craft classes that teach the skills needed to donate crafts to those in need.">
     <meta name="keywords" content="crafts, charity, craft, charities, students, student, nonprofit, homeless, help homeless, community, service, outreach, yarn, knitting, blankets, scarves, learn, create, donate, volunteer, donate, classes, projects">
     
@@ -37,6 +37,8 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- STYLES -->
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <link href="/styles/media.css" type="text/css" rel="stylesheet">
@@ -59,52 +61,80 @@
 <body class="volunteer">
     <div id="header"></div>
 
-    <div class="faq-content content">
-        <h2 class="title">VOLUNTEER FAQ</h2>
+    <div class="content">
+        <h2 class="title">MEMBER POSITIONS</h2>
 
-        <section>
+        <p class="center paragraph">Prospective volunteers of Crafts for Charity may apply for <strong>multiple teams across three general departments: Logistics, Outreach, and Teaching</strong>. Each team has different tasks and responsibilities, which you may learn more about down below.</p>
+        <p class="center">Volunteers are essential to Crafts for Charity and we appreciate each and every volunteer that works for us! If you are interested in volunteering, please read through the team descriptions, the general requirements, and then fill out an application here:</p>
+
+        <button class="btn yellow-btn center right large" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Apply Now!</button>
+
+        <!-- <div class="row member-cards justify-content-around">
+            <div class="col-sm-3 mem-card" id="log-card">
+                <img src="/CFC Banners/logistics.svg" alt="">
+                <h3 class="light-blue">Logistics</h3>
+                <p>Logistics members work together to create resources and guides, help with recruitment and expansion, and manage administrative work.</p>
+                <button class="lightblue-btn btn center right" onclick="window.location.pathname='/volunteer/positions/logistics.html';">Learn More</button>
+            </div>
+
+            <div class="col-sm-3 mem-card" id="outr-card">
+                <img src="/CFC Banners/outreach.svg" alt="">
+                <h3 class="dark-blue">Outreach</h3>
+                <p>The Outreach department is responsible for promoting Crafts for Charity through our website, social media, and public relations.</p>
+                <button class="darkblue-btn btn center right" onclick="window.location.pathname='/volunteer/positions/outreach.html';">Learn More</button>
+            </div>
+
+            <div class="col-sm-3 mem-card" id="teach-card">
+                <img src="/CFC Banners/teaching.svg" alt="">
+                <h3 class="yellow">Teaching</h3>
+                <p>Crafts for Charity Teachers work together to teach our virtual knitting and crocheting classes and help students learn more about CFC.</p>
+                <button class="yellow-btn btn center right" onclick="window.location.pathname='/volunteer/positions/teaching.html';">Learn More</button>
+            </div>
+        </div> -->
+
+
+
+        <section class="faq-content">
+            <h2 class="dashed-bottom">VOLUNTEER FAQ</h2>
+
             <div class="question">
                 <button class="collapsible first"><h2>I’m interested, how do I join?</h2></button>
                 <div class="coll-content">
                     <p>Fill out the application here: </p>
-                <button class="btn center right" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Volunteer Application</button>
+                    <button class="btn center right" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Volunteer Application</button>
+                    <!-- <p>Applications are currently closed. Please check back in late-July!</p> -->
                 </div>
             </div>
 
             <div class="question">
                 <button class="collapsible"><h2>What is the timeline for the application process?</h2></button>
                 <div class="coll-content">
-                    <p>We will be accepting applications for each season a month prior to the start of each season and up to 1 week before the start of each season.</p>
-                    <ul>
-                        <li>Summer Applications: June 1st - June 24th</li>
-                        <li>Fall Applications: August 15th - September 8th</li>
-                        <li>Winter Applications: November 11th - December 4th</li>
-                        <li>Spring Applications: February 12th - March 5th</li>
-                    </ul>                </div>
-            </div>
-
-            <div class="question">
-                <button class="collapsible"><h2>What are the dates for each season?</h2></button>
-                <div class="coll-content">
-                    <p>The dates for each season are as follows:</p>
-                    <ul>
-                        <li>Summer: 7/1 - 9/1, 9 weeks in total</li>
-                        <li>Fall: 9/15 - 11/20, 11/30 - 12/4, 10 weeks in total</li>
-                        <li>Winter: 12/11 - 12/23, 1/2 - 1/25, 2/1 -  3/5, 10.5 weeks in total</li>
-                        <li>Spring: 3/12 - 4/1, 4/7 - 6/1, 11 weeks in total</li>
-                    </ul>                </div>
+                    <p>After we recieve your application, expect us to contact you back within two weeks. If you do not receive a response within a week, please contact us at info@craftsforcharity.com. Applications are currently open, but may close and/or stay open based on demand.</p>
+                    </div>
             </div>
 
             <div class="question">
                 <button class="collapsible"><h2>Are there any dues I need to pay to join?</h2></button>
                 <div class="coll-content">
-                    <p>No, we do not require anyone to pay dues, however, we appreciate all donations of money and/or craft supplies! For teaching members, currently, we require you to use your own yarn and craft supplies because we do not have a safe way to distribute materials at the moment. When it is safer, we will try to give materials to anyone who needs them for free.</p>                </div>
+                    <p>No, we do not require anyone to pay dues; however, we appreciate all donations of money and/or craft supplies!</p>                </div>
+            </div>
+            
+            <div class="question">
+                <button class="collapsible"><h2>Do I have to live in or near Maryland to volunteer?</h2></button>
+                <div class="coll-content">
+                    <p>No, although CFC is based in Maryland, we welcome volunteers from all over the world! Our organization currently operates mainly virtually so we do not require volunteers to be located near us.</p>                </div>
             </div>
 
             <div class="question">
                 <button class="collapsible"><h2>I only want to make rectangles and/or scarves. Where can I find more information?</h2></button>
                 <div class="coll-content">
                     <p>We appreciate all knitted and/or crocheted items! Please refer to <a href="/donate/donate-materials.html">our Donate Materials page</a> to find more information.</p>                </div>
+            </div>
+            
+            <div class="question">
+                <button class="collapsible"><h2>Can I earn service hours from volunteering with Crafts for Charity?</h2></button>
+                <div class="coll-content">
+                    <p>Yes, you will be eligible to receive service hours for all of time you volunteer with Crafts for Charity.</p>                </div>
             </div>
 
             <div class="question">
@@ -160,12 +190,6 @@
                     <a href="/contact.html" target="_blank">info@craftsforcharity.com</a> or contact our instagram 
                     <a href="https://www.instagram.com/crafts_forcharity/" target="_blank">@crafts_forcharity</a>.</p>
             </div> -->
-        </section>
-
-        <section class="center arrows">
-            <p><button class="btn arrow left" onclick="window.location.pathname = '/volunteer/service-hours.html';">Service Hours</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="btn arrow right" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Volunteer Application</button></p>
         </section>
     </div>
     

@@ -84,9 +84,9 @@
                 - ex. check contact-form.html, header.html, footer.html
             2. go to <head> of all main pages:
                     $(function(){
-                        $("#header").load("/header.html"); 
-                        $("#footer").load("/footer.html"); 
-                        $("#email-form").load("/contact-form.html"); 
+                        $("#header").load("/insertables/header.html"); 
+                        $("#footer").load("/insertables/footer.html"); 
+                        $("#email-form").load("/insertables/contact-form.html"); 
                     });
                 add:
                     $("#ID-NAME").load("/FILE-NAME.html"); 
@@ -111,17 +111,21 @@
 
 */
 
-
+// Maven Pro
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+// Raleway
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 
 // VARIABLES
 
-$yellow : #ffd45a;
-$dark-blue : #454f99;
-$light-blue: #6fcafc;
+$yellow : #FFE05C;
+$orange : #FCC73F;
+$dark-blue : #454F99;
+$light-blue: #6DBFEB;
 $light-grey: #f1f1f1;
-$dark-grey: #767676;
+$grey: #D8DEE3;
+$dark-grey: #454649;
 
 
 @mixin center {
@@ -129,6 +133,40 @@ $dark-grey: #767676;
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* UNIVERSAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    //font-family: 'Maven Pro', sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: $dark-grey; //black
+
+    a {
+        color: $dark-grey;
+    }
+}
+
+.home #home-nav, 
+.about-us #about-us-nav, 
+.classes #classes-nav, 
+.donate #donate-nav, 
+.volunteer #volunteer-nav, 
+.contact-us #contact-us-nav, 
+.faq #faq-nav {
+    color: black;
 }
 
 
@@ -184,20 +222,26 @@ b {
     margin-bottom: 20px;
     border-bottom: 4px dashed $yellow;
 }
+.title-nodash {
+    color: $light-blue;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
 
 .btn {
     border: none;
     outline: none;
     color: white;
     background-color: $light-blue;
-    padding: 12px;
-    margin: 30px auto 20px;
-    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 20px auto;
+    border-radius: 100px;
     font-size: 1.1em;
     letter-spacing: 2px;
     transition: 0.3s;
     text-decoration: none;
-    width: 250px;
+    // width: 250px;
     font-weight: 600;
     cursor: pointer;
 
@@ -210,7 +254,7 @@ b {
         box-shadow: 0 0 0 5px rgba($color: $light-blue, $alpha: 0.4);
     }
 
-    &.apply { //put onto "Apply Here!" buttons
+    &.large { //put onto "Apply Here!" buttons
         font-size: 1.5em;
         width: 250px;
         padding: 15px;
@@ -218,23 +262,25 @@ b {
     }
 
     &.learn-more {
+        color: white;
+        background-color: $yellow;
         width: 175px;
+
+        &:hover {
+            background-color: $dark-blue;
+        }
     }
 }
 .yellow-btn {
-    // background-color: black;
-    // color: $yellow;
     color: black;
     background-color: $yellow;
 
     &:hover {
-        background-color: transparent;
-        color: $yellow;
+        background-color: $light-blue;
+        color: white;
     }
 }
 .black-btn {
-    // background-color: black;
-    // color: $yellow;
     color: $yellow;
     background-color: black;
 
@@ -333,6 +379,10 @@ b {
     margin-left: auto;
 }
 
+.paragraph {
+    margin-bottom: 15px;
+}
+
 .text-description-bigger {
     font-size: 18px;
 }
@@ -340,31 +390,6 @@ b {
 .title-borderbottom { //h2
     border-bottom: 4px dashed $yellow;
     margin-bottom: 20px;
-}
-
-
-
-
-
-/* --------------------------------------------------------------------- */
-/* UNIVERSAL */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    //font-family: 'Maven Pro', sans-serif;
-}
-
-html {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    color: $dark-grey; //black
-
-    a {
-        color: $dark-grey;
-    }
 }
 
 
@@ -451,6 +476,7 @@ header {
 
     .logo-text {
         font-size: 1.1em;
+        font-weight: bold;
         width: auto;
         color: $light-blue;
         transition: 0.8s;
@@ -462,6 +488,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     ul {
         position: relative;
@@ -500,16 +528,6 @@ nav {
     }
 }
 
-.home #home-nav, 
-.about-us #about-us-nav, 
-.classes #classes-nav, 
-.donate #donate-nav, 
-.volunteer #volunteer-nav, 
-.contact-us #contact-us-nav, 
-.faq #faq-nav {
-    color: black;
-}
-
 .dropdown-content {
     position: absolute;
     display: none;
@@ -519,6 +537,7 @@ nav {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 20px;
     margin-left: 50px;
+    padding-left: 0;
     border-radius: 5px;
 
     &.donate-drop {
@@ -539,6 +558,7 @@ nav {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 0;
     margin-left: 205px;
+    padding-left: 0;
     border-radius: 5px;
 
     i {
@@ -580,8 +600,9 @@ nav {
 }
 
 .content {
-    margin-top: 80px;
-    padding: 80px 0;
+    margin: 40px auto 0;
+    padding: 80px 1.5rem;
+    max-width: 1140px;
     justify-content: center;
     min-height: calc(100vh - 517px); //guess + check lol
 }
@@ -614,6 +635,7 @@ section:not(.our-purpose) {
 }
 
 h2, h3 {
+    font-weight: bold;
     line-height: 2em;
     letter-spacing: 1.75px;
 }
@@ -1242,51 +1264,44 @@ footer {
 /* --------------------------------------------------------------------- */
 /* MEMBER POSITION OVERVIEW */
 
-.mempos-content {
-    .member-cards {
-        display: flex;
-        justify-content: space-between;
-        margin: 50px 17%;
 
-        .member-card {
-            max-width: 30%;
-            text-align: center;
-            padding: 40px;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            font-size: 1.1em;
+.member-cards {
 
-            h3 {
-                text-transform: uppercase;
-                margin-bottom: 10px;
-            }
+    .mem-card {
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 20px;
+        border-radius: 5px;
 
-            img {
-                width: 100%;
-                object-fit: cover;
-                margin-bottom: 40px;
-            }
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
 
-            &#log-card {
-                background: $yellow;
-                color: black;
-                border-bottom: 10px solid $light-blue;
-            }
-            &#outr-card {
-                background: $light-blue;
-                color: white;
-                border-bottom: 10px solid $dark-blue;
-            }
-            &#teach-card {
-                background: $dark-blue;
-                color: $light-blue;
-                border-bottom: 10px solid $yellow;
-            }
+        img {
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 40px;
+        }
 
-            .btn {
-                width: 100%;
-            }
+        &#log-card {
+            background: $yellow;
+            color: black;
+            border-bottom: 10px solid $light-blue;
+        }
+        &#outr-card {
+            background: $light-blue;
+            color: white;
+            border-bottom: 10px solid $dark-blue;
+        }
+        &#teach-card {
+            background: $dark-blue;
+            color: $light-blue;
+            border-bottom: 10px solid $yellow;
+        }
+
+        .btn {
+            width: 100%;
         }
     }
 }
@@ -1396,7 +1411,7 @@ footer {
 
         h2 {
             text-transform: initial;
-            font-size: 1.4em;
+            font-size: 1em;
             margin-left: 25px;
             margin-right: 50px;
             text-align: left;
