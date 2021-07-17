@@ -37,6 +37,8 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- STYLES -->
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <link href="/styles/media.css" type="text/css" rel="stylesheet">
@@ -59,39 +61,57 @@
 <body class="volunteer">
     <div id="header"></div>
 
-    <div class="mempos-content content">
+    <div class="content">
         <h2 class="title">MEMBER POSITIONS</h2>
 
+        <p class="center paragraph">Prospective volunteers of Crafts for Charity may apply for <strong>multiple teams across three general departments: Logistics, Outreach, and Teaching</strong>. Each team has different tasks and responsibilities, which you may learn more about down below.</p>
+        <p class="center">Volunteers are essential to Crafts for Charity and we appreciate each and every volunteer that works for us! If you are interested in volunteering, please read through the team descriptions, the general requirements, and then fill out an application here:</p>
+
+        <button class="btn yellow-btn center right large" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Apply Now!</button>
+
+
         <section>
-            <div class="question center">
-                <p>Members of Crafts for Charity are divided into three departments: <strong>Logistics</strong>, <strong>Outreach</strong>, and <strong>Teaching</strong>. Each department consists of multiple teams that have different tasks and responsibilities and members in each team work together to complete these tasks and responsibilities. To learn more about our teams, <a href="https://docs.google.com/document/d/1mpxx5ww5vN4SEwTz_uqtgU9avtJy25WlO0_Npjq6tFE/edit?usp=sharing" target="_blank">click here.</a> Volunteers are essential to Crafts for Charity and we appreciate each and every volunteer that works with us.<!-- If you are interested in volunteering, please read through position descriptions then fill out an application here: --></p>
-            </div>
-            <button class="btn center application" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Volunteer Application</button>
-            <!-- <p class="center"><strong>Applications are currently closed. Please check back in mid-June!</strong></p> -->
+            <h2>MEMBER BENEFITS</h2>
+            <ul>
+                <li>Earn service hours while helping your community and local charities</li>
+                <li>Gain valuable experience that can be used on resumes for future jobs, internships, or college applications</li>
+                <li>Build stronger interpersonal and technical skills</li>
+            </ul>
+    
+            <h2>GENERAL REQUIREMENTS</h2>
+            <p>To volunteer, you must be between 14-17 years of age. If accepted, you must be committed to volunteer for at least 2 months.</p>
+    
+            <h2>DESIRABLE QUALIFICATIONS</h2>
+            <p>Teams have more specific qualifications, but in general, we look for these attributes in an applicant:</p>
+            <ul>
+                <li>Strong communication and writing skills</li>
+                <li>Ability to collaborate effectively in teams</li>
+            </ul>
         </section>
 
-        <div class="member-cards">
-            <div class="member-card" id="log-card">
+
+        <!-- <div class="row member-cards justify-content-around">
+            <div class="col-sm-3 mem-card" id="log-card">
                 <img src="/CFC Banners/logistics.svg" alt="">
                 <h3 class="light-blue">Logistics</h3>
                 <p>Logistics members work together to create resources and guides, help with recruitment and expansion, and manage administrative work.</p>
-                <button class="lightblue-btn btn center right" onclick="window.location.pathname='/volunteer/positions/logistics.html';">Learn More</button>
+                <button class="lightblue-btn btn center right" onclick="window.location.pathname='/volunteer/logistics/';">Learn More</button>
             </div>
 
-            <div class="member-card" id="outr-card">
+            <div class="col-sm-3 mem-card" id="outr-card">
                 <img src="/CFC Banners/outreach.svg" alt="">
                 <h3 class="dark-blue">Outreach</h3>
                 <p>The Outreach department is responsible for promoting Crafts for Charity through our website, social media, and public relations.</p>
-                <button class="darkblue-btn btn center right" onclick="window.location.pathname='/volunteer/positions/outreach.html';">Learn More</button>
+                <button class="darkblue-btn btn center right" onclick="window.location.pathname='/volunteer/outreach/';">Learn More</button>
             </div>
 
-            <div class="member-card" id="teach-card">
+            <div class="col-sm-3 mem-card" id="teach-card">
                 <img src="/CFC Banners/teaching.svg" alt="">
                 <h3 class="yellow">Teaching</h3>
                 <p>Crafts for Charity Teachers work together to teach our virtual knitting and crocheting classes and help students learn more about CFC.</p>
-                <button class="yellow-btn btn center right" onclick="window.location.pathname='/volunteer/positions/teaching.html';">Learn More</button>
+                <button class="yellow-btn btn center right" onclick="window.location.pathname='/volunteer/teaching/';">Learn More</button>
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -102,7 +122,7 @@
                 <button class="collapsible first"><h2>I’m interested, how do I join?</h2></button>
                 <div class="coll-content">
                     <p>Fill out the application here: </p>
-                    <button class="btn center right" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Volunteer Application</button>
+                    <button class="btn center right" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Apply Here!</button>
                     <!-- <p>Applications are currently closed. Please check back in late-July!</p> -->
                 </div>
             </div>

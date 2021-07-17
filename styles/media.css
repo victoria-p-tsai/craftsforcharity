@@ -1,24 +1,5 @@
 /* --------------------------------------------------------------------- */
 /* RESPONSIVE */
-/* for ipads + tablets (1530px)*/
-@media screen and (max-width: 1560px) {
-  .banner {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-/* nav list condenses */
-@media screen and (max-width: 1700px) {
-  nav ul .head {
-    margin: 0 20px;
-  }
-  .dropdown-content {
-    margin-left: 10px;
-  }
-}
-
 /* entire nav condenses + side padding shrinks */
 @media screen and (max-width: 1605px) {
   header {
@@ -34,6 +15,15 @@
   }
   nav ul .nav-item {
     font-size: .9em;
+  }
+}
+
+/* for ipads + tablets (1530px)*/
+@media screen and (max-width: 1560px) {
+  .banner {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -119,8 +109,17 @@
     text-align: right;
     padding: 8px;
   }
-  nav .head {
+  nav ul .head {
     cursor: pointer;
+    margin: 0 20px;
+    padding-bottom: 0;
+  }
+  nav ul .donate-dropdown {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  nav ul .donate-dropdown .dropdown-content {
+    margin-top: 0;
   }
   input[type=checkbox]:checked ~ label {
     color: black !important;
@@ -164,13 +163,13 @@
     height: 125px;
   }
   #classes-dropdown:checked ~ .dropdown-content {
-    height: 165px;
+    height: 125px;
   }
   #donate-dropdown:checked ~ .dropdown-content {
     height: 175px;
   }
   #volunteer-dropdown:checked ~ .dropdown-content {
-    height: 265px;
+    height: 260px;
   }
   #donatebtn-dropdown:checked ~ .dropdown-content {
     height: 165px;
