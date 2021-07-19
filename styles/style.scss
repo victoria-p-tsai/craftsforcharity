@@ -428,7 +428,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1000;
-    padding: 5px 100px;
+    padding: 0 100px;
     width: 100%;
     top: 0;
     left: 0;
@@ -469,18 +469,19 @@ header {
 
     .logo-pic img {
         position: relative;
-        height: 70px;
+        height: 60px;
         padding-right: 15px;
         transition: 0.8s;
     }
 
     .logo-text {
-        font-size: 1.1em;
+        // font-size: 1.1em;
         font-weight: bold;
-        width: auto;
+        // width: auto;
         color: $light-blue;
         transition: 0.8s;
         line-height: initial;
+        margin-bottom: 0;
     }
 }
 
@@ -525,9 +526,9 @@ nav {
         }
 
         .head {
-            margin: 35px 20px 0;
+            margin: 20px 20px 0;
             // margin: 0 10px 0 60px;
-            padding-bottom: 35px;
+            padding-bottom: 20px;
             display: block;
 
             &.donate-lbl {
@@ -538,11 +539,11 @@ nav {
         }
 
         .donate-dropdown {
-            margin-top: 35px;
-            padding-bottom: 35px;
+            margin-top: 20px;
+            padding-bottom: 20px;
 
             .dropdown-content {
-                margin-top: 15px;
+                margin-top: 10px;
             }
         }
     }
@@ -555,7 +556,7 @@ nav {
     background-color: white;
     width: 205px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-top: -15px;
+    margin-top: 0;
     margin-left: 10px;
     padding-left: 0;
     border-radius: 5px;
@@ -616,8 +617,8 @@ nav {
 }
 
 .content {
-    margin: 40px auto 0;
-    padding: 80px 1.5rem;
+    margin: 40px auto;
+    padding: 80px 1.5rem 0;
     max-width: 1140px;
     justify-content: center;
     min-height: calc(100vh - 517px); //guess + check lol
@@ -642,11 +643,6 @@ section:not(.our-purpose) {
 .disclaimer { //used for "page isnt done" disclaimer
     margin-bottom: 40px;
     color: black;
-}
-
-.policy {
-    font-size: 0.8em;
-    padding: 0 6rem;
 }
 
 h2, h3 {
@@ -863,9 +859,13 @@ footer {
     }
 
     .credits {
-        padding-top: 3rem;
+        padding-top: 2rem;
         width: 100%;
         text-align: center;
+    }
+
+    .policy {
+        font-size: 0.8em;
     }
 }
 

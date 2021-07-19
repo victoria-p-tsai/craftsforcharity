@@ -330,6 +330,16 @@ $dark-grey: #767676;
     }
 }
 
+@media screen and (max-width: 767px) {
+    footer {
+        padding: 3rem 1.5rem;
+
+        ul {
+            padding-left: 0;
+        }
+    }
+}
+
 /* header logo and text wrap around */
 @media screen and (max-width: 630px) {
     header {
