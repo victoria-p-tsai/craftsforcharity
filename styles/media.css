@@ -289,15 +289,18 @@
 }
 
 @media screen and (max-width: 575px) and (min-width: 400px) {
+  .card-deck img {
+    bottom: 25px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 575px) {
   .not-mobile {
     display: none;
   }
   .mobile {
     display: block;
-  }
-  .card-deck img {
-    bottom: 25px;
-    height: 200px;
   }
 }
 
@@ -329,7 +332,7 @@
             transform: translateY(-50%);
   }
   .content {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 0;
   }
   .title {
@@ -413,9 +416,8 @@
   header .logo .logo-text {
     display: none;
   }
-  .contact-page .info .icons {
-    font-size: 32px;
-    white-space: nowrap;
+  .content {
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=media.css.map */

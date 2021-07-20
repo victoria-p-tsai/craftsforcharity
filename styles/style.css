@@ -1453,5 +1453,6 @@ footer .policy {
 
 .mobile {
   display: none;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=style.css.map */

@@ -196,37 +196,38 @@
         let mql = window.matchMedia('(max-width: 575px)').matches;
         if (mql) {
             console.log("mobile");
-            $('#log-card').on('click', function() {
-                if ($('#log-card img').css('opacity') == 0)
-                    $('#log-card img').css({'opacity': 1, 'visibility': 'visible'});
-                else $('#log-card img').css({'opacity': 0, 'visibility': 'hidden'});
 
-                if ($('#log-card .card-text, #log-card .card-footer').css('opacity') == 0) {
-                    $('#log-card .card-text, #log-card .card-footer').css({'opacity': 1, 'visibility': 'visible'});
-                }
-                else {
+            $('#log-card').on('click', function() {
+                if ($('#log-card img').css('opacity') == 0) {
+                    $('#log-card img').css({'opacity': 1, 'visibility': 'visible'});
                     $('#log-card .card-text, #log-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
                 }
+                else {
+                    $('#log-card img').css({'opacity': 0, 'visibility': 'hidden'});
+                    $('#log-card .card-text, #log-card .card-footer').css({'opacity': 1, 'visibility': 'visible'});
+                }
             });
-
+            
             $('#out-card').on('click', function() {
-                if ($('#out-card img').css('opacity') == 0)
+                if ($('#out-card img').css('opacity') == 0) {
                     $('#out-card img').css({'opacity': 1, 'visibility': 'visible'});
-                else $('#out-card img').css({'opacity': 0, 'visibility': 'hidden'});
-                
-                if ($('#out-card .card-text, #out-card .card-footer').css('opacity') == 0)
+                    $('#out-card .card-text, #out-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
+                }
+                else {
+                    $('#out-card img').css({'opacity': 0, 'visibility': 'hidden'});
                     $('#out-card .card-text, #out-card .card-footer').css({'opacity': 1, 'visibility': 'visible'});
-                else $('#out-card .card-text, #out-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
+                }
             });
-
+            
             $('#teach-card').on('click', function() {
-                if ($('#teach-card img').css('opacity') == 0)
+                if ($('#teach-card img').css('opacity') == 0) {
                     $('#teach-card img').css({'opacity': 1, 'visibility': 'visible'});
-                else $('#teach-card img').css({'opacity': 0, 'visibility': 'hidden'});
-                
-                if ($('#teach-card .card-text, #teach-card .card-footer').css('opacity') == 0)
+                    $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
+                }
+                else {
+                    $('#teach-card img').css({'opacity': 0, 'visibility': 'hidden'});
                     $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 1, 'visibility': 'visible'});
-                else $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
+                }
             });
         }
     </script>
