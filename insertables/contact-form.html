@@ -4,8 +4,8 @@
 <head>
 </head>
 <!-- CHECK FORMSPREE FAQ IF YOU WANT TO ADD NEW FIELDS -->
-<form action="https://formspree.io/xnqggjkp" method="POST">
-    <div class="lcol">
+<form action="https://formspree.io/xnqggjkp" method="POST" class="row">
+    <div class="col-sm-6 align-items-between">
         <label>
             <input type="text" name="_name" placeholder="Name" required>
         </label>
@@ -19,15 +19,15 @@
         </label>
     </div>
 
-    <label>
+    <label class="col-sm-6">
         <textarea name="message" placeholder="Type your message here..." required></textarea>
     </label>    
     
     <!-- your other form fields go here -->
-    <br/>
 
     <button type="submit">Send</button>
     
-    <script type="text/javascript" src="main.js"></script>
 </form>
+
+<script type="text/javascript" src="main.js"></script>
 </html>

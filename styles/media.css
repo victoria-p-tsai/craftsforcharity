@@ -3,8 +3,7 @@
 /* entire nav condenses + side padding shrinks */
 @media screen and (max-width: 1605px) {
   header {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding: 5px 60px;
   }
   header.sticky {
     padding-right: 50px;
@@ -53,21 +52,21 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0;
+    padding: 0 20px 0 30px;
     background-color: white;
     display: block;
   }
   header.sticky {
-    padding: 0;
+    padding: 0 20px;
   }
   header .logo .logo-pic img {
-    margin: 10px 0 0 70px;
+    margin-top: 10px;
     display: inline-block;
     height: 60px;
   }
   header .logo .logo-text {
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 2em;
   }
   header .logo-text-wrap {
@@ -80,10 +79,10 @@
     display: block;
     position: absolute;
     font-size: 24px;
-    top: 45px;
+    top: 40px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: 70px;
+    right: 60px;
     float: right;
     cursor: pointer;
     -webkit-transition: 0.2s;
@@ -104,15 +103,18 @@
   }
   nav ul {
     display: block;
-    margin: 10px;
+    margin: 10px 0;
   }
   nav ul li {
     text-align: right;
-    padding: 8px;
+    padding: 8px 0;
   }
   nav ul .head {
     cursor: pointer;
-    margin: 0 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 20px 0 auto;
     padding-bottom: 0;
   }
   nav ul .donate-dropdown {
@@ -248,25 +250,6 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-  .contact-page .info, .contact-page .info .icons, .contact-page #email-form {
-    display: block;
-    width: 100%;
-  }
-  .contact-page .info .icons {
-    margin-top: 10px;
-  }
-  .contact-page #email-form .lcol, .contact-page #email-form textarea {
-    width: 100%;
-  }
-  .contact-page #email-form input[type=text], .contact-page #email-form textarea {
-    margin: 5px 0;
-  }
-  .contact-page iframe {
-    margin-top: 120px;
-  }
-}
-
 /* materials images turn into column (instead of float) */
 @media screen and (max-width: 900px) {
   #materials img, #materials #img-yarn-needle {
@@ -275,13 +258,6 @@
     left: 45%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-  }
-}
-
-@media screen and (min-width: 635px) {
-  .team-content div img {
-    float: left;
-    margin-right: 30px;
   }
 }
 
@@ -295,25 +271,10 @@
 }
 
 /* header logo and text wrap around */
-@media screen and (max-width: 630px) {
-  header {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    /* .logo-text {
-            padding-top: 5px;
-            
-            .logo-text-wrap {
-                display: block;
-            }
-        } */
-  }
-  header h1 {
-    font-size: 1.7em;
-  }
-  header .logo .logo-pic img {
-    margin-left: 30px;
-    height: 60px;
+@media screen and (min-width: 635px) {
+  .team-content div img {
+    float: left;
+    margin-right: 30px;
   }
   footer .cols {
     -webkit-box-orient: vertical;
@@ -346,10 +307,11 @@
 
 /* for phones */
 @media screen and (max-width: 430px) {
+  header {
+    padding-left: 20px;
+  }
   header .logo .logo-pic img {
     height: 60px;
-    padding-right: 0;
-    margin-left: 30px;
   }
   header .logo .logo-text {
     margin-top: 5px;

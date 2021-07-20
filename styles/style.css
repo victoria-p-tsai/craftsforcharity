@@ -192,6 +192,14 @@ html a {
   background-color: #f1f1f1;
 }
 
+.dark-grey {
+  color: #454649;
+}
+
+.dark-grey-bg {
+  background-color: #454649;
+}
+
 .white {
   color: white;
 }
@@ -429,7 +437,7 @@ header.sticky {
 }
 
 header.sticky .logo .logo-pic img {
-  height: 50px;
+  height: 60px;
 }
 
 header .btn {
@@ -467,13 +475,14 @@ header a:hover {
 
 .logo .logo-pic img {
   position: relative;
-  height: 60px;
-  padding-right: 15px;
+  height: 70px;
+  padding-right: 10px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
 .logo .logo-text {
+  font-size: 2.5em;
   font-weight: bold;
   color: #6DBFEB;
   -webkit-transition: 0.8s;
@@ -733,52 +742,37 @@ button.collapsible h2:hover, button.collapsible h2 .active {
   margin-left: 0.5rem;
 }
 
-#email-form {
-  padding: 17px 12.5%;
-}
-
-#email-form input[type=text], #email-form textarea {
-  background-color: #f1f1f1;
-}
-
-#email-form input[type=text]:hover, #email-form textarea:hover {
-  background-color: white;
-}
-
 input[type=text], textarea {
-  background-color: white;
+  background-color: #f1f1f1;
   width: 100%;
   outline: none;
   border: 1px solid #f1f1f1;
   border-radius: 5px;
-  margin: 5px;
-  padding: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
+input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+input[type=text]::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+  font-size: 14px;
+}
+
 input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
   border: 1px solid #a0a0a0;
-}
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  font-size: 14px;
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  font-size: 14px;
-}
-
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  font-size: 14px;
-}
-
-input::placeholder, textarea::placeholder {
-  font-size: 14px;
-}
-
-textarea {
-  height: 115px;
+  background-color: white;
 }
 
 button[type=submit] {
@@ -787,9 +781,9 @@ button[type=submit] {
   border: 0;
   outline: 0;
   margin-top: 15px;
+  margin-left: auto;
   padding: 7px;
   width: 100px;
-  float: right;
   font-size: 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -851,6 +845,7 @@ footer a {
 }
 
 footer a:not(.icon):hover {
+  text-decoration: none;
   border-bottom: 1px solid black;
 }
 
@@ -863,18 +858,6 @@ footer ul li {
   padding: 2px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-footer .icons-col {
-  width: 100%;
-  font-size: 33px;
-  text-align: center;
-  color: #454649;
-  margin-top: 20px;
-}
-
-footer .icons-col i {
-  margin: 10px;
 }
 
 footer .credits {
@@ -1104,17 +1087,11 @@ footer .policy {
   font-size: 1.3em;
 }
 
-.contacts #email-form input[type=text], .contacts #email-form textarea {
-  background-color: white;
-}
-
-.contacts .contacts-card .icons {
-  margin: 20px 0 30px;
-}
-
-.contacts .contacts-card .icons i {
-  margin: 15px;
-  font-size: 55px;
+.icons {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.5em;
 }
 
 .icons span {
@@ -1122,9 +1099,9 @@ footer .policy {
 }
 
 .icons i {
-  color: #454F99;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin: 10px;
 }
 
 .icons i:hover {
@@ -1338,7 +1315,7 @@ footer .policy {
   position: relative;
   background-color: transparent;
   border: 0;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 0;
 }
 
@@ -1358,7 +1335,9 @@ footer .policy {
 }
 
 .positions .card-deck .card .card-footer {
+  position: relative;
   opacity: 0;
+  visibility: hidden;
   padding-top: 0;
   background-color: transparent;
   border: 0;
@@ -1374,6 +1353,7 @@ footer .policy {
 .positions .card-deck .card:hover .card-text, .positions .card-deck .card:hover .card-footer {
   display: block;
   opacity: 1;
+  visibility: visible;
   z-index: 100;
 }
 
@@ -1403,60 +1383,30 @@ footer .policy {
   width: 130px;
 }
 
-.contact-page .row {
-  width: 100%;
-}
-
-.contact-page .info, .contact-page #email-form {
-  display: inline-block;
-  padding: 0;
-  height: 200px;
-}
-
-.contact-page .info {
-  width: 40%;
-}
-
-.contact-page .info .icons {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 2.5em;
-}
-
-.contact-page .info .icons i {
-  margin: 10px;
-}
-
-.contact-page .lcol {
-  height: 100%;
-  width: 40%;
-  float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .contact-page #email-form {
-  float: right;
-  width: 55%;
+  padding: 0;
 }
 
-.contact-page #email-form input[type=text] {
+.contact-page #email-form .col-sm-6 {
+  padding-right: 0;
+}
+
+.contact-page #email-form .col-sm-6 label {
   width: 100%;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-.contact-page #email-form textarea {
-  width: 55%;
-  float: right;
+.contact-page #email-form .col-sm-6 input[type=text], .contact-page #email-form .col-sm-6 textarea {
+  margin: 5px 0;
 }
 
-.contact-page #email-form button[type=submit] {
-  float: right;
+.contact-page #email-form .col-sm-6 textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-page #email-form .col-sm-6 button[type=submit] {
+  margin-left: auto;
 }
 
 /* --------------------------------------------------------------------- */

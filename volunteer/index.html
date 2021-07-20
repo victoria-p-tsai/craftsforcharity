@@ -67,7 +67,7 @@
         <p class="center">Prospective volunteers of Crafts for Charity may apply for <strong>multiple teams across three general departments: Logistics, Outreach, and Teaching</strong>. Each team has different tasks and responsibilities, which you may learn more about down below.</p>
         <p class="center">Volunteers are essential to Crafts for Charity and we appreciate each and every volunteer that works for us! If you are interested in volunteering, please read through the team descriptions, the general requirements, and then fill out an application here:</p>
 
-        <button class="btn yellow-btn center right large" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Apply Now!</button>
+        <button class="btn yellow-btn center right large" onclick="window.location.pathname = '/volunteer/application/';">Apply Now!</button>
 
 
         <section>
@@ -137,7 +137,7 @@
                 <button class="collapsible first"><h2>I’m interested, how do I join?</h2></button>
                 <div class="coll-content">
                     <p>Fill out the application here: </p>
-                    <button class="btn center right" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Apply Here!</button>
+                    <button class="btn center right" onclick="window.location.pathname = '/volunteer/application/';">Apply Here!</button>
                     <!-- <p>Applications are currently closed. Please check back in late-July!</p> -->
                 </div>
             </div>
@@ -166,7 +166,7 @@
             <div class="question">
                 <button class="collapsible"><h2>I only want to make rectangles and/or scarves. Where can I find more information?</h2></button>
                 <div class="coll-content">
-                    <p>We appreciate all knitted and/or crocheted items! Please refer to <a href="/donate/donate-materials.html">our Donate Materials page</a> to find more information.</p>
+                    <p>We appreciate all knitted and/or crocheted items! Please refer to <a href="/donate/crafts-materials/">our Donate Materials page</a> to find more information.</p>
                 </div>
             </div>
             
@@ -198,32 +198,35 @@
             console.log("mobile");
             $('#log-card').on('click', function() {
                 if ($('#log-card img').css('opacity') == 0)
-                    $('#log-card img').css({'opacity': 1});
-                else $('#log-card img').css({'opacity': 0, 'z-index': 5});
+                    $('#log-card img').css({'opacity': 1, 'visibility': 'visible'});
+                else $('#log-card img').css({'opacity': 0, 'visibility': 'hidden'});
 
-                if ($('#log-card .card-text, #log-card .card-footer').css('opacity') == 0)
-                    $('#log-card .card-text, #log-card .card-footer').css({'opacity': 1, 'z-index': 4});
-                else $('#log-card .card-text, #log-card .card-footer').css({'opacity': 0, 'z-index': 100});
+                if ($('#log-card .card-text, #log-card .card-footer').css('opacity') == 0) {
+                    $('#log-card .card-text, #log-card .card-footer').css({'opacity': 1, 'visibility': 'visible'});
+                }
+                else {
+                    $('#log-card .card-text, #log-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
+                }
             });
 
             $('#out-card').on('click', function() {
                 if ($('#out-card img').css('opacity') == 0)
-                    $('#out-card img').css({'opacity': 1});
-                else $('#out-card img').css({'opacity': 0, 'z-index': 5});
+                    $('#out-card img').css({'opacity': 1, 'visibility': 'visible'});
+                else $('#out-card img').css({'opacity': 0, 'visibility': 'hidden'});
                 
                 if ($('#out-card .card-text, #out-card .card-footer').css('opacity') == 0)
-                    $('#out-card .card-text, #out-card .card-footer').css({'opacity': 1, 'z-index': 4});
-                else $('#out-card .card-text, #out-card .card-footer').css({'opacity': 0, 'z-index': 100});
+                    $('#out-card .card-text, #out-card .card-footer').css({'opacity': 1, 'visibility': 'visible'});
+                else $('#out-card .card-text, #out-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
             });
 
             $('#teach-card').on('click', function() {
                 if ($('#teach-card img').css('opacity') == 0)
-                    $('#teach-card img').css({'opacity': 1});
-                else $('#teach-card img').css({'opacity': 0, 'z-index': 5});
+                    $('#teach-card img').css({'opacity': 1, 'visibility': 'visible'});
+                else $('#teach-card img').css({'opacity': 0, 'visibility': 'hidden'});
                 
                 if ($('#teach-card .card-text, #teach-card .card-footer').css('opacity') == 0)
-                    $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 1, 'z-index': 4});
-                else $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 0, 'z-index': 100});
+                    $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 1, 'visibility': 'visible'});
+                else $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 0, 'visibility': 'hidden'});
             });
         }
     </script>
