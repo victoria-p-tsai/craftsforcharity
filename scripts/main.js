@@ -5,13 +5,6 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 
-//header animation: transparent --> white
-window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 50);
-})
-
-
 //collapsible menu animation: hidden --> showing underneath
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -35,23 +28,8 @@ $('.collapsible').click(function(){
 });
 
 
-/*
-//header highlight: current page --> black
-var url = window.location.href.split("/"); //replace string with location.href
-var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
-//naturally you could use something other than the <nav> element
-var k=0;
-var currentPage = url[url.length - 1];
-for(k; k<navLinks.length; k++){
-    var lb = navLinks[k].href.split("/");
-    if(lb[lb.length-1] == currentPage) {
-        navLinks[k].closest(".head").classList.toggle("current");
-    }
-} */
-
-
 //slideshow animation: automatic + manual
-var myIndex = 0;
+/* var myIndex = 0;
 carousel();
 
 function carousel() {
@@ -64,12 +42,12 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+} */
 
 
 //privacy policy popup
 // Get the modal
-var modal = document.getElementById("myModal");
+/* var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 // var btn = document.getElementById("myBtn");
@@ -92,4 +70,4 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+} */

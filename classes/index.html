@@ -34,10 +34,15 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/CFC Banners/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- STYLES -->
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <link href="/styles/media.css" type="text/css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -45,9 +50,9 @@
     </script>
     <script> 
         $(function(){
-            $("#header").load("/header.html"); 
-            $("#footer").load("/footer.html"); 
-            $("#email-form").load("/contact-form.html"); 
+            $("#header").load("/insertables/header.html"); 
+            $("#footer").load("/insertables/footer.html"); 
+            $("#email-form").load("/insertables/contact-form.html"); 
         });
     </script> 
     <script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script>
@@ -77,13 +82,13 @@
 
             <div class="question">
                 <h3>What happens to what we make?</h3>
-                <p>The rectangles and scarves you knit or crochet are eventually donated to charities to help our community! You can learn more about the charities we help here (link to Who We Support Page). There are two ways for you to donate your rectangle(s) and scarves. You can drop them off or mail them to us. Learn more <a href="/donate/drop-off.html">here</a>. We will use your rectangles and scarves to help different charities in need.</p>
+                <p>The rectangles and scarves you knit or crochet are eventually donated to charities to help our community! You can learn more about the charities we help here (link to Who We Support Page). There are two ways for you to donate your rectangle(s) and scarves. You can drop them off or mail them to us. Learn more <a href="/donate/drop-off/">here</a>. We will use your rectangles and scarves to help different charities in need.</p>
             </div>
         </section>
 
         <section class="center">
-            <button class="btn right" onclick="window.location.pathname = '/classes/knitting.html';">Knitting Classes</button>
-            <button class="btn right" onclick="window.location.pathname = '/classes/crocheting.html';">Crocheting Classes</button>
+            <button class="btn right" onclick="window.location.pathname = '/classes/knitting/';">Knitting Classes</button>
+            <button class="btn right" onclick="window.location.pathname = '/classes/crocheting/';">Crocheting Classes</button>
         </section>
 
         <!-- <section id="virtual-classes">
@@ -115,11 +120,11 @@
             </div>
             
             <p class="center"><strong>To sign up for a class, press this button:</strong></p>
-            <button class="btn center resources right" onclick="window.location.pathname='/classes/register.html';">Register For A Class</button>
+            <button class="btn center resources right" onclick="window.location.pathname='/classes/register/';">Register For A Class</button>
         </section>
 
         <section class="center arrows">
-            <p><button class="btn arrow left" onclick="window.location.pathname = '/about-us/who-we-support.html';">Who We Support</button>
+            <p><button class="btn arrow left" onclick="window.location.pathname = '/about-us/who-we-support/';">Who We Support</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn arrow right" onclick="window.location.pathname = '/classes/materials.html';">Materials</button></p>
         </section>
     </div>

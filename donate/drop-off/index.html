@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>PROJECTS | Crafts for Charity</title>
+    <title>DROP OFF CRAFTS OR SUPPLIES | Crafts for Charity</title>
     <meta name="description" content="Crafts for Charity’s mission is to create enjoyable opportunities for those who want to volunteer creatively to help their community. We do this by providing free virtual craft classes that teach the skills needed to donate crafts to those in need.">
     <meta name="keywords" content="crafts, charity, craft, charities, students, student, nonprofit, homeless, help homeless, community, service, outreach, yarn, knitting, blankets, scarves, learn, create, donate, volunteer, donate, classes, projects">
     
@@ -34,10 +34,15 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/CFC Banners/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- STYLES -->
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <link href="/styles/media.css" type="text/css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -45,31 +50,51 @@
     </script>
     <script> 
         $(function(){
-            $("#header").load("/header.html"); 
-            $("#footer").load("/footer.html"); 
-            $("#email-form").load("/contact-form.html"); 
+            $("#header").load("/insertables/header.html"); 
+            $("#footer").load("/insertables/footer.html"); 
+            $("#email-form").load("/insertables/contact-form.html"); 
         });
     </script> 
     <script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script>
 </head>
 
-<body class="about-us">
+<body class="donate">
     <div id="header"></div>
 
-    <div class="projects-content content">
-        <h2 class="title">PROJECTS</h2>
+    <div class="content dropoff-content">
+        <h2 class="title">Drop Off Crafts or Donated Supplies</h2>
 
-        <section class="question answer">
-            <h3>Our Current Project:</h3>
-            <p><br><strong>Knitting scarves & rectangles for blankets</strong>
-                <br><br>Following the mission of “Warm Up America,” a nonprofit dedicated to helping knitters and crocheters donate their crafts, Crafts for Charity has decided to make the most recent project to help serve those who are in need of supplies to stay warm. CFC needs your help! Sign up for a class to learn how you can help create crafts to assist with CFC’s latest mission. To receive extra tips and information, sign up for our newsletter by letting us know in your first class. Thank you for your help and interest in our mission. Happy crafting!
-                </p>
+        <section>
+            <div class="question">
+                <h3>Mailing Location</h3>
+                <p>Please mail all donated materials or crafts to <b> 7445 Cherry Tree Dr Fulton, MD, 20759. </b> </p>
+            </div>
+            
+            <div class="question">
+                <h3>Drop Off Boxes</h3>
+                <p>We currently have a drop-off box located at <b> Happy Helpers for the Homeless (1550 Catons Center Drive Halethorpe, MD 21227) </b> if you would like to drop-off items in person.</p>
+            </div>
+
+            <div class="question">
+                <h3>Steps to Drop Off </h3>
+                <p>First, take all of your crafts or donated materials, and put them in a <b>closed</b> box or bag. Make sure that they are as closed off to the environment as possible.</p>
+                <p>Next, <b>fill out, submit, and print the form below</b> with what you are bringing. If you do not have ability to print the form, submit the form digitally and then enclose a paper with your name and email with your donations. Make sure <b>the form is inside your box or bag</b> before you drop it off, and you are all set!</p>
+            </div>
+
+            <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfLIohhGZJXikOELyMrmxievLwnDx5MzUW6N9QwY8QCFRyD8Q/viewform?usp=sf_link','_blank');" class="btn center">Donation Survey</button>
+            
+            <div class="question center">
+                <p>Thank you for all of your time and help with our mission. If you are interested in joining our team, see our “volunteer” tab for more information on how to apply. 
+
+                   Check out our “who we support” page on our “donate” tab to see why we do what we do!
+                    </p>
+            </div>
         </section>
 
         <section class="center arrows">
-            <p><button class="btn arrow left" onclick="window.location.pathname = '/about-us/meet-our-team.html';">Meet Our Team</button>
+            <p><button class="btn arrow left" onclick="window.location.pathname = '/donate/crafts-materials/';">Donate Materials</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <button class="btn arrow right" onclick="window.location.pathname = '/about-us/who-we-support.html';">Who We Support</button></p>
+                <button class="btn arrow right" onclick="window.location.pathname = '/donate/';">Donate Money</button></p>
         </section>
     </div>
     
