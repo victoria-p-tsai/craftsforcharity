@@ -85,12 +85,13 @@ $dark-grey: #767676;
             .logo-pic img {
                 margin: 10px 0 0 70px;
                 display: inline-block;
-                height: 70px;
+                height: 60px;
             }
 
             .logo-text {
                 display: block;
-                font-size: 1.3em;
+                margin-top: 15px;
+                font-size: 2em;
             }
         }
 
@@ -345,23 +346,21 @@ $dark-grey: #767676;
     header {
         align-items: center;
         
-        .logo-container {
-            h1 {
-                font-size: 1.7em;
-            }
+        h1 {
+            font-size: 1.7em;
+        }
 
-            .logo-text {
-                padding-top: 5px;
-                
-                .logo-text-wrap {
-                    display: block;
-                }
+        /* .logo-text {
+            padding-top: 5px;
+            
+            .logo-text-wrap {
+                display: block;
             }
+        } */
 
-            .logo .logo-pic img {
-                margin-left: 30px;
-                height: 60px;
-            }
+        .logo .logo-pic img {
+            margin-left: 30px;
+            height: 60px;
         }
     }
 
@@ -379,6 +378,24 @@ $dark-grey: #767676;
     }
 }
 
+
+
+@media screen and (max-width: 575px) and (min-width: 400px) {
+    .not-mobile {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .card-deck {
+        img {
+            bottom: 25px;
+            height: 200px;
+        }
+    }
+}
+
+
 /* for phones */
 @media screen and (max-width: 430px) {
     header {
@@ -390,9 +407,13 @@ $dark-grey: #767676;
             }
 
             .logo-text {
-                padding-top: 5px;
+                margin-top: 5px;
                 margin-left: 10px;
-                font-size: 1em;
+                // font-size: 1em;
+
+                .logo-text-wrap {
+                    display: block;
+                }
             }
         }
 
@@ -514,7 +535,7 @@ $dark-grey: #767676;
 }
 
 /* logo text disappears */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     header .logo .logo-text {
         display: none;
     }

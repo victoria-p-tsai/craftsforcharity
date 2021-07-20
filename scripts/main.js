@@ -29,7 +29,7 @@ $('.collapsible').click(function(){
 
 
 //slideshow animation: automatic + manual
-var myIndex = 0;
+/* var myIndex = 0;
 carousel();
 
 function carousel() {
@@ -42,12 +42,12 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+} */
 
 
 //privacy policy popup
 // Get the modal
-var modal = document.getElementById("myModal");
+/* var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 // var btn = document.getElementById("myBtn");
@@ -70,4 +70,4 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+} */

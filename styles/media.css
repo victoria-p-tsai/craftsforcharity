@@ -63,11 +63,12 @@
   header .logo .logo-pic img {
     margin: 10px 0 0 70px;
     display: inline-block;
-    height: 70px;
+    height: 60px;
   }
   header .logo .logo-text {
     display: block;
-    font-size: 1.3em;
+    margin-top: 15px;
+    font-size: 2em;
   }
   header .logo-text-wrap {
     display: inline;
@@ -299,17 +300,18 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    /* .logo-text {
+            padding-top: 5px;
+            
+            .logo-text-wrap {
+                display: block;
+            }
+        } */
   }
-  header .logo-container h1 {
+  header h1 {
     font-size: 1.7em;
   }
-  header .logo-container .logo-text {
-    padding-top: 5px;
-  }
-  header .logo-container .logo-text .logo-text-wrap {
-    display: block;
-  }
-  header .logo-container .logo .logo-pic img {
+  header .logo .logo-pic img {
     margin-left: 30px;
     height: 60px;
   }
@@ -329,6 +331,19 @@
   }
 }
 
+@media screen and (max-width: 575px) and (min-width: 400px) {
+  .not-mobile {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .card-deck img {
+    bottom: 25px;
+    height: 200px;
+  }
+}
+
 /* for phones */
 @media screen and (max-width: 430px) {
   header .logo .logo-pic img {
@@ -337,9 +352,11 @@
     margin-left: 30px;
   }
   header .logo .logo-text {
-    padding-top: 5px;
+    margin-top: 5px;
     margin-left: 10px;
-    font-size: 1em;
+  }
+  header .logo .logo-text .logo-text-wrap {
+    display: block;
   }
   header.sticky .logo .logo-pic img {
     height: 50px;
@@ -434,7 +451,7 @@
 }
 
 /* logo text disappears */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   header .logo .logo-text {
     display: none;
   }

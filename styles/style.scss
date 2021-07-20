@@ -193,14 +193,26 @@ html {
 .yellow {
     color: $yellow;
 }
+.yellow-bg {
+    background-color: $yellow;
+}
 .light-blue {
     color: $light-blue;
+}
+.light-blue-bg {
+    background-color: $light-blue;
 }
 .dark-blue {
     color: $dark-blue;
 }
+.dark-blue-bg {
+    background-color: $dark-blue;
+}
 .grey {
     color: $light-grey;
+}
+.grey-bg {
+    background-color: $light-grey;
 }
 .white {
     color: white;
@@ -292,28 +304,34 @@ b {
 .white-btn {
     background-color: white;
     color: $light-blue;
+    // border: 1px solid transparent;
 
     &:hover {
         background-color: transparent;
         color: white;
+        // border: 1px solid white;
     }
 }
 .lightblue-btn {
     background-color: $light-blue;
     color: $dark-blue;
+    // border: 1px solid transparent;
 
     &:hover {
         background-color: transparent;
         color: $light-blue;
+        // border: 1px solid $light-blue;
     }
 }
 .darkblue-btn {
     background-color: $dark-blue;
-    color: $light-blue;
+    color: white;
+    // border: 1px solid transparent;
 
     &:hover {
         background-color: transparent;
         color: $dark-blue;
+        // border: 1px solid $dark-blue;
     }
 }
 
@@ -334,20 +352,6 @@ b {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: " \f061"; //arrow-right
-}
-
-
-.soft-grey-length {
-    background-color: $light-grey;
-    width: 100%;
-    border-radius: 5px;
-    position: relative;
-    margin-bottom: 15px;
-    transition: color 0.3s;
-
-    &:hover {
-        color: $dark-blue;
-    }
 }
 
 
@@ -389,7 +393,10 @@ b {
 
 .title-borderbottom { //h2
     border-bottom: 4px dashed $yellow;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    line-height: 1.5em;
+    width: fit-content;
+    margin: 0 auto 20px;
 }
 
 
@@ -428,7 +435,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1000;
-    padding: 0 100px;
+    padding: 5px 100px;
     width: 100%;
     top: 0;
     left: 0;
@@ -437,11 +444,11 @@ header {
     outline: none;
 
     &.sticky {
-        padding: 5px 100px;
+        padding: 0 100px;
         background: rgba(255,255,255,1);
 
         .logo .logo-pic img {
-            height: 60px;
+            height: 50px;
         }
     }
 
@@ -457,6 +464,12 @@ header {
         }
         &:hover a {
             color: black;
+        }
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
         }
     }
 }
@@ -507,22 +520,12 @@ nav {
 
         li {
             list-style: none;
-            text-align: center;
             padding-left: 0;
-            position: relative;
             font-weight: bold;
             letter-spacing: 2px;
             font-size: .95em;
             color: $dark-grey;
             white-space: nowrap;
-
-            a {
-                text-decoration: none;
-            }
-            
-            &:hover {
-                color: black;
-            }
         }
 
         .head {
@@ -599,6 +602,10 @@ nav {
     display: block;
 }
 
+#menu-icon, #menu-icon ~ label, input[type=checkbox] {
+    display: none;
+}
+
 .mobile-container { //for indiv member positions when hamburger icon (mobile)
     display: none;
 }
@@ -612,10 +619,6 @@ nav {
     margin-bottom: 0;
 }
 
-#menu-icon, #menu-icon ~ label, input[type=checkbox] {
-    display: none;
-}
-
 .content {
     margin: 40px auto;
     padding: 80px 1.5rem 0;
@@ -624,11 +627,10 @@ nav {
     min-height: calc(100vh - 517px); //guess + check lol
 }
 
-section:not(.our-purpose) {
+section {
     width: 100%;
-    padding: 25px 0;
-    margin-right: auto;
-    margin-left: auto;
+    // padding: 25px 0;
+    margin: 40px auto;
 
     &::before { //when clicking on in-page links (#), allows space for header
         display: block; 
@@ -647,17 +649,15 @@ section:not(.our-purpose) {
 
 h2, h3 {
     font-weight: bold;
-    line-height: 2em;
+    line-height: 1.7em;
     letter-spacing: 1.75px;
 }
-
 h2 {
     text-transform: uppercase;
     font-size: 36px;
     color: $light-blue;
     text-align: center;
 }
-
 h3 {
     font-size: 1.2em;
 }
@@ -925,12 +925,6 @@ footer {
 
 /* --------------------------------------------------------------------- */
 /* HOME */
-
-/* .home-content section  {
-    max-width: 100%;
-    padding: 0 24%;
-    width: 100%;
-} */
 
 .banner {
     max-height: 670px;
@@ -1271,47 +1265,78 @@ footer {
 /* --------------------------------------------------------------------- */
 /* MEMBER POSITION OVERVIEW */
 
+.positions {
+    h3 {
+        color: $dark-blue;
+        width: fit-content;
+        padding: 0 10px;
+        border-radius: 10px;
+    }
 
-.member-cards {
-
-    .mem-card {
-        text-align: center;
-        padding: 40px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-
-        h3 {
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        img {
-            width: 100%;
-            object-fit: cover;
-            margin-bottom: 40px;
-        }
-
-        &#log-card {
-            background: $yellow;
-            color: black;
-            border-bottom: 10px solid $light-blue;
-        }
-        &#outr-card {
-            background: $light-blue;
-            color: white;
-            border-bottom: 10px solid $dark-blue;
-        }
-        &#teach-card {
-            background: $dark-blue;
-            color: $light-blue;
-            border-bottom: 10px solid $yellow;
-        }
-
-        .btn {
-            width: 100%;
+    .card-deck {
+        margin: 10px 0 30px;
+    
+        .card {
+            border: 0;
+            border-radius: 15px;
+            align-items: center;
+    
+            button {
+                margin-bottom: 30px;
+            }
+    
+            img {
+                position: absolute;
+                left: 0;
+                margin-top: 80px;
+                width: 100%;
+                padding: 10px 30px;
+                transition: 0.3s;
+                z-index: 10;
+            }
+    
+            .card-header {
+                position: relative;
+                background-color: transparent;
+                border: 0;
+                padding-top: 20px;
+                padding-bottom: 0;
+            }
+    
+            .card-body {
+                display: flex;
+                align-items: center;
+            }
+    
+            .card-text {
+                opacity: 0;
+                transition: 0.3s;
+            }
+    
+            .card-footer {
+                // display: none;
+                opacity: 0;
+                padding-top: 0;
+                background-color: transparent;
+                border: 0;
+                transition: 0.3s;
+            }
+    
+            &:hover {
+                img {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                .card-text, .card-footer {
+                    display: block;
+                    opacity: 1;
+                    z-index: 100;
+                }
+            }
         }
     }
 }
+
 
 
 /* --------------------------------------------------------------------- */
@@ -1451,3 +1476,10 @@ footer {
         }
     }
 } 
+
+
+
+
+.mobile {
+    display: none;
+}

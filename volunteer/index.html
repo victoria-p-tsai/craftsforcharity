@@ -38,7 +38,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/274a941fd0.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- STYLES -->
     <link href="/styles/style.css" type="text/css" rel="stylesheet">
     <link href="/styles/media.css" type="text/css" rel="stylesheet">
@@ -64,7 +64,7 @@
     <div class="content">
         <h2 class="title">MEMBER POSITIONS</h2>
 
-        <p class="center paragraph">Prospective volunteers of Crafts for Charity may apply for <strong>multiple teams across three general departments: Logistics, Outreach, and Teaching</strong>. Each team has different tasks and responsibilities, which you may learn more about down below.</p>
+        <p class="center">Prospective volunteers of Crafts for Charity may apply for <strong>multiple teams across three general departments: Logistics, Outreach, and Teaching</strong>. Each team has different tasks and responsibilities, which you may learn more about down below.</p>
         <p class="center">Volunteers are essential to Crafts for Charity and we appreciate each and every volunteer that works for us! If you are interested in volunteering, please read through the team descriptions, the general requirements, and then fill out an application here:</p>
 
         <button class="btn yellow-btn center right large" onclick="window.location.pathname = '/volunteer/volunteer-application.html';">Apply Now!</button>
@@ -78,10 +78,10 @@
                 <li>Build stronger interpersonal and technical skills</li>
             </ul>
     
-            <h2>GENERAL REQUIREMENTS</h2>
+            <h2 class="text-left">GENERAL REQUIREMENTS</h2>
             <p>To volunteer, you must be between 14-17 years of age. If accepted, you must be committed to volunteer for at least 2 months.</p>
     
-            <h2>DESIRABLE QUALIFICATIONS</h2>
+            <h2 class="text-left">DESIRABLE QUALIFICATIONS</h2>
             <p>Teams have more specific qualifications, but in general, we look for these attributes in an applicant:</p>
             <ul>
                 <li>Strong communication and writing skills</li>
@@ -90,28 +90,43 @@
         </section>
 
 
-        <!-- <div class="row member-cards justify-content-around">
-            <div class="col-sm-3 mem-card" id="log-card">
-                <img src="/CFC Banners/logistics.svg" alt="">
-                <h3 class="light-blue">Logistics</h3>
-                <p>Logistics members work together to create resources and guides, help with recruitment and expansion, and manage administrative work.</p>
-                <button class="lightblue-btn btn center right" onclick="window.location.pathname='/volunteer/logistics/';">Learn More</button>
-            </div>
+        <section class="positions">
+            <h3 class="not-mobile center"><i class="fas fa-arrow-down"></i> Hover over to learn more! <i class="fas fa-arrow-down"></i></h3>
+            <h3 class="mobile center"><i class="fas fa-arrow-down"></i> Tap to learn more! <i class="fas fa-arrow-down"></i></h3>
 
-            <div class="col-sm-3 mem-card" id="outr-card">
-                <img src="/CFC Banners/outreach.svg" alt="">
-                <h3 class="dark-blue">Outreach</h3>
-                <p>The Outreach department is responsible for promoting Crafts for Charity through our website, social media, and public relations.</p>
-                <button class="darkblue-btn btn center right" onclick="window.location.pathname='/volunteer/outreach/';">Learn More</button>
+            <div class="card-deck">
+                <div class="card light-blue-bg center" id="log-card">
+                    <h2 class="card-header white">LOGISTICS</h2>
+                    <div class="card-body">
+                        <img src="/CFC Banners/logistics.svg" alt="">
+                        <p class="card-text white">Teams in the logistics department work together to ensure that all operations in CFC are working effectively and smoothly.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn right white-btn" onclick="window.location.pathname = '/volunteer/logistics/';">Learn More</button>
+                    </div>
+                </div>
+                <div class="card yellow-bg center" id="out-card">
+                    <h2 class="card-header dark-blue">OUTREACH</h2>
+                    <div class="card-body">
+                        <img src="/CFC Banners/outreach.svg" alt="">
+                        <p class="card-text">Teams in the Outreach department are responsible for promoting CFC and expanding our connections with various groups and members of our community.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn right darkblue-btn" onclick="window.location.pathname = '/volunteer/outreach/';">Learn More</button>
+                    </div>
+                </div>
+                <div class="card dark-blue-bg center" id="teach-card">
+                    <h2 class="card-header">TEACHING</h2>
+                    <div class="card-body">
+                        <img src="/CFC Banners/teaching.svg" alt="">
+                        <p class="card-text white">Our teachers work together to provide free virtual craft instruction to students of all ages and skill levels. Currently, we offer classes in knitting and crocheting.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn right lightblue-btn" onclick="window.location.pathname = '/volunteer/teaching/';">Learn More</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-sm-3 mem-card" id="teach-card">
-                <img src="/CFC Banners/teaching.svg" alt="">
-                <h3 class="yellow">Teaching</h3>
-                <p>Crafts for Charity Teachers work together to teach our virtual knitting and crocheting classes and help students learn more about CFC.</p>
-                <button class="yellow-btn btn center right" onclick="window.location.pathname='/volunteer/teaching/';">Learn More</button>
-            </div>
-        </div> -->
+        </section>
 
 
 
@@ -131,31 +146,35 @@
                 <button class="collapsible"><h2>What is the timeline for the application process?</h2></button>
                 <div class="coll-content">
                     <p>After we recieve your application, expect us to contact you back within two weeks. If you do not receive a response within a week, please contact us at info@craftsforcharity.com. Applications are currently open, but may close and/or stay open based on demand.</p>
-                    </div>
+                </div>
             </div>
 
             <div class="question">
                 <button class="collapsible"><h2>Are there any dues I need to pay to join?</h2></button>
                 <div class="coll-content">
-                    <p>No, we do not require anyone to pay dues; however, we appreciate all donations of money and/or craft supplies!</p>                </div>
+                    <p>No, we do not require anyone to pay dues; however, we appreciate all donations of money and/or craft supplies!</p>
+                </div>
             </div>
             
             <div class="question">
                 <button class="collapsible"><h2>Do I have to live in or near Maryland to volunteer?</h2></button>
                 <div class="coll-content">
-                    <p>No, although CFC is based in Maryland, we welcome volunteers from all over the world! Our organization currently operates mainly virtually so we do not require volunteers to be located near us.</p>                </div>
+                    <p>No, although CFC is based in Maryland, we welcome volunteers from all over the world! Our organization currently operates mainly virtually so we do not require volunteers to be located near us.</p>
+                </div>
             </div>
 
             <div class="question">
                 <button class="collapsible"><h2>I only want to make rectangles and/or scarves. Where can I find more information?</h2></button>
                 <div class="coll-content">
-                    <p>We appreciate all knitted and/or crocheted items! Please refer to <a href="/donate/donate-materials.html">our Donate Materials page</a> to find more information.</p>                </div>
+                    <p>We appreciate all knitted and/or crocheted items! Please refer to <a href="/donate/donate-materials.html">our Donate Materials page</a> to find more information.</p>
+                </div>
             </div>
             
             <div class="question">
                 <button class="collapsible"><h2>Can I earn service hours from volunteering with Crafts for Charity?</h2></button>
                 <div class="coll-content">
-                    <p>Yes, you will be eligible to receive service hours for all of time you volunteer with Crafts for Charity.</p>                </div>
+                    <p>Yes, you will be eligible to receive service hours for all of time you volunteer with Crafts for Charity.</p>
+                </div>
             </div>
 
             <div class="question">
@@ -163,59 +182,50 @@
                 <div class="coll-content">
                     <p>Browse through other pages in our website for more information. You can also contact us at 
                         <a href="/contact/" target="_blank">info@craftsforcharity.com</a> or contact our instagram 
-                        <a href="https://www.instagram.com/crafts_forcharity/" target="_blank">@crafts_forcharity</a>.</p>                </div>
+                        <a href="https://www.instagram.com/crafts_forcharity/" target="_blank">@crafts_forcharity</a>.
+                    </p>
+                </div>
             </div>
-
-            <!-- <div class="question">
-                <h3>I’m interested, how do I join?</h3>
-                <p>Fill out the application here: </p>
-
-                <button class="btn center application right" onclick="window.location.pathname = './volunteer-application.html';">Volunteer Application</button>
-            </div>
-
-            <div class="question">
-                <h3>What is the timeline for the application process?</h3>
-                <p>We will be accepting applications for each season a month prior to the start of each season and up to 1 week before the start of each season.</p>
-                <ul>
-                    <li>Summer Applications: June 1st - June 24th</li>
-                    <li>Fall Applications: August 15th - September 8th</li>
-                    <li>Winter Applications: November 11th - December 4th</li>
-                    <li>Spring Applications: February 12th - March 5th</li>
-                </ul>
-            </div>
-
-            <div class="question">
-                <h3>What are the dates for each season?</h3>
-                <p>The dates for each season are as follows:</p>
-                <ul>
-                    <li>Summer: 7/1 - 9/1, 9 weeks in total</li>
-                    <li>Fall: 9/15 - 11/20, 11/30 - 12/4, 10 weeks in total</li>
-                    <li>Winter: 12/11 - 12/23, 1/2 - 1/25, 2/1 -  3/5, 10.5 weeks in total</li>
-                    <li>Spring: 3/12 - 4/1, 4/7 - 6/1, 11 weeks in total</li>
-                </ul>
-            </div>
-
-            <div class="question">
-                <h3>Are there any dues I need to pay to join?</h3>
-                <p>No, we do not require anyone to pay dues, however, we appreciate all donations of money and/or craft supplies! For teaching members, currently, we require you to use your own yarn and craft supplies because we do not have a safe way to distribute materials at the moment. When it is safer, we will try to give materials to anyone who needs them for free.</p>
-            </div>
-
-            <div class="question">
-                <h3>I only want to make rectangles and/or scarves. Where can I find more information?</h3>
-                <p>We appreciate all knitted and/or crocheted items! Please refer to *insert donate materials page link* to find more information.</p>
-            </div>
-            
-            <div class="question">
-                <h3>Where can I find more information about CFC?</h3>
-                <p>Browse through other pages in our website for more information. You can also contact us at 
-                    <a href="/contact.html" target="_blank">info@craftsforcharity.com</a> or contact our instagram 
-                    <a href="https://www.instagram.com/crafts_forcharity/" target="_blank">@crafts_forcharity</a>.</p>
-            </div> -->
         </section>
     </div>
     
     <div id="footer"></div>
 
     <script type="text/javascript" src="/scripts/main.js"></script>
+    <script>
+        let mql = window.matchMedia('(max-width: 575px)').matches;
+        if (mql) {
+            console.log("mobile");
+            $('#log-card').on('click', function() {
+                if ($('#log-card img').css('opacity') == 0)
+                    $('#log-card img').css({'opacity': 1});
+                else $('#log-card img').css({'opacity': 0, 'z-index': 5});
+
+                if ($('#log-card .card-text, #log-card .card-footer').css('opacity') == 0)
+                    $('#log-card .card-text, #log-card .card-footer').css({'opacity': 1, 'z-index': 4});
+                else $('#log-card .card-text, #log-card .card-footer').css({'opacity': 0, 'z-index': 100});
+            });
+
+            $('#out-card').on('click', function() {
+                if ($('#out-card img').css('opacity') == 0)
+                    $('#out-card img').css({'opacity': 1});
+                else $('#out-card img').css({'opacity': 0, 'z-index': 5});
+                
+                if ($('#out-card .card-text, #out-card .card-footer').css('opacity') == 0)
+                    $('#out-card .card-text, #out-card .card-footer').css({'opacity': 1, 'z-index': 4});
+                else $('#out-card .card-text, #out-card .card-footer').css({'opacity': 0, 'z-index': 100});
+            });
+
+            $('#teach-card').on('click', function() {
+                if ($('#teach-card img').css('opacity') == 0)
+                    $('#teach-card img').css({'opacity': 1});
+                else $('#teach-card img').css({'opacity': 0, 'z-index': 5});
+                
+                if ($('#teach-card .card-text, #teach-card .card-footer').css('opacity') == 0)
+                    $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 1, 'z-index': 4});
+                else $('#teach-card .card-text, #teach-card .card-footer').css({'opacity': 0, 'z-index': 100});
+            });
+        }
+    </script>
 </body>
 </html>
