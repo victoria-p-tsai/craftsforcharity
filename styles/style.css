@@ -1130,33 +1130,17 @@ footer .policy {
 }
 
 /* OUR TEAM */
-.team-content div {
-  display: block;
-  min-height: 300px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  margin-top: 50px;
+.team-content img {
+  margin-bottom: 25px;
   width: 100%;
-}
-
-.team-content div img {
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  margin-bottom: 30px;
-  max-width: 100%;
-  width: 300px;
   border-radius: 10px;
 }
 
-.team-content div h2 {
-  text-align: left;
+.team-content .members h2 {
+  line-height: 1em;
 }
 
-.team-content div h3 {
+.team-content h3 {
   color: #454F99;
 }
 

@@ -1091,29 +1091,20 @@ footer {
 /* OUR TEAM */
 
 .team-content {
-    div {
-        display: block;
-        min-height: 300px;
-        height: max-content;
-        margin-top: 50px;
+    img {
+        margin-bottom: 25px;
         width: 100%;
+        border-radius: 10px;
+    }
 
-        img {
-            @include center();
-            position: relative;
-            margin-bottom: 30px;
-            max-width: 100%;
-            width: 300px;
-            border-radius: 10px;
-        }
-
+    .members {
         h2 {
-            text-align: left;
+            line-height: 1em;
         } 
+    }
 
-        h3 {
-            color: $dark-blue;
-        }
+    h3 {
+        color: $dark-blue;
     }
 }
 
