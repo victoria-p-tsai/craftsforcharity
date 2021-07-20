@@ -1442,6 +1442,10 @@ footer .policy {
   padding-top: 30px;
 }
 
+.faq-content .collapsible .bigger {
+  font-size: 1.5em;
+}
+
 .faq-content .collapsible .coll-content {
   margin-bottom: 20px;
   margin-left: 5px;
