@@ -96,8 +96,8 @@
     background-color: white;
     width: 100%;
     overflow: scroll;
-    -webkit-transition: height 0.2s;
-    transition: height 0.2s;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
     padding-bottom: 10px;
     padding-right: 10px;
   }
@@ -128,7 +128,7 @@
     color: black !important;
   }
   #menu-icon:checked ~ nav {
-    height: 355%;
+    height: 330px;
     -webkit-box-shadow: 0px 10px 16px -16px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 16px -16px rgba(0, 0, 0, 0.2);
   }
@@ -139,9 +139,6 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: " \f0d8";
-  }
-  #classes, #donate {
-    margin-right: 3px;
   }
   .dropdown-content {
     position: relative;
@@ -313,11 +310,7 @@
     height: 60px;
   }
   header .logo .logo-text {
-    margin-top: 5px;
-    margin-left: 10px;
-  }
-  header .logo .logo-text .logo-text-wrap {
-    display: block;
+    display: none;
   }
   header.sticky .logo .logo-pic img {
     height: 50px;
@@ -327,12 +320,12 @@
   }
   #menu-icon + label {
     right: 35px;
-    top: 40px;
+    top: 35px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .content {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
   .title {
@@ -412,12 +405,4 @@
 }
 
 /* logo text disappears */
-@media screen and (max-width: 380px) {
-  header .logo .logo-text {
-    display: none;
-  }
-  .content {
-    padding-top: 30px;
-  }
-}
 /*# sourceMappingURL=media.css.map */

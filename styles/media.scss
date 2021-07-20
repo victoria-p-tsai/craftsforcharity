@@ -123,7 +123,7 @@ $dark-grey: #767676;
         background-color: white;
         width: 100%;
         overflow: scroll;
-        transition: height 0.2s;
+        transition: height 0.3s;
         padding-bottom: 10px;
         padding-right: 10px;
 
@@ -160,7 +160,7 @@ $dark-grey: #767676;
     
 
     #menu-icon:checked ~ nav {
-        height: 355%;
+        height: 330px;
         box-shadow: 0px 10px 16px -16px rgba(0,0,0,0.2);
     }
 
@@ -172,10 +172,6 @@ $dark-grey: #767676;
             font-weight: 900;
             content: " \f0d8"; //caret-up
         }
-    }
-
-    #classes, #donate {
-        margin-right: 3px;
     }
 
     .dropdown-content {
@@ -357,13 +353,7 @@ $dark-grey: #767676;
             }
 
             .logo-text {
-                margin-top: 5px;
-                margin-left: 10px;
-                // font-size: 1em;
-
-                .logo-text-wrap {
-                    display: block;
-                }
+                display: none;
             }
         }
 
@@ -378,12 +368,12 @@ $dark-grey: #767676;
 
     #menu-icon + label {
         right: 35px;
-        top: 40px;
+        top: 35px;
         transform: translateY(-50%);
     }
 
     .content {
-        padding-top: 50px;
+        padding-top: 30px;
         padding-bottom: 0;
     }
 
@@ -486,11 +476,4 @@ $dark-grey: #767676;
 
 /* logo text disappears */
 @media screen and (max-width: 380px) {
-    header .logo .logo-text {
-        display: none;
-    }
-
-    .content {
-        padding-top: 30px;
-    }
 }
