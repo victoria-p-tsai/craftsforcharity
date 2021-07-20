@@ -73,7 +73,7 @@
     display: inline;
   }
   header .btn {
-    margin: 10px 28px 0;
+    margin: 10px 25px 0;
   }
   #menu-icon + label {
     display: block;
@@ -123,6 +123,9 @@
   }
   nav ul .donate-dropdown .dropdown-content {
     margin-top: 0;
+  }
+  nav .not-mobile {
+    display: none;
   }
   input[type=checkbox]:checked ~ label {
     color: black !important;

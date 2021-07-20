@@ -99,7 +99,7 @@ $dark-grey: #767676;
         }
 
         .btn {
-            margin: 10px 28px 0;
+            margin: 10px 25px 0;
         }
     }
 
@@ -151,6 +151,10 @@ $dark-grey: #767676;
                     margin-top: 0;
                 }
             }
+        }
+
+        .not-mobile {
+            display: none;
         }
     }
 
