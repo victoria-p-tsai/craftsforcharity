@@ -185,7 +185,7 @@ $dark-grey: #767676;
         background-color: white;
         height: 0;
         overflow: hidden;
-        width: 250px;
+        width: 500px;
         box-shadow: none;
         margin: 0 0 0 auto;
         transition: 0.3s;
@@ -198,20 +198,20 @@ $dark-grey: #767676;
     }
 
     #aboutus-dropdown:checked ~ .dropdown-content {
-        height: 125px; //(# of items * 40) + 5 (- 5 * #of lines that wrap)
+        height: 125px; //(# of items * 40) + 5
     }
     #classes-dropdown:checked ~ .dropdown-content {
         height: 125px;
     }
+    #volunteer-dropdown:checked ~ .dropdown-content {
+        height: 235px; // minus 10
+    }
     #donate-dropdown:checked ~ .dropdown-content {
         height: 175px;
     }
-    #volunteer-dropdown:checked ~ .dropdown-content {
-        height: 260px;
-    }
-    #donatebtn-dropdown:checked ~ .dropdown-content {
+    /*#donatebtn-dropdown:checked ~ .dropdown-content {
         height: 165px;
-    }
+    }*/
 
     .side {
         display: block;
