@@ -860,6 +860,11 @@ table :not(thead) tr:nth-child(odd) {
   margin-top: 50px;
 }
 
+.arrows .arrow {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 footer {
   background-color: #f1f1f1;
   height: -webkit-max-content;
