@@ -131,6 +131,10 @@ html a {
   color: #454649;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .home #home-nav,
 .about-us #about-nav,
 .classes #classes-nav,
@@ -204,9 +208,22 @@ html a {
   color: white;
 }
 
+.mark-white {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 b {
   font-weight: bold;
   color: #454F99;
+}
+
+mark {
+  background-color: #FFE05C;
 }
 
 .title {
@@ -255,19 +272,10 @@ b {
 
 .btn.large {
   font-size: 1.5em;
-  width: 250px;
+  width: 100%;
+  max-width: 275px;
   padding: 15px;
   margin-bottom: 20px;
-}
-
-.btn.learn-more {
-  color: white;
-  background-color: #FFE05C;
-  width: 175px;
-}
-
-.btn.learn-more:hover {
-  background-color: #454F99;
 }
 
 .yellow-btn {
@@ -278,6 +286,18 @@ b {
 .yellow-btn:hover {
   background-color: #6DBFEB;
   color: white;
+}
+
+.yellowalt-btn {
+  color: black;
+  background-color: #FFE05C;
+  width: 100%;
+  max-width: 200px;
+}
+
+.yellowalt-btn:hover {
+  color: white;
+  background-color: #454F99;
 }
 
 .black-btn {
@@ -308,6 +328,16 @@ b {
 .lightblue-btn:hover {
   background-color: transparent;
   color: #6DBFEB;
+}
+
+.lightbluealt-btn {
+  background-color: #6DBFEB;
+  color: white;
+}
+
+.lightbluealt-btn:hover {
+  background-color: #454F99;
+  color: white;
 }
 
 .darkblue-btn {
@@ -548,6 +578,10 @@ nav ul .head.donate-lbl {
   white-space: nowrap;
   margin: 0;
   padding: 0;
+}
+
+nav ul .head:hover {
+  color: black;
 }
 
 nav ul .donate-dropdown {
@@ -1350,12 +1384,30 @@ footer .policy {
 }
 
 /* --------------------------------------------------------------------- */
-/* SERVICE HOURS */
-.srvhrs-content img {
-  max-width: 670px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+/* DONATE */
+.don-content .knitting {
+  height: 200px;
+  margin-bottom: -75px;
+  padding-right: 60px;
+}
+
+.don-content .cards {
+  height: 140px;
+  left: calc(52% + 80px);
+  top: -45px;
+}
+
+.don-content .mail {
+  height: 250px;
+  left: calc(30% - 200px);
+  top: -60px;
+  z-index: -5;
+}
+
+.don-content .check {
+  height: 190px;
+  right: calc(30% - 200px);
+  z-index: -5;
 }
 
 /* --------------------------------------------------------------------- */

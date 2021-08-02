@@ -63,34 +63,38 @@
 
     <div class="don-content content">
         <h2 class="title">DONATE</h2>
-
-        <section>
-            <div class="center question answer">
-                <form action="https://www.paypal.com/donate" method="post" target="_blank">
-                    <input type="hidden" name="cmd" value="_donations" />
-                    <input type="hidden" name="business" value="william@roboticsforall.net" />
-                    <input type="hidden" name="item_name" value="To raise money for craft materials and classes" />
-                    <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-            </div>
-        </section>
         
         <section>
             <div class="question">
-                <h3>Where do your donations go?</h3>
-                <p>Any donations will go directly to provide materials and tools for classes. They will help us purchase
-                    materials for classes such as yarn, knitting needles, crochet hooks, tripods, and other materials to
-                    help the teachers and students. This way our classes can work more efficiently and we can work
-                    better to help our community.</p>
+                <h3>Why Donate?</h3>
+                <p>Donations will go directly to provide materials and tools for classes. They will help us purchase materials for classes such as yarn, knitting needles, crochet hooks, tripods, and other materials to help the teachers and students. This way our classes can work more efficiently and we can work better to help our community.</p>
             </div>
 
-            <div class="question">
-                <h3>It’s tax-deductible!</h3>
-                <p>Crafts for Charity is fiscally sponsored by Robotics for All, Inc, a 501c(3) organization, so all
-                    donations are tax-deductible. (This is why the donation is first going to Robotics for All, but all
-                    your donations will be transferred to Crafts for Charity.)</p>
+            <img src="/CFC Banners/button.png" class="knitting center" alt="">
+            <form action="https://www.paypal.com/donate" method="post" target="_blank" class="center">
+                <input type="hidden" name="cmd" value="_donations" />
+                <input type="hidden" name="business" value="william@roboticsforall.net" />
+                <input type="hidden" name="item_name" value="To raise money for craft materials and classes" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="submit" name="submit" title="PayPal - The safer, easier way to pay online!" value="DONATE" alt="Donate with PayPal button" class="btn yellow-btn large" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+
+            <p class="center">The donation is first going to Robotics for All, but all your donations will be transferred to Crafts for Charity. CFC is fiscally sponsored by Robotics for All, Inc, a 501c(3) organization, so all donations are <strong>tax-deductible</strong>!</p>
+
+            <!-- <div class="position-relative mt-5">
+                <img src="/CFC Banners/cards.png" alt="" class="position-absolute cards">
+                <button class="btn lightbluealt-btn large center" onclick="window.location.pathname = '/about-us/';">CREDIT / DEBIT</button>
+                <p class="center">To donate by credit or debit card, use the button above.</p>
+            </div> -->
+
+            <div class="position-relative mt-5">
+                <img src="/CFC Banners/mail.png" alt="" class="position-absolute mail">
+                <img src="/CFC Banners/check.png" alt="" class="position-absolute check">
+                <h4 class="center mark-white">To donate by CHECK, please mail to:
+                    <br/><br/>
+                    <b>7445 Cherry Tree Drive<br/>
+                        Fulton, MD 20759</b></h4>
             </div>
         </section>
 
