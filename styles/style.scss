@@ -997,66 +997,6 @@ footer {
     font-size: 32px;
 }
 
-.actions {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: space-between;
-    margin: 40px 0 0;
-    padding: 30px 7% 40px;
-
-    .actions-items {
-        display: block;
-        width: 480px;
-        min-width: 380px;
-        padding: 20px 40px;
-        height: calc(max-content + 5px);
-        margin: 10px 20px;
-        z-index: 10;
-        border-radius: 5px;
-        text-align: center;
-        position: relative;
-        /* box-shadow: 0 0 1.5rem rgba(0,0,0,0.4); */
-
-        img {
-            width: 100%;
-            height: 50%;
-            object-fit: cover;
-            margin: 20px 0;
-            border: 5px solid white;
-        }
-
-        .btn {
-            position: relative;
-            bottom: 0;
-        }
-    }
-}
-
-.actions .actions-items h3, .member-cards .member-card h3 {
-    margin-bottom: 5px;
-}
-
-.actions #learn {
-    margin-top: 60px;
-    background: $yellow;
-    color: black;
-    border-bottom: 10px solid $light-blue;
-}
-
-.actions #create {
-    margin-top: 60px;
-    background: $light-blue;
-    border-bottom: 10px solid $dark-blue;
-    color: white;
-}
-
-.actions #donate {
-    margin-top: 60px;
-    background: $dark-blue;
-    border-bottom: 10px solid $yellow;
-    color: $light-blue;
-}
-
 .contacts {
     display: flex;
     justify-content: center;
@@ -1166,11 +1106,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-#virtual-classes .btn {
-    width: 300px;
-    font-size: 1.3em;
 }
 
 #survey h3 {

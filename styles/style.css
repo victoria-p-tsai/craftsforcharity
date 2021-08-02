@@ -1024,75 +1024,6 @@ footer .policy {
   font-size: 32px;
 }
 
-.actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
-  margin: 40px 0 0;
-  padding: 30px 7% 40px;
-}
-
-.actions .actions-items {
-  display: block;
-  width: 480px;
-  min-width: 380px;
-  padding: 20px 40px;
-  height: calc(-webkit-max-content + 5px);
-  height: calc(-moz-max-content + 5px);
-  height: calc(max-content + 5px);
-  margin: 10px 20px;
-  z-index: 10;
-  border-radius: 5px;
-  text-align: center;
-  position: relative;
-  /* box-shadow: 0 0 1.5rem rgba(0,0,0,0.4); */
-}
-
-.actions .actions-items img {
-  width: 100%;
-  height: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 20px 0;
-  border: 5px solid white;
-}
-
-.actions .actions-items .btn {
-  position: relative;
-  bottom: 0;
-}
-
-.actions .actions-items h3, .member-cards .member-card h3 {
-  margin-bottom: 5px;
-}
-
-.actions #learn {
-  margin-top: 60px;
-  background: #FFE05C;
-  color: black;
-  border-bottom: 10px solid #6DBFEB;
-}
-
-.actions #create {
-  margin-top: 60px;
-  background: #6DBFEB;
-  border-bottom: 10px solid #454F99;
-  color: white;
-}
-
-.actions #donate {
-  margin-top: 60px;
-  background: #454F99;
-  border-bottom: 10px solid #FFE05C;
-  color: #6DBFEB;
-}
-
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1206,11 +1137,6 @@ footer .policy {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-}
-
-#virtual-classes .btn {
-  width: 300px;
-  font-size: 1.3em;
 }
 
 #survey h3 {
