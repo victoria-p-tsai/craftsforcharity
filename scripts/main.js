@@ -44,6 +44,59 @@ function carousel() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
 } */
 
+//team descriptions
+let teamCenter = document.querySelectorAll('.team-center');
+let speechBubbles = document.querySelectorAll('.speech-bubble');
+let triangles = document.querySelectorAll('.speech-bubble-triangle');
+let bubbleSets = document.querySelectorAll('.speech-bubble-set');
+
+//show speech bubbles
+function showSpeechBubble (e) {
+  let speechBubble = document.querySelector(`#${this.id}-content`);
+  let triangle = document.querySelector(`#${this.id}-triangle`);
+  let bubbleSet = document.querySelector(`#${this.id}-speech-bubble-set`);
+  //laptop 
+  if (window.matchMedia('(min-width: 576px)').matches) {
+  
+  //hide other speechbubbles
+   bubbleSets.forEach(el => {
+     if(el != bubbleSet){
+       $(el).hide();
+     }
+   })
+  //positioning triangle
+    triangle.style.setProperty('--after', ((this.clientWidth/2 - 20) + this.offsetLeft)  +'px');
+    triangle.style.setProperty('--color', window.getComputedStyle(this).backgroundColor);
+  
+   //toggle the speech bubble
+    $(bubbleSet).slideToggle();
+  }
+
+ 
+  //smart phone
+if (window.matchMedia('(max-width: 575px)').matches) {
+  triangle.style.setProperty('--after', this.clientWidth/2  +'px');
+  triangle.style.setProperty('--color', window.getComputedStyle(this).backgroundColor);
+    console.log(speechBubble.style.top);
+   
+    this.parentElement.insertBefore(bubbleSet, this.nextElementSibling );
+  
+    bubbleSets.forEach(el => {
+      if(el != bubbleSet){
+        $(el).hide();
+      }
+    })
+    
+  $(bubbleSet).slideToggle();
+ 
+} 
+}
+
+teamCenter.forEach((team) => {
+    team.addEventListener('click', showSpeechBubble)
+})
+
+
 
 //privacy policy popup
 // Get the modal
