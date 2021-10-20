@@ -283,6 +283,24 @@
   .mobile {
     display: block;
   }
+  
+    /* team descriptions */
+    .card-team {
+      display:flex;
+      flex-direction:column;
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    .team-center {
+      width: 80%;
+      /* position: relative; */
+    }
+
+    .speech-bubble {
+    margin: 0 auto;
+    }
+
 }
 
 /* for phones */
