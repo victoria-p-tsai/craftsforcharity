@@ -1347,6 +1347,7 @@ footer .policy {
     width: 20%;
     height: 150px;
     margin: 20px 10px;
+    cursor: pointer;
 }
 .each-teams {
     text-align: center;
