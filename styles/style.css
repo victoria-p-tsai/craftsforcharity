@@ -1316,6 +1316,141 @@ footer .policy {
 }
 
 /* --------------------------------------------------------------------- */
+/* team descriptions */
+
+
+.team-descriptions .teams {
+ text-align:left;
+}
+
+.each-teams.bigger {
+  font-size: 1.5em;
+
+ 
+}
+
+.card-team {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.team-center {
+    border: 0;
+   border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    width: 20%;
+    height: 150px;
+    margin: 20px 10px;
+}
+.each-teams {
+    text-align: center;
+    line-height: 1.1;
+}
+
+.speech-bubble {
+   padding: 40px 30px;
+   position: relative;
+   width:80%;
+   top: -5px;
+   background-color: #6DBFEB;
+   color: white;
+   border-radius: 15px;
+}
+
+.speech-bubble-set {
+  position:relative;
+  margin-top:0;
+  top:-18px;
+  display:none;
+}
+
+.speech-bubble-set.is-open {
+  height:var(--height);
+}
+.speech-bubble-triangle {
+  position: relative;
+  width: 62px;
+  height:62px; 
+  z-index: 1;
+  left: var(--after, 11%) ;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  background: var(--color, #6DBFEB);
+}
+
+.speech-bubble h2, .speech-bubble p {
+  font-size: 1.1em;
+  text-align:left;
+}
+.speech-bubble h2 {
+  text-transform: capitalize;
+}
+
+.applying-notification h2 {
+  text-transform: none;
+}
+
+.responsibilities {
+  margin-top: 25px;
+}
+
+.speech-bubble-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-btn {
+  background-color: #fff;
+  color: #6DBFEB;
+  border: 0;
+  outline: 0;
+  padding: 7px 20px;
+  width: max-content;
+  min-width:200px;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.square-btn.hover-yellow:hover {
+   background-color: #ffe05c;
+   color:black;
+}
+
+.square-btn.hover-blue:hover {
+  background-color: #6DBFEB;
+  color: white;
+}
+
+
+.square-btn.blue-letters {
+  color: #454F99;
+}
+
+.not-show {
+  display: none;
+}
+
+.not-open {
+  background-color: #454649;
+}
+
+
+
+/* --------------------------------------------------------------------- */
 /* DONATE */
 .don-content .knitting {
   height: 200px;
