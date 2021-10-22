@@ -1318,6 +1318,9 @@ footer .policy {
 /* --------------------------------------------------------------------- */
 /* team descriptions */
 
+.black {
+  color:black;
+}
 
 .team-descriptions .teams {
  text-align:left;
@@ -1390,6 +1393,10 @@ footer .policy {
 }
 .speech-bubble h2 {
   text-transform: capitalize;
+}
+
+.applying-notification {
+  margin-bottom: 50px;
 }
 
 .applying-notification h2 {
