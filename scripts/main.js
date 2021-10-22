@@ -65,7 +65,7 @@ function showSpeechBubble (e) {
      }
    })
   //positioning triangle
-    triangle.style.setProperty('--after', ((this.clientWidth/2 - 20) + this.offsetLeft)  +'px');
+    triangle.style.setProperty('--after', ((this.clientWidth/2 - 30) + this.offsetLeft)  +'px');
     triangle.style.setProperty('--color', window.getComputedStyle(this).backgroundColor);
   
    //toggle the speech bubble
