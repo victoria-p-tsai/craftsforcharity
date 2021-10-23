@@ -1321,7 +1321,6 @@ footer .policy {
 .black {
   color:black;
 }
-
 .team-descriptions .teams {
  text-align:left;
 }
@@ -1357,12 +1356,23 @@ footer .policy {
     line-height: 1.1;
 }
 
+.logistics-description {
+  background-color: #6DBFEB;
+}
+
+.outreach-description {
+  background-color: #FFE05C;
+}
+
+.teaching-description{
+  background-color: #454F99;
+}
 .speech-bubble {
    padding: 40px 30px;
    position: relative;
    width:80%;
    top: -5px;
-   background-color: #6DBFEB;
+   /* background-color: #6DBFEB; */
    color: white;
    border-radius: 15px;
 }
@@ -1398,7 +1408,6 @@ footer .policy {
 .applying-notification {
   margin-bottom: 50px;
 }
-
 .applying-notification h2 {
   text-transform: none;
 }
@@ -1455,7 +1464,6 @@ footer .policy {
 .not-open {
   background-color: #454649;
 }
-
 
 
 /* --------------------------------------------------------------------- */
