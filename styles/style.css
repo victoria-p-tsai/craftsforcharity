@@ -765,8 +765,8 @@ button.collapsible h2:hover, button.collapsible h2 .active {
 
 .coll-content {
   padding: 0px 18px 8px;
-  margin: 8px 0 0;
-  max-height: -10px;
+  margin:  0;
+  max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-out;
   transition: max-height 0.3s ease-out;
