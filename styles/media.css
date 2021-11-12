@@ -200,6 +200,9 @@
   .mobile-container {
     display: block;
     margin-right: 10px;
+    position: relative;
+    top: -25px;
+
   }
   h2 {
     line-height: 1.2em;
