@@ -182,6 +182,7 @@
     display: block;
     position: relative;
     bottom: -16px;
+    top: -3px;
   }
   .side i {
     display: inline-block;
