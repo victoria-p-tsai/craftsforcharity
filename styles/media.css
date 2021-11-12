@@ -106,7 +106,7 @@
     margin: 10px 0;
   }
   nav ul li {
-    text-align: right;
+    text-align: center;
     padding: 8px 0;
   }
   nav ul .head {
@@ -147,10 +147,11 @@
     position: relative;
     display: block;
     z-index: 10000;
+    right:0;
     background-color: white;
     height: 0;
     overflow: hidden;
-    width: 500px;
+    width: 200px;
     -webkit-box-shadow: none;
             box-shadow: none;
     margin: 0 0 0 auto;
