@@ -181,6 +181,7 @@
   .side {
     display: block;
     position: relative;
+    bottom: -16px;
   }
   .side i {
     display: inline-block;
