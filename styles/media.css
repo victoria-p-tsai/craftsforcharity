@@ -249,7 +249,7 @@
   }
   
   .card-header {
-    font-size:25px;
+    font-size:23px;
 }
  .card-deck .card {
    max-height:350px;
@@ -283,9 +283,7 @@
             justify-content: center;
     margin-bottom: 0;
   }
-   .card-deck .card .card-header {
-     font-size:22px;
-  }
+  
 }
 
 @media screen and (max-width: 575px) and (min-width: 400px) {
