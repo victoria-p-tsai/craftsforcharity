@@ -254,7 +254,9 @@
  .card-deck .card {
    max-height:350px;
   }
-
+  .card-deck .card .card-body {
+    height:70%;
+  }
 
 @media screen and (max-width: 767px) {
   footer {
