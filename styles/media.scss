@@ -279,6 +279,16 @@ $dark-grey: #767676;
         left: 45%;
         transform: translateX(-50%);
     }
+    
+    .card-header {
+    font-size:25px;
+}
+ .card-deck .card {
+   max-height:350px;
+  }
+  .card-deck .card .card-body {
+    height:70%;
+  }
 }
 
 @media screen and (max-width: 767px) {
