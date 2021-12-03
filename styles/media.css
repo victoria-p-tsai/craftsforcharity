@@ -251,7 +251,7 @@
   .card-header {
     font-size:25px;
 }
- .card-deck card {
+ .card-deck .card {
    max-width:60%;
  
 
