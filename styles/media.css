@@ -236,6 +236,15 @@
     min-height: 0;
     padding-bottom: 60px;
   }
+  .members {
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+  .members-row {
+    margin-bottom: 20px;
+    display: flex;
+}
 }
 
 /* materials images turn into column (instead of float) */
