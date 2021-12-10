@@ -1109,12 +1109,20 @@ footer .policy {
 }
 .members {
     display:flex;
-    justify-content:space-around
+    justify-content:space-around;
 }
+
 .team-content .members h2 {
   line-height: 1em;
 }
 
+.members-img {
+    width:100%;
+}
+
+.members-img img {
+    object-fit: cover;
+}
 .team-content h3 {
   color: #454F99;
 }
