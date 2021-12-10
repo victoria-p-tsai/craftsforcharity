@@ -1112,6 +1112,9 @@ footer .policy {
     justify-content:space-around;
 }
 
+.row {
+    width:45%;
+}
 .team-content .members h2 {
   line-height: 1em;
 }
