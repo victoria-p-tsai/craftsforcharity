@@ -1107,7 +1107,10 @@ footer .policy {
   width: 100%;
   border-radius: 10px;
 }
-
+.members {
+    display:flex;
+    justify-content:space-around
+}
 .team-content .members h2 {
   line-height: 1em;
 }
