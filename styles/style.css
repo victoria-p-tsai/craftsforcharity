@@ -1110,17 +1110,18 @@ footer .policy {
 .members {
     display:flex;
     justify-content:space-around;
+    flex-wrap: wrap;
 }
 
 .row {
-    width:45%;
+    width: 50%;
 }
 .team-content .members h2 {
   line-height: 1em;
 }
 
 .members-img {
-    width:100%;
+   width: 350px;
 }
 
 .members-img img {
