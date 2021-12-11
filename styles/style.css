@@ -1116,6 +1116,14 @@ footer .policy {
 .members-row {
     width: 50%;
 }
+
+.members-center {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 .team-content .members h2 {
   line-height: 1em;
 }
