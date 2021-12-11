@@ -246,12 +246,19 @@
     display: flex;
 }
   .members-img {
-    width: 300px;
+    width: 250px;
+    height:250px;
     text-align: center;
 }
   .team-content .members h2 {
     margin-top: 20px;
 }
+  .members-center {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* materials images turn into column (instead of float) */
@@ -273,7 +280,7 @@
   .card-deck .card .card-body {
     height:70%;
   }
-
+}
 @media screen and (max-width: 767px) {
   footer {
     padding: 3rem 1.5rem;
