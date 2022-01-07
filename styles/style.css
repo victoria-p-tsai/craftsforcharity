@@ -831,6 +831,7 @@ button[type=submit] {
   transition: 0.3s;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 button[type=submit]:hover {
