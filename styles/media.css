@@ -444,5 +444,15 @@
   }
 }
 
+@media screen and (max-width: 320px){
+  .title {
+    font-size: 26px;
+}
+  
+.team-descriptions .teams {
+    font-size: 25px;
+}
+
+}
 /* logo text disappears */
 /*# sourceMappingURL=media.css.map */
