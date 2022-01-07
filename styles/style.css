@@ -1624,4 +1624,8 @@ footer .policy {
   display: none;
   white-space: nowrap;
 }
+
+strong {
+font-family: 'Maven Pro', sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
