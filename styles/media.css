@@ -371,7 +371,7 @@
     padding-bottom: 0;
   }
   .title {
-   font-size: 28px;
+   font-size: 32px;
     width: 100%;
     margin: 10px auto;
   }
@@ -435,6 +435,11 @@
   }
   .faq-content h2 {
     line-height: 1.4em;
+  }
+  
+  //team descriptions {
+    text-align: center;
+    font-size: 30px;
   }
 }
 
