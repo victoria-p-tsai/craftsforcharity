@@ -437,7 +437,8 @@
     line-height: 1.4em;
   }
   
-  //team descriptions {
+/*   team descriptions */
+ .teams {
     text-align: center;
     font-size: 30px;
   }
