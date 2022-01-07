@@ -438,7 +438,7 @@
   }
   
 /*   team descriptions */
- .teams {
+ .team-descriptions .teams {
     text-align: center;
     font-size: 30px;
   }
