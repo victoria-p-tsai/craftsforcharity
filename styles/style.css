@@ -260,6 +260,7 @@ mark {
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .btn:hover {
@@ -714,6 +715,7 @@ p {
 
 p, ul li, a, nav .dropdown label:not(.donate-lbl) {
   line-height: 1.6em;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 label {
