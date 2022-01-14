@@ -170,7 +170,7 @@
     height: 125px;
   }
   #volunteer-dropdown:checked ~ .dropdown-content {
-    height: 235px;
+    height: 150px;
   }
   #donate-dropdown:checked ~ .dropdown-content {
     height: 175px;
