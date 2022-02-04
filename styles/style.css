@@ -572,6 +572,9 @@ nav ul li {
   color: #454649;
   white-space: nowrap;
 }
+.about-us ul li {
+   list-style: none;
+}
 
 nav ul .head {
   margin: 20px 20px 0;
