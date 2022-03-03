@@ -1563,6 +1563,16 @@ footer .policy {
   margin-left: auto;
 }
 
+#agree-check {
+  display:inline-block;
+}
+
+.check-form {
+  margin:20px 5px;
+ /* display:inline-block; */
+ font-size:15px;
+}
+
 /* --------------------------------------------------------------------- */
 /* FAQ */
 .faq-content a {
