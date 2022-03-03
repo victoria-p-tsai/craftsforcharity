@@ -97,6 +97,48 @@ teamCenter.forEach((team) => {
 })
 
 
+//open modal
+let modal = document.querySelector('.modal');
+
+let openModal = document.querySelector('.open-term-of-use');
+openModal.addEventListener('click', function(){
+    modal.style.display = 'block';
+})
+
+//close modal
+let closeBtn = document.querySelector('.close');
+
+
+closeBtn.addEventListener('click', function(){
+  modal.style.display = 'none';
+})
+
+window.addEventListener('click', function(e){
+  if(e.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+//if checkbox of agreement is not checked, can't send
+const agreeCheck = document.getElementById('agree-check');
+const formBtn = document.querySelector('.contact-us-submit');
+
+
+ agreeCheck.addEventListener('change', update);
+
+function update() {
+
+  if(this.checked){
+    formBtn.disabled = false;
+     console.log('button is work')
+  }else{
+    formBtn.disabled = true;
+    console.log('button is not work')
+  }
+
+
+};
+
 
 //privacy policy popup
 // Get the modal
