@@ -99,7 +99,7 @@ teamCenter.forEach((team) => {
 
 //open modal
 
-window.addEventListner('DOMContentLoaded', function(){
+document.addEventListner('DOMContentLoaded', function(){
     let modal = document.querySelector('.modal');
 
 let openTermOfUse = document.querySelector('.open-term-of-use');
