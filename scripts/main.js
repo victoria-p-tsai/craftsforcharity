@@ -102,6 +102,8 @@ let modal = document.querySelector('.modal');
 
 let openTermOfUse = document.querySelector('.open-term-of-use');
 
+
+
 openTermOfUse.addEventListener('click', function(){
     modal.style.display = 'block';
 })
