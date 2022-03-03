@@ -144,7 +144,7 @@ function update() {
 
 
 
-}
+})
 
 //privacy policy popup
 // Get the modal
