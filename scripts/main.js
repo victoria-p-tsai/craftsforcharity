@@ -98,12 +98,11 @@ teamCenter.forEach((team) => {
 
 
 //open modal
-let modal = document.querySelector('.modal');
+
+window.addEventListner('DOMContentLoaded', function(){
+    let modal = document.querySelector('.modal');
 
 let openTermOfUse = document.querySelector('.open-term-of-use');
-
-
-
 openTermOfUse.addEventListener('click', function(){
     modal.style.display = 'block';
 })
@@ -143,6 +142,9 @@ function update() {
 
 };
 
+
+
+}
 
 //privacy policy popup
 // Get the modal
