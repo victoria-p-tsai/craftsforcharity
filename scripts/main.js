@@ -101,6 +101,7 @@ teamCenter.forEach((team) => {
 let modal = document.querySelector('.modal');
 
 let openModal = document.querySelector('.open-term-of-use');
+
 openModal.addEventListener('click', function(){
     modal.style.display = 'block';
 })
