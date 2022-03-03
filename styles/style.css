@@ -1569,8 +1569,9 @@ footer .policy {
 
 .check-form {
   margin:20px 5px;
- /* display:inline-block; */
+ display:none;
  font-size:13px;
+    
 }
 
 /* --------------------------------------------------------------------- */
