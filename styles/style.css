@@ -943,6 +943,7 @@ footer .policy {
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
+  display:none;
   /* Black w/ opacity */
 }
 
@@ -954,18 +955,56 @@ footer .policy {
   width: 70%;
   border-radius: 5px;
   height: 80vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   position: relative;
+ 
+}
+
+.term-of-use-text {
+  overflow-y:scroll;
+  height:100%;
+  
+  /* padding: 0px 10px; */
+}
+
+
+.term-of-use-header, .term-of-use-text h4, .term-of-use-article-title {
+  text-align: center;
+  margin-bottom:10px;
+  
+}
+
+.term-of-use-header > h5 {
+ margin-bottom:40px;
+}
+
+.term-of-use-content, .term-of-use-article {
+  margin-bottom: 40px;
+
+}
+.term-of-use-content p{
+  font-size:15px;
+}
+
+.term-of-use-text  ol {
+  list-style-position:inside;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: bold;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  float: right;
+  right:15.5%;
+  top:90px;
+  position:absolute;
+  z-index:2;
+  
+  /* justify-content: right;
+  right:1%;
+  top:1%; */
   /* position: fixed;
     right: 20%; */
 }
@@ -975,7 +1014,9 @@ footer .policy {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  outline:none;
 }
+
 
 /* --------------------------------------------------------------------- */
 /* HOME */
@@ -1569,9 +1610,19 @@ footer .policy {
 
 .check-form {
   margin:20px 5px;
- display:none;
  font-size:13px;
     
+}
+
+.open-term-of-use {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.open-term-of-use:hover {
+  color: var(--blue);
+
 }
 
 /* --------------------------------------------------------------------- */
