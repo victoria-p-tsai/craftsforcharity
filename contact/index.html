@@ -52,7 +52,7 @@
         $(function(){
             $("#header").load("/insertables/header.html"); 
             $("#footer").load("/insertables/footer.html"); 
-            $("#email-form").load("/insertables/contact-form.html"); 
+//             $("#email-form").load("/insertables/contact-form.html"); 
         });
     </script> 
     <script defer src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script>
@@ -87,7 +87,35 @@
                 </p>
             </div>
     
-            <div class="col-md-6" id="email-form"></div>
+            <div class="col-md-6" id="email-form">
+            <p>By submitting this form, you acknowledge that you agree to the terms of craftsforcharity.com's <a href="https://craftsforcharity.com/legal/documents/privacy_policy.pdf" target="_blank">Privacy Policy.</a></p>
+<form action="https://formspree.io/xnqggjkp" method="POST" class="row">
+    <div class="col-sm-6 align-items-between">
+        
+        <label>
+            <input type="text" name="_name" placeholder="Name" required>
+        </label>
+    
+        <label>
+            <input type="text" name="_replyto" placeholder="Email" required>
+        </label>
+    
+        <label>
+            <input type="text" name="_subject" placeholder="Subject" />
+        </label>
+    </div>
+
+    <label class="col-sm-6">
+        <textarea name="message" placeholder="Type your message here..." required></textarea>
+    </label>    
+    
+     <!-- your other form fields go here -->
+      <div class="check-form">
+                    <input type="checkbox" name="agree" id="agree-check" /> I have read, understand and agree to the <span class="open-term-of-use">Terms of Use</span>
+                    </div>
+                    <button  class="contact-us-submit"type="submit">Send</button>
+</form>
+            </div>
         </section>
 
 <!--         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49467.29210250227!2d-76.98583836912994!3d39.204134219107715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7d91d627ee6c5%3A0x9b40ab3f00bcde3c!2sClarksville%2C%20MD%2021029!5e0!3m2!1sen!2sus!4v1594177605395!5m2!1sen!2sus" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
