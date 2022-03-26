@@ -921,6 +921,9 @@ footer .policy {
   font-size: 0.8em;
 }
 
+footer .DMCA-policy {
+    display:none;
+}
 /* --------------------------------------------------------------------- */
 /* PRIVACY POLICY POPUP */
 /* The Modal (background) */
