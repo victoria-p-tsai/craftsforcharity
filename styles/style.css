@@ -1227,6 +1227,10 @@ footer .DMCA-policy {
   width: 275px;
 }
 
+.attention {
+  margin-top:10px;
+  margin-bottom:100px;
+}
 /* --------------------------------------------------------------------- */
 /* MATERIALS */
 .materials-content {
@@ -1572,6 +1576,9 @@ footer .DMCA-policy {
   z-index: -5;
 }
 
+.question.center{
+  margin-bottom:100px;
+}
 /* --------------------------------------------------------------------- */
 /* CONTACT US */
 .contact-page .logo {
