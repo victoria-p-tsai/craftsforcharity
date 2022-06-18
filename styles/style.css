@@ -1046,6 +1046,29 @@ footer .DMCA-policy {
   overflow: hidden;
 }
 
+.donate-animation img {
+  cursor: pointer;
+  height:100px;
+  object-fit:cover;
+  position: absolute;
+
+	/* top: 50%;
+	left: 50%;  */
+	/* -webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+	
+	display: inline-block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.donate-animation img:nth-child(2){
+opacity:0;
+}
+ .donate-animation:hover  img:nth-child(2) {
+  opacity: 1;
+} 
+
 .our-purpose {
   position: relative;
   background-color: #f1f1f1;
