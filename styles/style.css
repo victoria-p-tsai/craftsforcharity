@@ -1046,7 +1046,7 @@ footer .DMCA-policy {
   overflow: hidden;
 }
 
-.donate-animation {
+/* .donate-animation {
 position:relative;
 height:500px;
 display: flex;
@@ -1059,14 +1059,11 @@ justify-content: center;
   object-fit:cover;
   position: absolute;
 
-	/* top: 50%;
-	left: 50%;  */
-	/* -webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%); */
+
 	
-	display: inline-block;
-	-webkit-transition: .4s ease-in-out;
-	transition: .4s ease-in-out;
+  display: inline-block;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .donate-animation img:nth-child(2){
@@ -1074,7 +1071,7 @@ opacity:0;
 }
  .donate-animation:hover  img:nth-child(2) {
   opacity: 1;
-} 
+}  */
 
 .our-purpose {
   position: relative;
