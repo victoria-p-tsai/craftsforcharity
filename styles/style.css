@@ -1048,14 +1048,14 @@ footer .DMCA-policy {
 
 .donate-animation {
 position:relative;
-height:100px;
+height:500px;
 display: flex;
 justify-content: center;
 
 }
 .donate-animation img {
   cursor: pointer;
-  height:100px;
+  height:500px;
   object-fit:cover;
   position: absolute;
 
