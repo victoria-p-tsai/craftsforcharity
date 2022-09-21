@@ -1046,32 +1046,20 @@ footer .DMCA-policy {
   overflow: hidden;
 }
 
-/* .donate-animation {
+.donate-animation {
 position:relative;
+background-image: url(../images/animation/image.png);
+background-size:cover;
+cursor: pointer;
 height:500px;
-display: flex;
-justify-content: center;
+background-repeat: no-repeat;
+background-position: center;
 
 }
-.donate-animation img {
-  cursor: pointer;
-  height:500px;
-  object-fit:cover;
-  position: absolute;
 
-
-	
-  display: inline-block;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+.donate-animation:hover {
+  background-image: url(../images/animation/Image\ from\ iOS.gif);
 }
-
-.donate-animation img:nth-child(2){
-opacity:0;
-}
- .donate-animation:hover  img:nth-child(2) {
-  opacity: 1;
-}  */
 
 .our-purpose {
   position: relative;
