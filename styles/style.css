@@ -1048,7 +1048,7 @@ footer .DMCA-policy {
 
 .donate-animation {
 position:relative;
-background-image: url(images/animation/image.png);
+background-image: url(https://github.com/vtsai2537/crafts-for-charity/blob/master/images/animation/image.png?raw=true);
 background-size:cover;
 cursor: pointer;
 height:500px;
@@ -1058,7 +1058,7 @@ background-position: center;
 }
 
 .donate-animation:hover {
-  background-image: url(images/animation/Image from iOS.gif);
+  background-image: url(https://github.com/vtsai2537/crafts-for-charity/blob/master/images/animation/Image%20from%20iOS.gif?raw=true);
 }
 
 .our-purpose {
