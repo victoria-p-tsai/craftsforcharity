@@ -1048,7 +1048,7 @@ footer .DMCA-policy {
 
 .donate-animation {
 position:relative;
-background-image: url(../images/animation/image.png);
+background-image: url(images/animation/image.png);
 background-size:cover;
 cursor: pointer;
 height:500px;
@@ -1058,7 +1058,7 @@ background-position: center;
 }
 
 .donate-animation:hover {
-  background-image: url(../images/animation/Image\ from\ iOS.gif);
+  background-image: url(images/animation/Image from iOS.gif);
 }
 
 .our-purpose {
