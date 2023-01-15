@@ -151,10 +151,20 @@ $dark-grey: #767676;
                     margin-top: 0;
                 }
             }
+          
+            .dropdown-triangle:hover .donate-dropdown-content {
+                display: block;
+                height:fit-content;
+            }
+            
         }
 
         .not-mobile {
             display: none;
+        }
+        
+        .dropdown-triangle {
+            display:inline-block
         }
     }
 
@@ -335,11 +345,16 @@ $dark-grey: #767676;
     }
 }
 @media screen and (max-width: 575px) {
-    .not-mobile {
-        display: none;
+    .dropdown-triangle {
+        display:inline-block
     }
     .mobile {
         display: block;
+    }
+    
+    .dropdown-triangle:hover .donate-dropdown-content {
+        display: block;
+        height:fit-content;
     }
 }
 
