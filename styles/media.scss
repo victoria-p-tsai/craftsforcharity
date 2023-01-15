@@ -152,7 +152,7 @@ $dark-grey: #767676;
                 }
             }
           
-            .dropdown-triangle:hover .donate-dropdown-content {
+            .dropdown-triangle:hover + .donate-dropdown-content {
                 display: block;
                 height:fit-content;
             }
@@ -352,7 +352,7 @@ $dark-grey: #767676;
         display: block;
     }
     
-    .dropdown-triangle:hover .donate-dropdown-content {
+    .dropdown-triangle:hover + .donate-dropdown-content {
         display: block;
         height:fit-content;
     }
