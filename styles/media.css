@@ -131,7 +131,7 @@
   .dropdown-triangle {
     display:inline-block
 }
-.dropdown-triangle:hover .donate-dropdown-content {
+.dropdown-triangle:hover + .donate-dropdown-content {
   display: block;
   height:fit-content;
 }
@@ -346,7 +346,7 @@
     display:inline-block
   }
 
-  .dropdown-triangle:hover .donate-dropdown-content {
+  .dropdown-triangle:hover + .donate-dropdown-content {
     display: block;
     height:fit-content;
 }
