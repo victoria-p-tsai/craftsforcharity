@@ -1046,32 +1046,20 @@ footer .DMCA-policy {
   overflow: hidden;
 }
 
-/* .donate-animation {
+.donate-animation {
 position:relative;
+background-image: url(https://github.com/vtsai2537/crafts-for-charity/blob/master/images/animation/image.png?raw=true);
+background-size:cover;
+cursor: pointer;
 height:500px;
-display: flex;
-justify-content: center;
+background-repeat: no-repeat;
+background-position: center;
 
 }
-.donate-animation img {
-  cursor: pointer;
-  height:500px;
-  object-fit:cover;
-  position: absolute;
 
-
-	
-  display: inline-block;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+.donate-animation:hover {
+  background-image: url(https://github.com/vtsai2537/crafts-for-charity/blob/master/images/animation/Image%20from%20iOS.gif?raw=true);
 }
-
-.donate-animation img:nth-child(2){
-opacity:0;
-}
- .donate-animation:hover  img:nth-child(2) {
-  opacity: 1;
-}  */
 
 .our-purpose {
   position: relative;
