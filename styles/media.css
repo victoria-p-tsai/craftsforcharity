@@ -127,6 +127,14 @@
   nav .not-mobile {
     display: none;
   }
+
+  .dropdown-triangle {
+    display:inline-block
+}
+.dropdown-triangle:hover .donate-dropdown-content {
+  display: block;
+  height:fit-content;
+}
   input[type=checkbox]:checked ~ label {
     color: black !important;
   }
@@ -320,6 +328,15 @@
   .not-mobile {
     display: none;
   }
+  
+  .dropdown-triangle {
+    display:inline-block
+  }
+
+  .dropdown-triangle:hover .donate-dropdown-content {
+    display: block;
+    height:fit-content;
+}
   .mobile {
     display: block;
   }
