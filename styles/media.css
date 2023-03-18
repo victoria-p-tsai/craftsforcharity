@@ -486,3 +486,12 @@
 }
 /* logo text disappears */
 /*# sourceMappingURL=media.css.map */
+
+/*mailbox and letter pictures disappear on mobile*/
+  
+@media only screen and (max-width: 500px) {
+  .mail,.check {
+    display:none;
+  }
+}
+
