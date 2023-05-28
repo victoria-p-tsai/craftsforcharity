@@ -183,9 +183,9 @@
   #donate-dropdown:checked ~ .dropdown-content {
     height: 175px;
   }
-  /*#donatebtn-dropdown:checked ~ .dropdown-content {
-        height: 165px;
-    }*/
+  #donatebtn-dropdown:checked ~ .dropdown-content {
+    height: 165px;
+  }
   .side {
     display: block;
     position: relative;
