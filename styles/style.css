@@ -601,8 +601,8 @@ nav ul .donate-dropdown .dropdown-content {
   margin-top: 10px;
 }
 
-nav #donatebtn-nav {
-  color: #6DBFEB;
+nav #donate-label {
+  padding-bottom: 10px;
 }
 
 .dropdown-content {
