@@ -183,9 +183,9 @@
   #donate-dropdown:checked ~ .dropdown-content {
     height: 175px;
   }
-  /*#donatebtn-dropdown:checked ~ .dropdown-content {
-        height: 165px;
-    }*/
+  #donatebtn-dropdown:checked ~ .dropdown-content {
+    height: 165px;
+  }
   .side {
     display: block;
     position: relative;
@@ -300,7 +300,7 @@
   .donate-animation {
     display:none;
   }
-
+}
 
 @media screen and (max-width: 767px) {
   footer {
@@ -495,3 +495,22 @@
   }
 }
 
+@media screen and (max-width: 1300px){
+  .donate-mobile {
+      display: block;
+  }
+
+  .donate-desktop {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 1301px){
+  .donate-mobile {
+      display: none;
+  }
+
+  .donate-desktop {
+      display: block;
+  }
+}
