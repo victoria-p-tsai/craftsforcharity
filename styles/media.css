@@ -503,6 +503,9 @@
   .donate-desktop {
       display: none;
   }
+  nav ul li {
+    font-size: 1.65em;
+  }
 }
 
 @media screen and (min-width: 1301px){
