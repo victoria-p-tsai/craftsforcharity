@@ -139,7 +139,7 @@
     color: black !important;
   }
   #menu-icon:checked ~ nav {
-    height: 330px;
+    height: 100vh;
     -webkit-box-shadow: 0px 10px 16px -16px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 16px -16px rgba(0, 0, 0, 0.2);
   }
