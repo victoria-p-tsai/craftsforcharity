@@ -491,8 +491,11 @@ $dark-grey: #767676;
         display: none;
     }
 
-    nav ul li {
-        font-size: 1em;
+    nav {
+        position: absolute;
+        top: 10vh;
+        padding-right: 5vw;
+        width: 50vw;
     }
 
     nav ul label, nav ul li a.head {

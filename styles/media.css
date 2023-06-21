@@ -497,11 +497,19 @@
 
 @media screen and (max-width: 1300px) {
   .donate-mobile {
-      display: block;
+    display: block;
   }
 
   .donate-desktop {
-      display: none;
+    display: none;
+  }
+
+  nav {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    padding-right: 5vw;
+    width: 50vw;
   }
 
   nav ul label, nav ul li a.head {
@@ -511,10 +519,10 @@
 
 @media screen and (min-width: 1301px) {
   .donate-mobile {
-      display: none;
+    display: none;
   }
 
   .donate-desktop {
-      display: block;
+    display: block;
   }
 }
