@@ -494,8 +494,8 @@ $dark-grey: #767676;
     nav {
         position: absolute;
         top: 10vh;
-        padding-right: 5vw;
-        width: 50vw;
+        padding: 0 5vw;
+        width: auto;
     }
 
     nav ul label, nav ul li a.head {

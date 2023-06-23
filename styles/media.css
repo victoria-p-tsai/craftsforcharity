@@ -508,8 +508,8 @@
     position: absolute;
     top: 10vh;
     right: 0;
-    padding-right: 5vw;
-    width: 50vw;
+    padding: 0 5vw;
+    width: auto;
   }
 
   nav ul label, nav ul li a.head {
