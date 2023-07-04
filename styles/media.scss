@@ -170,9 +170,9 @@ $dark-grey: #767676;
     }
 
     input[type=checkbox]:checked ~ label {
+        transform: rotate(90deg) !important;
         color: black !important;
     }
-    
 
     #menu-icon:checked ~ nav {
         margin-right: 0;

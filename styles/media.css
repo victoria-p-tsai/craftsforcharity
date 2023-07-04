@@ -137,6 +137,9 @@
   height:fit-content;
 }
   input[type=checkbox]:checked ~ label {
+    transform: rotate(90deg) !important;
+    margin-left: -20px;
+    margin-top: -20px;
     color: black !important;
   }
   #menu-icon:checked ~ nav {
