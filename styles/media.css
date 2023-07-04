@@ -92,12 +92,13 @@
     display: block;
     text-align: right;
     float: right;
-    height: 0;
+    height: 100vh;
     background-color: white;
     width: 100%;
+    margin-right: -999px;
     overflow: scroll;
-    -webkit-transition: height 0.3s;
-    transition: height 0.3s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     padding-bottom: 10px;
     padding-right: 10px;
   }
@@ -139,7 +140,7 @@
     color: black !important;
   }
   #menu-icon:checked ~ nav {
-    height: 100vh;
+    margin-right: 0;
     -webkit-box-shadow: 0px 10px 16px -16px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 16px -16px rgba(0, 0, 0, 0.2);
   }
